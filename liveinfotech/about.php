@@ -312,7 +312,6 @@
 			</div><!-- Owl carousel end -->
 		</div><!-- Main row end -->
 	</div>
-	<!--/ Container end -->
 </section>
 <!--/ Clients end -->
 	<!-- Footer start -->
