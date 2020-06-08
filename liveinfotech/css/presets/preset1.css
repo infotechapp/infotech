@@ -456,3 +456,9 @@ padding: 20px;
     font-size: 15px;
     line-height: 1.6em;
   }
+
+  @media screen and (max-width: 768px) {
+	#content-desktop {
+		display: none;
+	}
+}

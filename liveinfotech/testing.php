@@ -13,10 +13,9 @@
 			<!-- Subpage title start -->
 			<div class="banner-title-content">
 	        	<div class="text-center">
-		        	<h2>Services</h2>
+		        	<h2>Testing(QA)</h2>
 		        	<ul class="breadcrumb">
-			            <li>Home</li>
-			            <li><a href="javascript:void(0)"> Services</a></li>
+			            <li>Assuring Customer Delight with Mature Test Processes – The Single Stop Shop for All Your Testing Needs</li>
 		          	</ul>
 	          	</div>
           	</div><!-- Subpage title end -->
@@ -30,7 +29,7 @@
                 <div class="featured-tab clearfix">
                     <div class="tab-content col-md-12 col-sm-12">
                         <div class="tab-pane active animated fadeInRight" id="tab_a">
-                            <img class="img-responsive pull-left" src="images/tab/featured-tab1.png" alt="">
+                            <img class="img-responsive pull-left" src="images/tab/testing.png" alt="">
                             <p>“Understanding The Source Code”</p>
                             <h3>WHITE BOX TESTING</h3>
                             <p>Deployment of winning products every time, calls for scrutinizing software to pinpoint areas requiring improvement and that results comply with the expected quality. Our understanding of crucial aspects of testing in software development has helped us in becoming the global leading platform for world-class white box testing services.
@@ -48,7 +47,7 @@
                 <div class="featured-tab clearfix">
                     <div class="tab-content col-md-12 col-sm-12">
                         <div class="tab-pane active animated fadeInRight" id="tab_a">
-                            <img class="img-responsive pull-right" src="images/tab/featured-tab2.png" alt="">
+                            <img class="img-responsive pull-right" src="images/tab/testing1.png" alt="">
                             <p>“Ameliorate User Experience”</p>
                             <h3>BLACK BOX TESTING</h3>
                             <p>Analyzing the in and out of a software, we are proficient in testing aiming to achieve what you desire.Black Box testing is an integral part of application development. Wildnet Quality Analysts ensure that their clients avail best-in-class testing services. Their emphasis is not only to obtain the expected results in a software product, but to ameliorate user experience. Black-box technique incorporates the identification of slightest anomalies and security vulnerabilities through automated tests.</p>
@@ -88,7 +87,7 @@
                 <div class="featured-tab clearfix">
                     <div class="tab-content col-md-12 col-sm-12">
                         <div class="tab-pane active animated fadeInRight" id="tab_a">
-                            <img class="img-responsive pull-left" src="images/tab/featured-tab1.png" alt="">
+                            <img class="img-responsive pull-left" src="images/tab/testing2.png" alt="">
                             <p>“A Rigorous Examination”</p>
                             <h3>QA AND TESTING SERVICES AT WILDNET</h3>
                             <p>While finalizing a software product, every QA at Wildnet dedicates his/her expertise ensuring seamless functionality, incredible performance and unmatched security. The world of technology is changing at an unprecedented rate as domains of Mobile and Web, Cloud, IoT, Big Data, Blockchain, etc calls for ability to face erratic challenges. At Wildnet, the team of expert Quality Analysts with technology domain expertise offers :</p>

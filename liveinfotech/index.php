@@ -8,15 +8,21 @@
 		<section id="home" class="no-padding">
 			<div id="main-slide" class="cd-hero">
 				<ul class="cd-hero-slider">
-					<li class="selected">
+				<li class="selected">
 						<div class="overlay2">
 							<img class="" src="images/slider/bg1.jpg" alt="slider">
 						</div>
-						<div class="cd-full-width">
-							<h2>Need To Invent The Future!</h2>
-							<h3>We Making Difference To Great Things Possible</h3>
-							<a href="contact.php" class="btn btn-primary solid cd-btn">Enquire Now </a>
-						</div> <!-- .cd-full-width -->
+						<div class="cd-half-width cd-img-container img-right">
+							<img src="images/slider/home-website.png" alt="">
+						</div> <!-- .cd-half-width.cd-img-container -->
+						<div class="cd-half-width">
+							<h3>Web application development services
+								using industry leading technologies</h3>
+							<p>Harness the power of modern web frameworks to build progressive web apps that scale
+							</p>
+							<a href="contact.html" class="btn btn-primary solid cd-btn">Enquire Now </a>
+						</div> <!-- .cd-half-width -->
+
 					</li>
 					<li>
 						<div class="overlay2">
@@ -28,22 +34,22 @@
 							</p>
 						</div> <!-- .cd-half-width -->
 
-						<!--<div class="cd-half-width cd-img-container">-->
-						<!--	<img src="images/slider/bg-thumb1.png" alt="">-->
-						<!--</div> .cd-half-width.cd-img-container -->
+						<div class="cd-half-width cd-img-container">
+						<img src="images/slider/home-mobile.png" alt="">
+						</div>
 					</li>
 					<li>
 						<div class="overlay2">
 							<img class="" src="images/slider/bg3.jpg" alt="slider">
 						</div>
-						<!--<div class="cd-half-width cd-img-container img-right">-->
-						<!--	<img src="images/slider/bg-thumb2.png" alt="">-->
-						<!--</div> .cd-half-width.cd-img-container -->
+						<div class="cd-half-width cd-img-container img-right">
+							<img src="images/slider/home-seo.png" alt="">
+						</div>
 						<div class="cd-half-width">
 							<h2>Your Challenge is Our Progress</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!
 							</p>
-							
+
 						</div> <!-- .cd-half-width -->
 					</li>
 					<li class="cd-bg-video">
@@ -70,7 +76,7 @@
 				<!--		</ul>-->
 				<!--	</nav>-->
 				<!--</div>-->
-				
+
 				<div class="cd-slider-nav">
 					<nav>
 						<span class="cd-marker item-1"></span>
@@ -81,7 +87,7 @@
 							<li class="video"><a href="#0"><i class="fa fa-video-camera"></i> Digital</a></li>
 						</ul>
 					</nav>
-				</div> 
+				</div>
 
 			</div>
 			<!--/ Main slider end -->
@@ -627,7 +633,7 @@
 						</div><!-- tab content -->
 					</div><!-- Featured tab end -->
 				</div><!-- Content row end -->
-				
+
 			</div><!-- Container end -->
 		</section><!-- About end -->
 
@@ -848,7 +854,7 @@
 
 		<?php include "include/footer.php"; ?>
 	<?php include "include/commonjs.php"; ?>
-		
+
 	</div>
 </body>
 

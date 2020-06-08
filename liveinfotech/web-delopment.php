@@ -13,10 +13,10 @@
 			<!-- Subpage title start -->
 			<div class="banner-title-content">
 	        	<div class="text-center">
-		        	<h2>Services</h2>
+		        	<h2>Web Development</h2>
 		        	<ul class="breadcrumb">
-			            <li>Home</li>
-			            <li><a href="javascript:void(0)"> Services</a></li>
+			            <li>The technical skill and battle-tested processes
+								to deliver high-performing websites.</li>
 		          	</ul>
 	          	</div>
           	</div><!-- Subpage title end -->
@@ -30,7 +30,7 @@
             <div class="featured-tab clearfix">
                 <div class="tab-content col-md-12 col-sm-12">
                     <div class="tab-pane active animated fadeInRight" id="tab_a">
-                        <img class="img-responsive pull-left" src="images/tab/featured-tab1.png" alt="">
+                        <img class="img-responsive pull-right" src="images/tab/website1.png" alt="">
                         <h3>Web Development</h3>
                         <p>Offering deep technology knowledge and wide breadth of experience across multiple industries to help clients with their custom web solutions development and maintenance initiatives.</p>
                         <ul class="check-list liadjustment">
@@ -41,6 +41,15 @@
                             <li><i class="fa fa-check"></i> Excellent UX</li>
                             <li><i class="fa fa-check"></i> Latest Technology</li>
                         </ul>
+                    </div>
+                </div><!-- tab content -->
+            </div><!-- Featured tab end -->
+		</div><!-- Content row end -->
+        <div class="row" >
+            <div class="featured-tab clearfix">
+                <div class="tab-content">
+                    <div class="active animated fadeInRight">
+                        <img class="img-responsive" src="images/tab/websitesdlc.png" alt="">
                     </div>
                 </div><!-- tab content -->
             </div><!-- Featured tab end -->

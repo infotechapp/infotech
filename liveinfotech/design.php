@@ -12,10 +12,10 @@
             <!-- Subpage title start -->
             <div class="banner-title-content">
                 <div class="text-center">
-                    <h2>Services</h2>
+                    <h2>Design(UX/UI)</h2>
                     <ul class="breadcrumb">
-                        <li>Home</li>
-                        <li><a href="javascript:void(0)"> Services</a></li>
+                        <li>With a relentless focus on users’ needs, we design sites
+                            that grow brands and drive audiences to action.</li>
                     </ul>
                 </div>
             </div><!-- Subpage title end -->
@@ -29,7 +29,7 @@
                     <div class="featured-tab clearfix">
                         <div class="tab-content col-md-12 col-sm-12">
                             <div class="tab-pane active animated fadeInRight" id="tab_a">
-                                <img class="img-responsive pull-left" src="images/tab/featured-tab1.png" alt="">
+                                <img class="img-responsive pull-left" src="images/tab/design.png" alt="">
                                 <h3>Design(UI/UX)</h3>
                                 <p>Application Designing for mobile devices, tablets, and web has tremendously
                                     influenced brands by assisting them to set foot on the track of an unstoppable

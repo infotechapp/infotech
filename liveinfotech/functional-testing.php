@@ -13,10 +13,9 @@
 			<!-- Subpage title start -->
 			<div class="banner-title-content">
 	        	<div class="text-center">
-		        	<h2>Services</h2>
+		        	<h2>Testing(QA)</h2>
 		        	<ul class="breadcrumb">
-			            <li>Home</li>
-			            <li><a href="javascript:void(0)"> Services</a></li>
+			            <li>Functional Testing</li>
 		          	</ul>
 	          	</div>
           	</div><!-- Subpage title end -->
@@ -41,7 +40,7 @@
                 <div class="featured-tab clearfix">
                     <div class="tab-content col-md-12 col-sm-12">
                         <div class="tab-pane active animated fadeInRight" id="tab_a">
-                            <img class="img-responsive pull-left" src="images/tab/featured-tab1.png" alt="">
+                            <img class="img-responsive pull-left" src="images/tab/testing3.png" alt="">
                             <p>“Flexible and Affordable Testing Method”</p>
                             <h3>MANUAL TESTING</h3>
                             <p>At Wildnet, our major emphasis is to pinpoint defects in the early stages and rectify them. We provide expert testers and tools to test your product in faster time-to-market, measurable improvements in quality and reduced cost. Leveraging our services help you to identify defects when they are less costly to remediate. We cover multiple Browser, OS, Devices in Manual Testing.
@@ -101,7 +100,7 @@
                 <div class="featured-tab clearfix">
                     <div class="tab-content col-md-12 col-sm-12">
                         <div class="tab-pane active animated fadeInRight" id="tab_a">
-                            <img class="img-responsive pull-right" src="images/tab/featured-tab2.png" alt="">
+                            <img class="img-responsive pull-right" src="images/tab/testing4.png" alt="">
                             <p>“FAST. ACCURATE. DEFECT FREE”</p>
                             <h3>AUTOMATION TESTING</h3>
                             <p>If you are looking for Continuous, Fast, Accurate, defect-free and efficient testing of your product, Automation testing is the best solution for it. For any large scale and complex projects, one should always consider Automation Testing as an important step.
@@ -140,7 +139,7 @@
                 <div class="featured-tab clearfix">
                     <div class="tab-content col-md-12 col-sm-12">
                         <div class="tab-pane active animated fadeInRight" id="tab_a">
-                            <img class="img-responsive pull-left" src="images/tab/featured-tab1.png" alt="">
+                            <img class="img-responsive pull-left" src="images/tab/testing5.png" alt="">
                             <p>“A Rigorous Examination”</p>
                             <h3>SELENIUM</h3>
                             <p>Selenium is a framework, written in <strong>JavaScript</strong> that helps to automate functional tests for web applications. It supports various platforms like Chrome, Internet Explorer, Firefox, Mac OS X, Linux etc. The <strong>major components</strong> of Selenium are <strong>Remote control (RC), Integrated Development Environment (IDE), Selenium-Grid</strong> that provide better integration of framed test work with different units.</p>
@@ -167,7 +166,7 @@
                 <div class="featured-tab clearfix">
                     <div class="tab-content col-md-12 col-sm-12">
                         <div class="tab-pane active animated fadeInRight" id="tab_a">
-                            <img class="img-responsive pull-right" src="images/tab/featured-tab2.png" alt="">
+                            <img class="img-responsive pull-right" src="images/tab/appium.png" alt="">
                             <p>“Mobile Application Testing Tool”</p>
                             <h3>APPIUM</h3>
                             <p >Appium is an open-source <strong>Mobile application automation testing framework</strong> used with native, hybrid and mobile web apps. It has NO dependency on Mobile device OS. APPIUM is a framework or wrapper that translate Selenium Webdriver commands into UIAutomation (iOS) or UIAutomator (Android) commands depending on the device type, not any OS type. Like Selenium, <strong>Appium also supports all languages that have Selenium client libraries</strong> like – Java, Objective-C, JavaScript with node.js, PHP, Ruby, Python, C#, etc. It drives iOS, Android, and Windows apps using the WebDriver protocol. Appium supports Safari on iOS and Chrome or the built-in ‘Browser’ app on Android.</p>

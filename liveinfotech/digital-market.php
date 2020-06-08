@@ -13,10 +13,9 @@
 			<!-- Subpage title start -->
 			<div class="banner-title-content">
 	        	<div class="text-center">
-		        	<h2>Services</h2>
+		        	<h2>Digital Marketing</h2>
 		        	<ul class="breadcrumb">
-			            <li>Home</li>
-			            <li><a href="javascript:void(0)"> Services</a></li>
+			            <li>We Understand Competition, We Understand Business Challenges, Make an Impression with Infotechapp Marketing Communication</li>
 		          	</ul>
 	          	</div>
           	</div><!-- Subpage title end -->
@@ -91,6 +90,15 @@
 
 
             </div><!-- Content row end -->
+            <div class="row" >
+            <div class="featured-tab clearfix">
+                <div class="tab-content">
+                    <div class="active animated fadeInRight">
+                        <img class="img-responsive" style="width: 100%;" src="images/tab/digitalmarketing.png" alt="">
+                    </div>
+                </div><!-- tab content -->
+            </div><!-- Featured tab end -->
+        </div><!-- Content row end -->
         </div>
 	 </section>
 	 <section id="feature" class="feature" style="background: antiquewhite;">

@@ -82,27 +82,27 @@
 				        <div class="tab-pane active animated fadeInRight" id="tab_a">
 				        	<i class="fa fa-trophy big"></i>
 				            <h3>We Are Awwared Winning Company</h3> 
-				            <p>Our company delivers technology-driven business solutions that meet the strategic objectives of our clients and We have innovative ideas which often attract you in all aspects. We create a powerful Digital Marketing for your company that increases your market value.</p>
+				            <p>Over the year we have lots of experience in our field. In sit amet massa sapien. Vestibulum diam turpis, gravida in lobortis id, ornare a eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit. Duis lorem nulla, eleifend.</p>
 				        </div>
 				        <div class="tab-pane animated fadeInLeft" id="tab_b">
 				        	<i class="fa fa-briefcase big"></i>
 				            <h3>We Have Worldwide Business</h3> 
-							<p>we have been committed to the service of website development. Over these years, we have created websites, web applications, and mobile applications for small and large companies across a wide range of industries.</p>							 
+							<p>Helvetica cold-pressed lomo messenger bag ugh. Vinyl jean shorts Austin pork belly PBR retro, Etsy VHS kitsch actually messenger bag pug. Pbrb semiotics try-hard, Schlitz occupy dreamcatcher master cleanse Marfa Vice tofu. </p>							 
 				        </div>
 				        <div class="tab-pane animated fadeIn" id="tab_c">
 				            <i class="fa fa-android big"></i>
 				            <h3>We Build Readymade Applications</h3> 
-				            <p>We extended our services and today we cover Web Designing & Development, E-Commerce, Mobile Application Development, Digital Marketing.</p>
+				            <p>Over the year we have lots of experience in our field. In sit amet massa sapien. Vestibulum diam turpis, gravida in lobortis id, ornare a eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit. Duis lorem nulla, eleifend.</p>
 				        </div>
 				        <div class="tab-pane animated fadeIn" id="tab_d">
 				            <i class="fa fa-pagelines big"></i>
 				            <h3>Clean and Modern Design</h3> 
-				            <p>Our process involves seasoned design professionals who are committed to keeping your unique requirements in mind while designing an online presence for your business. We’ve done custom website designing for reputed companies and industries.</p>
+				            <p>Over the year we have lots of experience in our field. In sit amet massa sapien. Vestibulum diam turpis, gravida in lobortis id, ornare a eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit. Duis lorem nulla, eleifend.</p>
 				        </div>
 				        <div class="tab-pane animated fadeIn" id="tab_e">
 				            <i class="fa fa-support big"></i>
 				            <h3>24/7 Dedicated Support</h3> 
-				            <p>We provide tech support services to address your issues on call. Call our Customer Service executive or submit your request online, our tech support staff will get in touch with you. Services for Consumers/Professionals.</p>
+				            <p>Occupy selfies Tonx, +1 Truffaut beard organic normcore tilde flannel artisan squid cray single-origin coffee. Master cleanse vinyl Austin kogi, semiotics skateboard fap wayfarers health goth. Helvetica cray church-key hashtag Carles. Four dollar toast meggings seitan, Tonx pork belly VHS Bushwick. Chambray banh mi cornhole. Locavore messenger bag seitan.</p>
 				        </div>
 					</div><!-- tab content -->
 	    		</div><!-- Overview tab end -->
@@ -312,6 +312,7 @@
 			</div><!-- Owl carousel end -->
 		</div><!-- Main row end -->
 	</div>
+	<!--/ Container end -->
 </section>
 <!--/ Clients end -->
 	<!-- Footer start -->

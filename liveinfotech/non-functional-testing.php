@@ -13,10 +13,9 @@
 			<!-- Subpage title start -->
 			<div class="banner-title-content">
 	        	<div class="text-center">
-		        	<h2>Services</h2>
+		        	<h2>Testing(QA)</h2>
 		        	<ul class="breadcrumb">
-			            <li>Home</li>
-			            <li><a href="javascript:void(0)"> Services</a></li>
+			            <li>Non-Functional Testing</li>
 		          	</ul>
 	          	</div>
           	</div><!-- Subpage title end -->
@@ -30,7 +29,7 @@
                 <div class="featured-tab clearfix">
                     <div class="tab-content col-md-12 col-sm-12">
                         <div class="tab-pane active animated fadeInRight" id="tab_a">
-                            <img class="img-responsive pull-left" src="images/tab/featured-tab1.png" alt="">
+                            <img class="img-responsive pull-left" src="images/tab/testing6.png" alt="">
                             <p>“Responsiveness and Stability”</p>
                             <h3>Non-Functional Testing</h3>
                             <p>Lack of software performance can cause investment in additional resources, loss in the income, compromised customer experience, reduced competitiveness, and failure of project. Relating to the non-functional prerequisites of a system, our QAs check for its readiness. Our purpose is to solely monitor efficiency, usability, portability, and maintainability of the system being developed.
@@ -93,7 +92,7 @@
                 <div class="featured-tab clearfix">
                     <div class="tab-content col-md-12 col-sm-12">
                         <div class="tab-pane active animated fadeInRight" id="tab_a">
-                            <img class="img-responsive pull-right" src="images/tab/featured-tab2.png" alt="">
+                            <!-- <img class="img-responsive pull-right" src="images/tab/featured-tab2.png" alt=""> -->
                             <h3>Non-Functional Testing at
                                 InfoTechApp</h3>
                             <p>Wildnet employs best-in-breed QA experts. Utilizing minutest of capabilities of non-functional testing, experts work to ensure that product performs as expected. Under this testing category, it is imperative to ensure that performance which is crucial to product deployment is never overlooked. Our QAs insist that every parameter non-functional testing comprises of needs to be thoroughly scrutinized for expected results.</p>

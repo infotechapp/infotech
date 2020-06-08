@@ -13,10 +13,10 @@
 			<!-- Subpage title start -->
 			<div class="banner-title-content">
 	        	<div class="text-center">
-		        	<h2>Services</h2>
+		        	<h2>Mobile Development</h2>
 		        	<ul class="breadcrumb">
-			            <li>Home</li>
-			            <li><a href="javascript:void(0)"> Services</a></li>
+			            <li>Delivering the technical talent
+							to build great apps and keep them running</li>
 		          	</ul>
 	          	</div>
           	</div><!-- Subpage title end -->
@@ -30,7 +30,7 @@
                 <div class="featured-tab clearfix">
                     <div class="tab-content col-md-12 col-sm-12">
                         <div class="tab-pane active animated fadeInRight" id="tab_a">
-                            <img class="img-responsive pull-left" src="images/tab/featured-tab1.png" alt="">
+                            <img class="img-responsive pull-left" src="images/tab/mobile.png" alt="">
                             <h3>Mobile App Development</h3>
                             <p>Mobile technology has developed immensely in recent times and has threatened the existence of PCs, Gaming consoles or even TV up to some extent. Mobile technologies have enabled us to harness their potential to the fullest. At Clarion, we invest time and resources to make us ready for future mobile trends. We have the expertise in offshore mobile application development for multiple platforms:</p>
                             <ul class="check-list liadjustment">
@@ -45,6 +45,15 @@
                     </div><!-- tab content -->
                 </div><!-- Featured tab end -->
             </div><!-- Content row end -->
+            <div class="row" >
+            <div class="featured-tab clearfix">
+                <div class="tab-content">
+                    <div class="active animated fadeInRight">
+                        <img class="img-responsive" src="images/tab/mobilesdlc.png" alt="">
+                    </div>
+                </div><!-- tab content -->
+            </div><!-- Featured tab end -->
+        </div><!-- Content row end -->
         </div><!-- Container end -->
     </section><!-- About end -->
 
