@@ -32,14 +32,14 @@
 						</ul>
 
 					</div>
-					<!--/ End Recent Posts-->
+					
 
 
 					<div class="col-md-6 col-sm-12 footer-widget footer-about-us">
 						<h3 class="widget-title">About Craft</h3>
-						<p>We are a awward winning multinational company. We believe in quality and standard worldwide.
+						<p>Our company delivers technology-driven business solutions that meet the strategic objectives of our clients.
 						</p>
-						<p><strong>Address: </strong>1102 Saint Marys, Junction City, KS</p>
+						<p><strong>Address: </strong>Main Road, Sector 14 Gurgaon, Haryana</p>
 						<div class="row">
 							<div class="col-md-6">
 								<strong>Email: </strong>
@@ -47,7 +47,7 @@
 							</div>
 							<div class="col-md-6">
 								<strong>Phone No.</strong>
-								<p>8899293353,8523882090</p>
+								<p>+91-8899293353, +91-8523882090</p>
 							</div>
 						</div>
 
