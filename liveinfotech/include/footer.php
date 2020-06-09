@@ -32,7 +32,7 @@
 						</ul>
 
 					</div>
-					<!--/ End Recent Posts-->
+					
 
 
 					<div class="col-md-6 col-sm-12 footer-widget footer-about-us">
