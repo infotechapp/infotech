@@ -49,7 +49,7 @@
             <div class="featured-tab clearfix">
                 <div class="tab-content">
                     <div class="active animated fadeInRight">
-                        <img class="img-responsive" src="images/tab/mobilesdlc.png" alt="">
+                        <img class="img-responsive" width="100%" src="images/tab/mobilesdlc.png" alt="">
                     </div>
                 </div><!-- tab content -->
             </div><!-- Featured tab end -->
@@ -125,7 +125,7 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
-                            <span class="service-icon icon-pentagon"><i class="fa fa-mobile"></i></span>
+                          <img src="images/services/it.png" alt="">
                             <h4>Technology Consulting</h4>
                           </div>
                           <div class="flip-card-back">
@@ -139,8 +139,8 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
-                            <span class="service-icon icon-pentagon"><i class="fa fa-mobile"></i></span>
-                            <h4>Custom Mobile App Development</h4>
+                          <img src="images/services/smartphone.png" alt="">
+                                                      <h4>Custom Mobile App Development</h4>
                           </div>
                           <div class="flip-card-back">
                             <p>Our custom mobile app solutions are best in class that ensures
@@ -154,7 +154,7 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
-                            <span class="service-icon icon-pentagon"><i class="fa fa-mobile"></i></span>
+                          <img src="images/services/ux.png" alt="">
                             <h4>UI/UX Development</h4>
                           </div>
                           <div class="flip-card-back">
@@ -169,7 +169,7 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
-                            <span class="service-icon icon-pentagon"><i class="fa fa-mobile"></i></span>
+                          <img src="images/services/design2.png" alt="">
                             <h4>Enterprise Application Development</h4>
                           </div>
                           <div class="flip-card-back">
@@ -189,7 +189,7 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
-                            <span class="service-icon icon-pentagon"><i class="fa fa-mobile"></i></span>
+                          <img src="images/services/app.png" alt="">
                             <h4>App Integration</h4>
                           </div>
                           <div class="flip-card-back">
@@ -205,7 +205,7 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
-                            <span class="service-icon icon-pentagon"><i class="fa fa-mobile"></i></span>
+                          <img src="images/services/application.png" alt="">
                             <h4>Cloud Mobility Solutions</h4>
                           </div>
                           <div class="flip-card-back">
@@ -220,7 +220,7 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
-                            <span class="service-icon icon-pentagon"><i class="fa fa-mobile"></i></span>
+                          <img src="images/services/maintenance.png" alt="">
                             <h4>Application Maintenance Services</h4>
                           </div>
                           <div class="flip-card-back">
@@ -235,7 +235,7 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
-                            <span class="service-icon icon-pentagon"><i class="fa fa-mobile"></i></span>
+                          <img src="images/services/beta.png" alt="">
                             <h4>App QA & Testing</h4>
                           </div>
                           <div class="flip-card-back">

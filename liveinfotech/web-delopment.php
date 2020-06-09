@@ -68,7 +68,7 @@
         </div> <!-- Title row end -->
         <div class="row">
             <div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
-                <span class="feature-icon pull-left"><i class="fa fa-heart-o"></i></span>
+                <span class="feature-icon pull-left"><img src="images/services/website1.png" alt=""></span>
                 <div class="feature-content">
                     <h3>Custom Web Development</h3>
                     <p>From startups to large enterprises, we build feature-rich and multi-functional custom web application to run your business effortlessly</p>
@@ -77,7 +77,7 @@
             <!--/ End first featurebox -->
 
             <div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
-                <span class="feature-icon pull-left"><i class="fa fa-codepen"></i></span>
+                <span class="feature-icon pull-left"><img src="images/services/website2.png" alt=""></span>
                 <div class="feature-content">
                     <h3>E-Commerce Development</h3>
                     <p>Every online business has its specific needs and we work accordingly to provide maximum benefits through our align eCommerce website development.</p>
@@ -86,7 +86,7 @@
             <!--/ End 2nd featurebox -->
 
             <div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
-                <span class="feature-icon pull-left"><i class="fa fa-film"></i></span>
+                <span class="feature-icon pull-left"><img src="images/services/monitor1.png" alt=""></span>
                 <div class="feature-content">
                     <h3>CMS Web Development</h3>
                     <p>Our experienced full stack developers use modern approaches for creating rapid prototypes of Content Management System (CMS) based web applications.</p>
@@ -99,7 +99,7 @@
 
         <div class="row">
             <div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
-                <span class="feature-icon pull-left"><i class="fa fa-newspaper-o"></i></span>
+                <span class="feature-icon pull-left"><img src="images/services/campaign.png" alt=""></span>
                 <div class="feature-content">
                     <h3>Enterprise App Devlopment</h3>
                     <p>Through our exceptional Web App development, we at Endive Software have earned extensive experience to handle the client of varied industries.</p>
@@ -108,7 +108,7 @@
             <!--/ End 1st featurebox -->
 
             <div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
-                <span class="feature-icon pull-left"><i class="fa fa-desktop"></i></span>
+                <span class="feature-icon pull-left"><img src="images/services/design.png" alt=""></span>
                 <div class="feature-content">
                     <h3>UI/UX Design</h3>
                     <p>A sharp and appealing UI is quite enough to take you apart from the competitors and we put stunning color combinations and effects that don’t compromise performance.</p>
@@ -117,7 +117,7 @@
             <!--/ End 2nd featurebox -->
 
             <div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
-                <span class="feature-icon pull-left"><i class="fa fa-pagelines"></i></span>
+                <span class="feature-icon pull-left"><img src="images/services/support.png" alt=""></span>
                 <div class="feature-content">
                     <h3>Support & Maintenance</h3>
                     <p>At Endive Software, we provide exceptional maintenance and support services for the websites while development to enhance the overall performance of website</p>
@@ -142,7 +142,7 @@
         </div> <!-- Title row end -->
         <div class="row">
             <div class="feature-box col-sm-6 wow fadeInDown" data-wow-delay=".5s">
-                <span class="feature-icon pull-left"><i class="fa fa-heart-o"></i></span>
+                <span class="feature-icon pull-left"><img src="images/services/teamwork.png" alt=""></span>
                 <div class="feature-content">
                     <h3>Consultancy</h3>
                     <p>Our experienced professionals will help you with a robust solution as they work with the customer’s aspect and provide valuable business solutions to boost the online presence.</p>
@@ -151,7 +151,7 @@
             <!--/ End first featurebox -->
 
             <div class="feature-box col-sm-6 wow fadeInDown" data-wow-delay=".8s">
-                <span class="feature-icon pull-left"><i class="fa fa-codepen"></i></span>
+                <span class="feature-icon pull-left"><img src="images/services/code.png" alt=""></span>
                 <div class="feature-content">
                     <h3>Development</h3>
                     <p>We develop all kinds of websites using PHP platforms and designing tools. As per the customers need, we provide innovative and result-oriented solutions at affordable prices.</p>
@@ -166,7 +166,7 @@
 
         <div class="row">
             <div class="feature-box col-sm-6 wow fadeInDown" data-wow-delay="1.1s">
-                <span class="feature-icon pull-left"><i class="fa fa-film"></i></span>
+                <span class="feature-icon pull-left"><img src="images/services/bug.png" alt=""></span>
                 <div class="feature-content">
                     <h3>Testing</h3>
                     <p>Our experienced QA team works dedicatedly to make the entire code light-weight, strong and bug-free. Our QA team ensures for a seamless business performance.</p>
@@ -174,7 +174,7 @@
             </div>
 
             <div class="feature-box col-sm-6 wow fadeInDown" data-wow-delay="1.4s">
-                <span class="feature-icon pull-left"><i class="fa fa-newspaper-o"></i></span>
+                <span class="feature-icon pull-left"><img src="images/services/job.png" alt=""></span>
                 <div class="feature-content">
                     <h3>Support</h3>
                     <p>We are here whenever you need us to give a second life of your existing infrastructure as upgraded service or even to provide breathing after your site goes live for keeping maintained.</p>

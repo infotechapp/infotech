@@ -59,21 +59,21 @@
         <div class="container">
             <div class="row">
                 <div class="feature-box col-sm-6 wow fadeInDown" data-wow-delay=".5s">
-                    <span class="feature-icon pull-left"><i class="fa fa-heart-o"></i></span>
+                    <span class="feature-icon pull-left"><img src="images/services/function.png" alt=""></span>
                     <div class="feature-content">
                         <h3>Functional Testing</h3>
                         <p>“No matter how complex your application is, our experts will get it working just as you have always wanted!”</p>
-                        <a href="functional-testing.php" class="btn btn-primary solid cd-btn">Read More </a>
+                        <a href="functional-testing.php" class="btn btn-primary solid blank">Read More </a>
                     </div>
                 </div>
                 <!--/ End first featurebox -->
 
                 <div class="feature-box col-sm-6 wow fadeInDown" data-wow-delay=".5s">
-                    <span class="feature-icon pull-left"><i class="fa fa-codepen"></i></span>
+                    <span class="feature-icon pull-left"><img src="images/services/list.png" alt=""></span>
                     <div class="feature-content">
                         <h3>Non-Functional Testing</h3>
                         <p>“An inadequate performance can not only cost considerable loss, but also the major portion of audience.”</p>
-                        <a href="non-functional-testing.php" class="btn btn-primary solid cd-btn">Read More </a>
+                        <a href="non-functional-testing.php" class="btn btn-primary solid blank">Read More </a>
                     </div>
                 </div>
                 <!--/ End 2nd featurebox -->
