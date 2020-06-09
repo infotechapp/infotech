@@ -14,7 +14,7 @@ if(isset($_POST["submit"]))
     if ($conn->connect_error) {
        die("Connection failed: " . $conn->connect_error);
     } 
-    $sql = "INSERT INTO contact(name,email,subject,message)VALUES ('".$_POST["name"]."','".$_POST["email"]."','".$_POST["subject"]."','".$_POST["message"]."')";
+    $sql = "INSERT INTO contact(name,email,mobile_number,subject,purpose,message)VALUES ('".$_POST["name"]."','".$_POST["email"]."','".$_POST["mobile_number"]."','".$_POST["subject"]."','".$_POST["purpose"]."','".$_POST["message"]."')";
     if (mysqli_query($conn, $sql)) {	
        $mess = "Thank You! We will contact you shortly…";
     } else {
@@ -63,20 +63,30 @@ if(isset($_POST["submit"]))
 	    		<div class="col-md-7">
 	    			<form id="contact-form" action="contact.php" method="post" role="form">
 						<div class="row">
-							<div class="col-md-4">
+							<div class="col-md-6">
 								<div class="form-group">
 									<label>Name</label>
 								<input class="form-control" name="name" id="name" placeholder="" type="text" required>
 								</div>
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-6">
 								<div class="form-group">
 									<label>Email</label>
 									<input class="form-control" name="email" id="email" 
 									placeholder="" type="email" required>
 								</div>
 							</div>
-							<div class="col-md-4">
+							
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>Mobile Number</label>
+									<input class="form-control" name="mobile_number" id="mobile_number" 
+									placeholder="" required>
+								</div>
+							</div>
+							<div class="col-md-6">
 								<div class="form-group">
 									<label>Subject</label>
 									<input class="form-control" name="subject" id="subject" 
@@ -84,9 +94,23 @@ if(isset($_POST["submit"]))
 								</div>
 							</div>
 						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label class="control-label">Purpose</label>
+									<select class="form-control" name="purpose" id="purpose" required>
+									  <option value="Web Development">Web Development</option>
+									  <option value="Mobile App Development">Mobile App Development</option>
+									  <option value="Digital Marketing">Digital Marketing</option>
+									  <option value="Other">Other</option>
+									</select>
+								</div>
+							</div>
+							
+						</div>
 						<div class="form-group">
 							<label>Message</label>
-							<textarea class="form-control" name="message" id="message" placeholder="" rows="10" required></textarea>
+							<textarea class="form-control" name="message" id="message" placeholder="" rows="5" required></textarea>
 						</div>
 						<div class="text-right"><br>
 							 
@@ -97,12 +121,12 @@ if(isset($_POST["submit"]))
 	    		<div class="col-md-5">
 	    			<div class="contact-info">
 		    			<h3>Contact Details</h3>
-			    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget erat magna. Pellentesque justo ante</p>
-			    		<br>
-			    		<p><i class="fa fa-home info"></i>  1102 Saint Marys, Junction City, KS </p>
-						<p><i class="fa fa-phone info"></i>  +(785) 238-4131 </p>
-						<p><i class="fa fa-envelope-o info"></i>  info@bizcraft.com</p>
-						<p><i class="fa fa-globe info"></i>  www.bizcraft.com</p>
+			    		
+			    		
+			    		<p><i class="fa fa-home info"></i>  Main Road, Sector 14 Gurgaon, Haryana </p>
+						<p><i class="fa fa-phone info"></i>  +91-8899293353, +91-8523882090 </p>
+						<p><i class="fa fa-envelope-o info"></i>  info@infotechapp.com</p>
+						<p><i class="fa fa-globe info"></i>  www.infotechapp.com</p>
     				</div>
 	    		</div>
 	    	</div>
