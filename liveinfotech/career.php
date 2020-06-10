@@ -94,7 +94,7 @@
 
 		              	<div class="gap-20"></div>
 
-						<p><a href="#" class="btn btn-primary solid">Apply Now <i class="fa fa-long-arrow-right"></i></a></p>
+						<p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@infotechapp.com" target="_blank" class="btn btn-primary solid">Apply Now <i class="fa fa-long-arrow-right"></i></a></p>
 
 		         </div><!--/ Accordion end -->
 
@@ -167,7 +167,9 @@
 
 		              	<div class="gap-20"></div>
 
-						<p><a href="#" class="btn btn-primary solid">Apply Now <i class="fa fa-long-arrow-right"></i></a></p>
+						<p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@infotechapp.com" target="_blank" class="btn btn-primary solid">Apply Now <i class="fa fa-long-arrow-right"></i></a></p>
+						
+
 
 		            </div><!--/ Accordion end -->
 
@@ -178,7 +180,7 @@
 						<!-- category start -->
 						<div class="widget widget-categories">
 							<h3>How to Apply</h3>
-							<p>Send your cv, relevant work experience and anything else that will make you stand out to career@bizcraft.com</p>
+							<p>Send your cv, relevant work experience and anything else that will make you stand out to info@infotechapp.com</p>
 						</div><!-- category end -->
 
 						<!-- tags start -->
