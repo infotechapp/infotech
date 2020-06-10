@@ -394,28 +394,28 @@
             <div class="container">
                 <div class="row">
                     <div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
-                        <span class="feature-icon pull-left"><i class="fa fa-heart-o"></i></span>
+                        <span class="feature-icon pull-left"><img src="images/services/support2.png" alt=""></span>
                         <div class="feature-content">
-                            <h3>Clean &amp; Modern Design</h3>
-                            <p>Bras urna felis accumsan at ultrde cesid posuere masa socis nautoque penat</p>
+                            <h3>Full service, full stack</h3>
+                            <p>From idea to implementation, our complete product development approach means convenience and less risk.</p>
                         </div>
                     </div>
                     <!--/ End first featurebox -->
 
                     <div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
-                        <span class="feature-icon pull-left"><i class="fa fa-codepen"></i></span>
+                        <span class="feature-icon pull-left"><img src="images/services/house-design.png" alt=""></span>
                         <div class="feature-content">
-                            <h3>Useful Shortcodes</h3>
-                            <p>High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua</p>
+                            <h3>Smart, intuitive user experiences</h3>
+                            <p>Infotechapp’s methodology bridges the gap between design and engineering in ways our competitors can’t.</p>
                         </div>
                     </div>
                     <!--/ End 2nd featurebox -->
 
                     <div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
-                        <span class="feature-icon pull-left"><i class="fa fa-film"></i></span>
+                        <span class="feature-icon pull-left"><img src="images/services/monitor.png" alt=""></span>
                         <div class="feature-content">
-                            <h3>Parallax Section</h3>
-                            <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
+                            <h3>Trailblazing apps that function flawlessly</h3>
+                            <p>Our ambitious software, mobile, and web apps offer security, stability, and scalability, with attention to detail.</p>
                         </div>
                     </div>
                     <!--/ End 3rd featurebox -->
@@ -425,63 +425,32 @@
 
                 <div class="row">
                     <div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
-                        <span class="feature-icon pull-left"><i class="fa fa-newspaper-o"></i></span>
+                        <span class="feature-icon pull-left"><img src="images/services/information.png" alt=""></span>
                         <div class="feature-content">
-                            <h3>Multipurpose Concept</h3>
-                            <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
+                            <h3>Tech that advances the industry</h3>
+                            <p>InfoTechApp helps create and lead some of the open-source web development technologies of the future.</p>
                         </div>
                     </div>
                     <!--/ End 1st featurebox -->
 
                     <div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
-                        <span class="feature-icon pull-left"><i class="fa fa-desktop"></i></span>
+                        <span class="feature-icon pull-left"><img src="images/services/meeting.png" alt=""></span>
                         <div class="feature-content">
-                            <h3>Responsive Layout</h3>
-                            <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
+                            <h3>Brilliant, top-tier talent</h3>
+                            <p>We hire only the brightest and most experienced product strategists, designers, engineers, and managers.</p>
                         </div>
                     </div>
                     <!--/ End 2nd featurebox -->
 
                     <div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
-                        <span class="feature-icon pull-left"><i class="fa fa-pagelines"></i></span>
+                        <span class="feature-icon pull-left"><img src="images/services/group.png" alt=""></span>
                         <div class="feature-content">
-                            <h3>Light wight Performance</h3>
-                            <p>High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua</p>
+                            <h3>Dedicated teams distributed nationwide</h3>
+                            <p>InfoTechApp is always nearby, with teams 100% allocated to your project, resulting in on-time, on-budget work.</p>
                         </div>
                     </div>
                     <!--/ End 3rd featurebox -->
 
-                </div><!-- Content row end -->
-
-                <div class="gap-40"></div>
-
-                <div class="row">
-                    <div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
-                        <span class="feature-icon pull-left"><i class="fa fa-recycle"></i></span>
-                        <div class="feature-content">
-                            <h3>Free Lifetime Updates</h3>
-                            <p>Bras urna felis accumsan at ultrde cesid posuere masa socis nautoque penat</p>
-                        </div>
-                    </div>
-                    <!--/ End first featurebox -->
-
-                    <div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
-                        <span class="feature-icon pull-left"><i class="fa fa-diamond"></i></span>
-                        <div class="feature-content">
-                            <h3>Endless Possibilites</h3>
-                            <p>High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua</p>
-                        </div>
-                    </div>
-                    <!--/ End first featurebox -->
-
-                    <div class="feature-box col-sm-4 wow fadeInDown" data-wow-delay=".5s">
-                        <span class="feature-icon pull-left"><i class="fa fa-whatsapp"></i></span>
-                        <div class="feature-content">
-                            <h3>24/7 Live Support</h3>
-                            <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
-                        </div>
-                    </div>
-                    <!--/ End first featurebox -->
                 </div><!-- Content row end -->
 
             </div>
