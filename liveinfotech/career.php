@@ -29,8 +29,8 @@
 			<div class="row">
 				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
 
-					<h3 class="title-border">Senior Manager</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, natus voluptatibus adipisci porro magni dolore eos eius ducimus corporis quos perspiciatis quis iste, vitae autem libero ullam omnis cupiditate quam.</p>
+					<h3 class="title-border">Software Engineer - PHP</h3>
+					
 
 					<div class="panel-group" id="accordionA">
 		              	<div class="panel panel-default">
@@ -42,12 +42,12 @@
 			                <div id="collapseOne" class="panel-collapse collapse in">
 			                  <div class="panel-body">
 			                    <ul class="unstyled arrow">
-									<li>B.Sc. from any reputed university</li>
-									<li>MBA in Marketing from any reputed university is very much desired</li>
-									<li>Two (02) years of experience in Software Company is an advantage.</li>
-									<li>Experience as Business Analyst will be an added advantage</li>
-									<li>Manage and execute lead generation activities.</li>
-									<li>Help building marketing strategy, tool and approach by thorough research</li>
+									<li>B.Tech/MCA from any reputed university</li>
+									<li>2+ Years of strong PHP and MySQL experience.</li>
+									<li>Proficient in PHP, JavaScript, HTML,AJAX, and MySQL</li>
+									<li>Hands-on experience in any PHP based framework/CMS like CakePHP/Zend or Joomla/Drupal</li>
+									<li>Strong Object Oriented Programming fundamentals. (PHP5)</li>
+									<li>Should possess excellent communication and interpersonal skills</li>
 								</ul>
 			                  </div>
 			                </div>
@@ -62,10 +62,8 @@
 			                <div id="collapseTwo" class="panel-collapse collapse">
 			                  <div class="panel-body">
 			                    <ul class="unstyled arrow">
-									<li>Global Business Development &amp; Strategic Account Management</li>
-									<li>Marketing Research</li>
-									<li>Marketing Collaterals development</li>
-									<li>Business Analysis</li>
+									<li>Analyzing Data and understanding results</li>
+									<li>Arranging client coordination</li>
 									<li>Manage and execute lead generation activities.</li>
 									<li>Help building marketing strategy, tool and approach by thorough research</li>
 								</ul>
@@ -74,23 +72,7 @@
 		              	</div><!--/ Panel 2 end-->
 
 
-		              	<div class="panel panel-default">
-			                <div class="panel-heading">
-				                <h4 class="panel-title">
-				                	<a data-toggle="collapse" class="collapsed" data-parent="#accordionA, #accordionB" href="#collapseThree"> What’s in it for you?</a>
-				            	</h4>
-			                </div>
-			                <div id="collapseThree" class="panel-collapse collapse">
-			                  <div class="panel-body">
-			                    <ul class="unstyled arrow">
-									<li>Very Competitive Salary and Long Term Benefits with Excellent Career Opportunity in a Focused &amp; Stable organization.</li>
-									<li>Training on new technology.</li>
-									<li>Overseas Tour with Opportunity to work with Global Companies.</li>
-									<li>Most importantly a friendly work environment with opportunity to learn from a number of highly skilled mentors.</li>
-								</ul>
-			                  </div>
-			                </div>
-		              	</div><!--/ Panel 3 end-->
+		           
 
 		              	<div class="gap-20"></div>
 
@@ -102,9 +84,8 @@
 
 		         <div class="gap-40"></div>
 
-		   		<h3 class="title-border">Assistent Manager (P&amp;L)</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, natus voluptatibus adipisci porro magni dolore eos eius ducimus corporis quos perspiciatis quis iste, vitae autem libero ullam omnis cupiditate quam.</p>
-
+		   		<h3 class="title-border">Sr. Software Engineer - Graphics / Web Designer</h3>
+					
 					<div class="panel-group" id="accordionB">
 		              	<div class="panel panel-default">
 			                <div class="panel-heading">
@@ -115,12 +96,9 @@
 			                <div id="collapseA" class="panel-collapse collapse in">
 			                  <div class="panel-body">
 			                    <ul class="unstyled arrow">
-									<li>B.Sc. from any reputed university</li>
-									<li>MBA in Marketing from any reputed university is very much desired</li>
-									<li>Two (02) years of experience in Software Company is an advantage.</li>
-									<li>Experience as Business Analyst will be an added advantage</li>
-									<li>Manage and execute lead generation activities.</li>
-									<li>Help building marketing strategy, tool and approach by thorough research</li>
+									<li>Should have 2+ yrs experience of Photoshop, Dreamweaver, HTML, CSS.</li>
+									<li>Should have experience as Graphics / Web Designer</li>
+									<li>Excellent communication skill.</li>
 								</ul>
 			                  </div>
 			                </div>
@@ -135,35 +113,13 @@
 			                <div id="collapseB" class="panel-collapse collapse">
 			                  <div class="panel-body">
 			                    <ul class="unstyled arrow">
-									<li>Global Business Development &amp; Strategic Account Management</li>
-									<li>Marketing Research</li>
-									<li>Marketing Collaterals development</li>
-									<li>Business Analysis</li>
-									<li>Manage and execute lead generation activities.</li>
+									
+									<li>Work individually or in a team .</li>
 									<li>Help building marketing strategy, tool and approach by thorough research</li>
 								</ul>
 			                  </div>
 			                </div>
 		              	</div><!--/ Panel 2 end-->
-
-
-		              	<div class="panel panel-default">
-			                <div class="panel-heading">
-				                <h4 class="panel-title">
-				                	<a data-toggle="collapse" class="collapsed" data-parent="#accordionA, #accordionB" href="#collapseC"> What’s in it for you?</a>
-				            	</h4>
-			                </div>
-			                <div id="collapseC" class="panel-collapse collapse">
-			                  <div class="panel-body">
-			                    <ul class="unstyled arrow">
-									<li>Very Competitive Salary and Long Term Benefits with Excellent Career Opportunity in a Focused &amp; Stable organization.</li>
-									<li>Training on new technology.</li>
-									<li>Overseas Tour with Opportunity to work with Global Companies.</li>
-									<li>Most importantly a friendly work environment with opportunity to learn from a number of highly skilled mentors.</li>
-								</ul>
-			                  </div>
-			                </div>
-		              	</div><!--/ Panel 3 end-->
 
 		              	<div class="gap-20"></div>
 
@@ -186,7 +142,7 @@
 						<!-- tags start -->
 						<div class="widget widget-tags">
 							<h3>Why Us</h3>
-							<p>We are an awward winning company. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, natus voluptatibus adipisci porro magni dolore eos eius ducimus corporis quos perspiciatis quis iste, vitae autem libero ullam omnis cupiditate quam.</p>
+							<p>We have been committed to the service of website development. Over these years, we have created websites, web applications, and mobile applications for small and large companies across a wide range of industries.</p>
 						</div><!-- tags end -->
 
 

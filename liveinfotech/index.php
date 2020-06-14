@@ -492,7 +492,7 @@
                             </li>
                             <li>
                                 <a class="animated fadeIn" href="#tab_c" data-toggle="tab">
-                                    <span class="tab-icon"><i class="fa fa-android"></i></span>
+                                    <span class="tab-icon"><i class="fa fa-desktop"></i></span>
                                     <div class="tab-info">
                                         <h3>What we do</h3>
                                     </div>
@@ -518,11 +518,8 @@
                         <div class="tab-content col-md-9 col-sm-7">
                             <div class="tab-pane active animated fadeInRight" id="tab_a">
                                 <img class="img-responsive pull-left" src="images/tab/whoweare.png" alt="">
-                                <h3>We are awwared winning company</h3>
-                                <p>We have a balanced work-life culture, supported by strong principles to excel, write
-                                    the best quality code, question the status quo and bring the best out of the box
-                                    ideas while maintaining a flat hierarchy – no micro managing here, we are an
-                                    employee run family business</p>
+                                <h4>We are technology-driven company</h4>
+                                <p>Our company delivers technology-driven business solutions that meet the strategic objectives of our clients and We have innovative ideas. We create a powerful Digital Marketing for your company that increases your market value.</p>
                                 <ul class="check-list">
                                     <li><i class="fa fa-arrow-circle-right"></i> We design to keep in mind business</li>
                                     <li><i class="fa fa-arrow-circle-right"></i> Love design to keep in mind business
@@ -533,10 +530,8 @@
                             </div>
                             <div class="tab-pane animated fadeInLeft" id="tab_b">
                                 <img class="img-responsive pull-right" src="images/tab/featured-tab2.png" alt="">
-                                <h3>We are awwared winning company</h3>
-                                <p>Helvetica cold-pressed lomo messenger bag ugh. Vinyl jean shorts Austin pork belly
-                                    PBR retro, Etsy VHS kitsch actually messenger bag pug. Pbrbp semiotics try-hard,
-                                    Schlitz occupy dreamcatcher master cleanse Marfa Vice tofu. </p>
+                                <h3>Our company provide IT solutions</h3>
+                                <p>We have been committed to the service of website development. Over these years, we have created websites, web applications, and mobile applications for small and large companies across a wide range of industries. </p>
                                 <ul class="check-list">
                                     <li><i class="fa fa-check"></i> Duis autem vel eum iriure</li>
                                     <li><i class="fa fa-check"></i> vulputate molestie consequat</li>
@@ -547,13 +542,8 @@
                             </div>
                             <div class="tab-pane animated fadeIn" id="tab_c">
                                 <img class="img-responsive pull-left" src="images/tab/sdlc.png" alt="">
-                                <h3>We are awwared winning company</h3>
-                                <p>Leveraging notable technologies and following the organization’s best practices, we
-                                    ensure the successful completion of projects at global level. We transform the
-                                    startups and empower them into huge enterprises by end-to-end assistance in
-                                    accomplishment of their vision. Our team of 300+ creative professionals has managed
-                                    to bag no less than 660+ projects and gaining the trust of hundreds of clients
-                                    worldwide.</p>
+                                <h3>We Build Readymade Applications you</h3>
+                                <p>We extended our services and today we cover Web Designing & Development, E-Commerce, Mobile Application Development, Digital Marketing..</p>
                                 <ul class="check-list">
                                     <li><i class="fa fa-arrow-circle-right"></i> We design to keep in mind business</li>
                                     <li><i class="fa fa-arrow-circle-right"></i> Love design to keep in mind business
@@ -614,7 +604,7 @@
 
 
         <!-- Team start -->
-        <section id="team" class="team">
+        <!-- <section id="team" class="team">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 heading">
@@ -622,7 +612,7 @@
                         <h2 class="title">Meet with our Team <span class="title-desc">A Quality Experience Team with 4
                                 years experience</span></h2>
                     </div>
-                </div><!-- Title row end -->
+                </div>
 
                 <div class="row text-center">
                     <div class="col-md-3 col-sm-6">
@@ -645,7 +635,7 @@
                             </div>
                         </div>
                     </div>
-                    <!--/ Team 1 end -->
+                    
                     <div class="col-md-3 col-sm-6">
                         <div class="team wow slideInLeft">
                             <div class="img-hexagon">
@@ -666,7 +656,7 @@
                             </div>
                         </div>
                     </div>
-                    <!--/ Team 2 end -->
+                   
                     <div class="col-md-3 col-sm-6">
                         <div class="team wow slideInRight">
                             <div class="img-hexagon">
@@ -687,7 +677,7 @@
                             </div>
                         </div>
                     </div>
-                    <!--/ Team 3 end -->
+                   
                     <div class="col-md-3 col-sm-6">
                         <div class="team animate wow slideInRight">
                             <div class="img-hexagon">
@@ -708,12 +698,12 @@
                             </div>
                         </div>
                     </div>
-                    <!--/ Team 4 end -->
+                   
                 </div>
-                <!--/ Content row end -->
+                
             </div>
-            <!--/ Container end -->
-        </section>
+            
+        </section> -->
         <!--/ Team end -->
 
 

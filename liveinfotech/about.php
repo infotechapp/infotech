@@ -39,7 +39,7 @@
 					<ul class="nav nav-tabs nav-stacked col-md-3 col-sm-5">
 					  	<li class="active">
 					  		<a class="animated fadeIn" href="#tab_a" data-toggle="tab">
-					  			<span class="tab-icon"><i class="fa fa-trophy"></i></span>
+					  			<span class="tab-icon"><i class="fa fa-binoculars"></i></span>
 					  			<div class="tab-info">
 						  			<h3>Who Are We</h3>
 					  			</div>
@@ -55,7 +55,7 @@
 						</li>
 					 	<li>
 						  	<a class="animated fadeIn" href="#tab_c" data-toggle="tab">
-						  		<span class="tab-icon"><i class="fa fa-android"></i></span>
+						  		<span class="tab-icon"><i class="fa fa-desktop"></i></span>
 					  			<div class="tab-info">
 						  			<h3>What We Do</h3>
 					  			</div>
@@ -80,17 +80,17 @@
 					</ul>
 					<div class="tab-content col-md-9 col-sm-7">
 				        <div class="tab-pane active animated fadeInRight" id="tab_a">
-				        	<i class="fa fa-trophy big"></i>
-				            <h3>We Are Awwared Winning Company</h3> 
+				        	<i class="fa fa-binoculars big"></i>
+				            <h3>We are technology-driven company</h3> 
 				            <p>Our company delivers technology-driven business solutions that meet the strategic objectives of our clients and We have innovative ideas. We create a powerful Digital Marketing for your company that increases your market value.</p>
 				        </div>
 				        <div class="tab-pane animated fadeInLeft" id="tab_b">
 				        	<i class="fa fa-briefcase big"></i>
-				            <h3>We Have Worldwide Business</h3> 
-							<p>we have been committed to the service of website development. Over these years, we have created websites, web applications, and mobile applications for small and large companies across a wide range of industries.</p>							 
+				            <h3>Our company provide IT solutions</h3> 
+							<p>We have been committed to the service of website development. Over these years, we have created websites, web applications, and mobile applications for small and large companies across a wide range of industries.</p>							 
 				        </div>
 				        <div class="tab-pane animated fadeIn" id="tab_c">
-				            <i class="fa fa-android big"></i>
+				            <i class="fa fa-desktop big"></i>
 				            <h3>We Build Readymade Applications</h3> 
 				            <p>We extended our services and today we cover Web Designing & Development, E-Commerce, Mobile Application Development, Digital Marketing.</p>
 				        </div>
@@ -161,12 +161,12 @@
 			</div><!--/ Container end -->
 		</div><!--/ Counter end -->
 
-		<div class="gap-60"></div>
+		
 
 
-		<div class="container"><!-- 2nd container start -->
+		<!-- <div class="container">
 
-			<!-- Team start -->
+			
 			<div class="team">
 
 				<div class="row">
@@ -174,7 +174,7 @@
 						<span class="title-icon classic pull-left"><i class="fa fa-weixin"></i></span>
 						<h2 class="title classic">Meet with our Team</h2>
 					</div>
-				</div><!-- Title row end -->
+				</div>
 
 				<div class="row text-center">
 					<div class="col-md-3 col-sm-6">
@@ -196,8 +196,8 @@
 								</div>
 							</div>
 						</div>	
-					</div><!--/ Team 1 end -->
-					<div class="col-md-3 col-sm-6">
+					</div>
+					 <div class="col-md-3 col-sm-6">
 						<div class="team wow slideInLeft">
 							<div class="img-hexagon">
 								<img src="images/team/team2.jpg" alt="">
@@ -215,9 +215,9 @@
 									<a class="dribble" href="#"><i class="fa fa-dribbble"></i></a>
 								</div>
 							</div>
-						</div>
-					</div><!--/ Team 2 end -->
-					<div class="col-md-3 col-sm-6">
+						</div> -->
+					<!-- </div> --><!--/ Team 2 end -->
+					<!-- <div class="col-md-3 col-sm-6">
 						<div class="team wow slideInRight">
 							<div class="img-hexagon">
 								<img src="images/team/team3.jpg" alt="">
@@ -235,9 +235,9 @@
 									<a class="dribble" href="#"><i class="fa fa-dribbble"></i></a>
 								</div>
 							</div>
-						</div>
-					</div><!--/ Team 3 end -->
-					<div class="col-md-3 col-sm-6">
+						</div> -->
+					<!-- </div> --><!--/ Team 3 end -->
+					<!-- <div class="col-md-3 col-sm-6">
 						<div class="team animate wow slideInRight">
 							<div class="img-hexagon">
 								<img src="images/team/team4.jpg" alt="">
@@ -256,13 +256,13 @@
 								</div>
 							</div>
 						</div>
-					</div><!--/ Team 4 end -->
-				</div><!--/ Content row end -->
+					</div>
+				</div> -->
 
-			</div><!-- Team end -->
+			<!-- </div>
 
-		</div><!-- 2nd container end -->
-	</section><!--/ Main container end -->
+		</div>  -->
+	</section>
 	
 <!-- Clients start -->
 <section id="clients" class="clients">

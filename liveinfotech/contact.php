@@ -16,6 +16,23 @@ if(isset($_POST["submit"]))
     } 
     $sql = "INSERT INTO contact(name,email,mobile_number,subject,purpose,message)VALUES ('".$_POST["name"]."','".$_POST["email"]."','".$_POST["mobile_number"]."','".$_POST["subject"]."','".$_POST["purpose"]."','".$_POST["message"]."')";
     if (mysqli_query($conn, $sql)) {	
+
+       //Email Id start	
+       $subject = "New leads arrived";	
+       $to = "info@infotechapp.com";
+       $message = "<b>Name :</b> ".$_POST["name"];
+       $message .= "<b>Email :</b> ".$_POST["email"];
+       $message .= "<b>Mobile Number :</b> ".$_POST["mobile_number"];
+       $message .= "<b>Subject :</b> ".$_POST["subject"];
+       $message .= "<b>Purpose :</b> ".$_POST["purpose"];
+       $message .= "<b>Message :</b> ".$_POST["message"];
+       
+       $header = "From:digital@infotechapp.com \r\n";
+	   $header .= "MIME-Version: 1.0\r\n";
+	   $header .= "Content-type: text/html\r\n";
+       mail ($to,$subject,$message,$header);
+       //Email Id start	
+
        $mess = "Thank You! We will contact you shortly…";
     } else {
        $mess = "Error: " . $sql . "" . mysqli_error($conn);
@@ -77,14 +94,14 @@ if(isset($_POST["submit"]))
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
-									<label>Mobile Number</label>
+									<label>Contact</label>
 									<input class="form-control" name="mobile_number" id="mobile_number" 
 									placeholder="" required>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
-									<label>Subject</label>
+									<label>Message</label>
 									<input class="form-control" name="subject" id="subject" 
 									placeholder="" required>
 								</div>
@@ -93,7 +110,7 @@ if(isset($_POST["submit"]))
 						<div class="row">
 							<div class="col-md-12">
 								<div class="form-group">
-									<label class="control-label">Purpose</label>
+									<label class="control-label">How can we help you?</label>
 									<select class="form-control" name="purpose" id="purpose" required>
 									  <option value="Web Development">Web Development</option>
 									  <option value="Mobile App Development">Mobile App Development</option>
