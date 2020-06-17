@@ -1,4 +1,3 @@
-<!-- Footer start -->
 		<footer id="footer" class="footer footer2">
 			<div class="container">
 
@@ -20,9 +19,9 @@
 							<li>
 								<a href="portfolio-static.php">Portfolio </a>
 							</li>
-							<li>
+							<!-- <li>
 								<a href="testimonial.php">Testimonials </a>
-							</li>
+							</li> -->
 							<li>
 								<a href="career.php">Career </a>
 							</li>
@@ -83,21 +82,21 @@
 								<a title="Facebook" href="#">
 									<span class="icon-pentagon wow bounceIn"><i class="fa fa-facebook"></i></span>
 								</a>
-								<a title="Google+" href="#">
+								<!-- <a title="Google+" href="#">
 									<span class="icon-pentagon wow bounceIn"><i class="fa fa-google-plus"></i></span>
-								</a>
+								</a> -->
 								<a title="linkedin" href="#">
 									<span class="icon-pentagon wow bounceIn"><i class="fa fa-linkedin"></i></span>
 								</a>
 								<a title="Pinterest" href="#">
 									<span class="icon-pentagon wow bounceIn"><i class="fa fa-pinterest"></i></span>
 								</a>
-								<a title="Skype" href="#">
+								<!-- <a title="Skype" href="#">
 									<span class="icon-pentagon wow bounceIn"><i class="fa fa-skype"></i></span>
 								</a>
 								<a title="Dribble" href="#">
 									<span class="icon-pentagon wow bounceIn"><i class="fa fa-dribbble"></i></span>
-								</a>
+								</a> -->
 							</li>
 						</ul>
 					</div>
@@ -118,4 +117,4 @@
 			</div>
 			<!--/ Container end -->
 		</section>
-		<!--/ Copyright end -->
+		<!--/ Copyright end

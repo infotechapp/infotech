@@ -55,9 +55,9 @@
 							<li class="<?php if($urlexp2[1] =='portfolio-static' || $urlexp2[1] =='portfolio-item'){echo 'active';}?>">
 								<a href="portfolio-static.php">Portfolio </a>
 							</li>
-							<li class="<?php if($urlexp2[1] =='testimonial'){echo 'active';}?>">
+							<!-- <li class="<?php //if($urlexp2[1] =='testimonial'){echo 'active';}?>">
 								<a href="testimonial.php">Testimonials </a>
-							</li>
+							</li> -->
 							<li class="<?php if($urlexp2[1] =='career'){echo 'active';}?>">
 								<a href="career.php">Career </a>
 							</li>

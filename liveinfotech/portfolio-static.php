@@ -32,7 +32,7 @@
 						<figure class="effect-oscar">
 							<img src="images/portfolio/portfolio1.jpg" alt="">
 							<figcaption>
-								<a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a>
+								<!-- <a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a> -->
 								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/portfolio-bg1.jpg"><i class="fa fa-search"></i></a>            
 							</figcaption>			
 						</figure>
@@ -48,7 +48,7 @@
 						<figure class="effect-oscar">
 							<img src="images/portfolio/portfolio2.jpg" alt="">
 							<figcaption>
-								<a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a>
+								<!-- <a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a> -->
 								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/portfolio-bg2.jpg"><i class="fa fa-search"></i></a>            
 							</figcaption>			
 						</figure>
@@ -64,7 +64,7 @@
 						<figure class="effect-oscar">
 							<img src="images/portfolio/portfolio3.jpg" alt="">
 							<figcaption>
-								<a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a>
+								<!-- <a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a> -->
 								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/portfolio-bg3.jpg"><i class="fa fa-search"></i></a>            
 							</figcaption>			
 						</figure>
@@ -80,7 +80,7 @@
 						<figure class="effect-oscar">
 							<img src="images/portfolio/portfolio4.jpg" alt="">
 							<figcaption>
-								<a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a>
+								<!-- <a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a> -->
 								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/portfolio-bg1.jpg"><i class="fa fa-search"></i></a>            
 							</figcaption>			
 						</figure>
@@ -96,7 +96,7 @@
 						<figure class="effect-oscar">
 							<img src="images/portfolio/portfolio5.jpg" alt="">
 							<figcaption>
-								<a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a>
+								<!-- <a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a> -->
 								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/portfolio-bg2.jpg"><i class="fa fa-search"></i></a>            
 							</figcaption>			
 						</figure>
@@ -112,7 +112,7 @@
 						<figure class="effect-oscar">
 							<img src="images/portfolio/portfolio6.jpg" alt="">
 							<figcaption>
-								<a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a>
+								<!-- <a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a> -->
 								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/portfolio-bg3.jpg"><i class="fa fa-search"></i></a>            
 							</figcaption>			
 						</figure>
@@ -128,7 +128,7 @@
 						<figure class="effect-oscar">
 							<img src="images/portfolio/portfolio7.jpg" alt="">
 							<figcaption>
-								<a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a>
+								<!-- <a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a> -->
 								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/portfolio-bg1.jpg"><i class="fa fa-search"></i></a>            
 							</figcaption>			
 						</figure>
@@ -144,7 +144,7 @@
 						<figure class="effect-oscar">
 							<img src="images/portfolio/portfolio8.jpg" alt="">
 							<figcaption>
-								<a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a>
+								<!-- <a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a> -->
 								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/portfolio-bg2.jpg"><i class="fa fa-search"></i></a>            
 							</figcaption>			
 						</figure>

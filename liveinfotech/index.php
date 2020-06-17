@@ -229,8 +229,8 @@
                                     <img src="images/portfolio/portfolio1.jpg" alt="">
                                     <figcaption>
                                         <h3>Startup Business</h3>
-                                        <a class="link icon-pentagon" href="portfolio-item.php"><i
-                                                class="fa fa-link"></i></a>
+                                        <!-- <a class="link icon-pentagon" href="portfolio-item.php"><i
+                                                class="fa fa-link"></i></a> -->
                                         <a class="view icon-pentagon" data-rel="prettyPhoto"
                                             href="images/portfolio/portfolio-bg1.jpg"><i class="fa fa-search"></i></a>
                                     </figcaption>
@@ -244,8 +244,8 @@
                                     <img src="images/portfolio/portfolio2.jpg" alt="">
                                     <figcaption>
                                         <h3>Easy to Lanunch</h3>
-                                        <a class="link icon-pentagon" href="portfolio-item.php"><i
-                                                class="fa fa-link"></i></a>
+                                        <!-- <a class="link icon-pentagon" href="portfolio-item.php"><i
+                                                class="fa fa-link"></i></a> -->
                                         <a class="view icon-pentagon" data-rel="prettyPhoto"
                                             href="images/portfolio/portfolio-bg2.jpg"><i class="fa fa-search"></i></a>
                                     </figcaption>
@@ -259,8 +259,8 @@
                                     <img src="images/portfolio/portfolio3.jpg" alt="">
                                     <figcaption>
                                         <h3>Your Business</h3>
-                                        <a class="link icon-pentagon" href="portfolio-item.php"><i
-                                                class="fa fa-link"></i></a>
+                                        <!-- <a class="link icon-pentagon" href="portfolio-item.php"><i
+                                                class="fa fa-link"></i></a> -->
                                         <a class="view icon-pentagon" data-rel="prettyPhoto"
                                             href="images/portfolio/portfolio-bg3.jpg"><i class="fa fa-search"></i></a>
                                     </figcaption>
@@ -274,8 +274,8 @@
                                     <img src="images/portfolio/portfolio4.jpg" alt="">
                                     <figcaption>
                                         <h3>Prego Match</h3>
-                                        <a class="link icon-pentagon" href="portfolio-item.php"><i
-                                                class="fa fa-link"></i></a>
+                                        <!-- <a class="link icon-pentagon" href="portfolio-item.php"><i
+                                                class="fa fa-link"></i></a> -->
                                         <a class="view icon-pentagon" data-rel="prettyPhoto"
                                             href="images/portfolio/portfolio-bg4.jpg"><i class="fa fa-search"></i></a>
                                     </figcaption>
@@ -289,8 +289,8 @@
                                     <img src="images/portfolio/portfolio5.jpg" alt="">
                                     <figcaption>
                                         <h3>Fashion Brand</h3>
-                                        <a class="link icon-pentagon" href="portfolio-item.php"><i
-                                                class="fa fa-link"></i></a>
+                                        <!-- <a class="link icon-pentagon" href="portfolio-item.php"><i
+                                                class="fa fa-link"></i></a> -->
                                         <a class="view icon-pentagon" data-rel="prettyPhoto"
                                             href="images/portfolio/portfolio-bg5.jpg"><i class="fa fa-search"></i></a>
                                     </figcaption>
@@ -304,8 +304,8 @@
                                     <img src="images/portfolio/portfolio6.jpg" alt="">
                                     <figcaption>
                                         <h3>The Insidage</h3>
-                                        <a class="link icon-pentagon" href="portfolio-item.php"><i
-                                                class="fa fa-link"></i></a>
+                                        <!-- <a class="link icon-pentagon" href="portfolio-item.php"><i
+                                                class="fa fa-link"></i></a> -->
                                         <a class="view icon-pentagon" data-rel="prettyPhoto"
                                             href="images/portfolio/portfolio-bg1.jpg"><i class="fa fa-search"></i></a>
                                     </figcaption>
@@ -319,8 +319,8 @@
                                     <img src="images/portfolio/portfolio7.jpg" alt="">
                                     <figcaption>
                                         <h3>Light Carpet</h3>
-                                        <a class="link icon-pentagon" href="portfolio-item.php"><i
-                                                class="fa fa-link"></i></a>
+                                        <!-- <a class="link icon-pentagon" href="portfolio-item.php"><i
+                                                class="fa fa-link"></i></a> -->
                                         <a class="view icon-pentagon" data-rel="prettyPhoto"
                                             href="images/portfolio/portfolio-bg2.jpg"><i class="fa fa-search"></i></a>
                                     </figcaption>
@@ -334,8 +334,8 @@
                                     <img src="images/portfolio/portfolio8.jpg" alt="">
                                     <figcaption>
                                         <h3>Amazing Keyboard</h3>
-                                        <a class="link icon-pentagon" href="portfolio-item.php"><i
-                                                class="fa fa-link"></i></a>
+                                        <!-- <a class="link icon-pentagon" href="portfolio-item.php"><i
+                                                class="fa fa-link"></i></a> -->
                                         <a class="view icon-pentagon" data-rel="prettyPhoto"
                                             href="images/portfolio/portfolio-bg3.jpg"><i class="fa fa-search"></i></a>
                                     </figcaption>
@@ -715,44 +715,38 @@
                     <div id="testimonial-carousel" class="owl-carousel owl-theme text-center testimonial-slide">
                         <div class="item">
                             <div class="testimonial-thumb">
-                                <img src="images/team/testimonial1.jpg" alt="testimonial">
+                                <img src="images/team/download.jpeg" alt="testimonial">
                             </div>
                             <div class="testimonial-content">
                                 <p class="testimonial-text">
-                                    Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover
-                                    many web sites still in their infancy. Various versions have evolved over the years,
-                                    sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to
-                                    using.
+                                   The Website/Mobile App Development services provided by Infotechapp are quite appreciable. We wish to have a long lasting relationship and great success to Infotechapp in future.
                                 </p>
-                                <h3 class="name">Sarah Arevik<span>Chief Executive</span></h3>
+                               <!--  <p class="testimonial-text">
+                                    Itechapp's hardworking team effectively handled the website and showed flexibility when asked to maintain parts of the project.
+                                </p> -->
+                                <h3 class="name">Ankit Sharma<span>Chief Executive</span></h3>
                             </div>
                         </div>
                         <div class="item">
                             <div class="testimonial-thumb">
-                                <img src="images/team/testimonial2.jpg" alt="testimonial">
+                                <img src="images/team/download.jpeg" alt="testimonial">
                             </div>
                             <div class="testimonial-content">
                                 <p class="testimonial-text">
-                                    Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover
-                                    many web sites still in their infancy. Various versions have evolved over the years,
-                                    sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to
-                                    using.
+                                    Infotechapp has been absolutely fantastic in assisting us with managing all of our various websites and technical issues. They respond to our queries at very quickly. Thanks...
                                 </p>
-                                <h3 class="name">Narek Bedros<span>Sr. Manager</span></h3>
+                                <h3 class="name">Rahul mittal<span>Sr. Manager</span></h3>
                             </div>
                         </div>
                         <div class="item">
                             <div class="testimonial-thumb">
-                                <img src="images/team/testimonial3.jpg" alt="testimonial">
+                                <img src="images/team/download.jpeg" alt="testimonial">
                             </div>
                             <div class="testimonial-content">
                                 <p class="testimonial-text">
-                                    Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover
-                                    many web sites still in their infancy. Various versions have evolved over the years,
-                                    sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to
-                                    using.
+                                    Infotechapp designed superior websites for my company and have continuously demonstrated excellent support. Our company will continue to work with Infotechapp to develop and manage our web projects..
                                 </p>
-                                <h3 class="name">Taline Lucine<span>Sales Manager</span></h3>
+                                <h3 class="name">Mohit Malhotra<span>Project Manager</span></h3>
                             </div>
                         </div>
                     </div>
