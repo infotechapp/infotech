@@ -1,4 +1,5 @@
 <!-- initialize jQuery Library -->
+		
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<!-- Bootstrap jQuery -->
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>

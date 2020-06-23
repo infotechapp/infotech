@@ -25,8 +25,15 @@
 							</a>
 						</div>
 					</div>
+
 					<!--/ Logo end -->
+					
+						
+
+				   
+				  
 					<nav class="collapse navbar-collapse clearfix" role="navigation">
+
 						<ul class="nav navbar-nav navbar-right">
 							<li class="<?php if($urlexp2[1] =='index'){echo 'active';}?>">
 								<a href="index.php">Home </a>
@@ -64,6 +71,12 @@
 							<li class="<?php if($urlexp2[1] =='contact'){echo 'active';}?>">
 								<a href="contact.php">Contact</a>
 							</li>
+
+
+							<li class="<?php if($urlexp2[1] =='register'){echo 'active';}?>">
+								<a href="register.php"><u>Register</u></a>
+							</li>
+
 						</ul>
 					</nav>
 					<!--/ Navigation end -->

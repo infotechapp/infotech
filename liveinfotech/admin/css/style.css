@@ -1,0 +1,37 @@
+body { margin-top:1px; }
+hr.message-inner-separator
+{
+    clear: both;
+    margin-top: 10px;
+    margin-bottom: 13px;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+    background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+.custom-alert{
+    position: absolute;
+    top: 10px;
+    width: 480px;
+    text-align: center;
+    left: 50%;
+    margin-left: -240px;
+}
+.custom-success{
+	position: relative;
+    width: 99%;
+	text-align: center;
+}
+.success_msg{
+	position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 3px;
+}div#example-datatable_length {    display: none;}
+
+.img-circle {
+    border-radius: 100%;
+    max-width: 55px;
+}

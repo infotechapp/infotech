@@ -3366,3 +3366,40 @@ a.close-styler{
 .style-switch-wrapper #preset6 {
 	background-color: #8C42BA;
 }
+a.btn.btn-primary.solid.newClass {
+    margin-top: 9px;
+}
+
+  .loader2 { margin: 40% 0 33% -20%;
+position: absolute;
+z-index: 9999;      
+    width: 100%;    
+    text-align: center;   
+    top: 0;
+    
+
+}
+
+.loader2  > img {
+    margin-top: -50px;
+    position: absolute;
+    top: 50%;
+}
+.loader2 {
+    margin: 0;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    background: rgba(0,0,0,0.2);
+    left: 0;
+    height: 100%;
+}
+.loader2 > img {
+    margin-top: -50px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -50px;
+}

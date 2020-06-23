@@ -232,7 +232,7 @@
                                         <!-- <a class="link icon-pentagon" href="portfolio-item.php"><i
                                                 class="fa fa-link"></i></a> -->
                                         <a class="view icon-pentagon" data-rel="prettyPhoto"
-                                            href="images/portfolio/portfolio-bg1.jpg"><i class="fa fa-search"></i></a>
+                                            href="images/portfolio/dbsadgb.png"><i class="fa fa-search"></i></a>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -810,7 +810,8 @@
             <!--/ Container end -->
         </section>
         <!--/ Clients end -->
-
+        <!-- Modal HTML -->
+  
         <?php include "include/footer.php"; ?>
         <?php include "include/commonjs.php"; ?>
 
