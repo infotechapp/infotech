@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<?php include "include/head.php"; ?>
-	
+
 <body>
 	<div class="body-inner">
 	<!-- Header start -->
@@ -13,7 +13,7 @@
 			<!-- Subpage title start -->
 			<div class="banner-title-content">
 	        	<div class="text-center">
-		        	<h2>Portfolio Static</h2>
+		        	<h2>Portfolio</h2>
 		        	<ul class="breadcrumb">
 			            <li>Home</li>
 			            <li><a href="javascript:void(0)"> Portfolio </a></li>
@@ -22,7 +22,7 @@
           	</div><!-- Subpage title end -->
 	</div><!-- Banner area end -->
 
-	
+
 	<!-- Portfolio start -->
 	<section id="main-container" class="portfolio-static">
 		<div class="container">
@@ -33,128 +33,180 @@
 							<img src="images/portfolio/portfolio1.jpg" alt="">
 							<figcaption>
 								<!-- <a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a> -->
-								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/portfolio-bg1.jpg"><i class="fa fa-search"></i></a>            
-							</figcaption>			
+								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/portfolio1.jpg"><i class="fa fa-search"></i></a>
+							</figcaption>
 						</figure>
 						<div class="portfolio-static-desc">
-							<h3>Startup Business</h3>
-							<span><a href="#">Illustrations</a></span>
-						</div>					
+							<h3>SketchUp</h3>
+							<span><a href="javascript:void(0)">Webdesign</a></span>
+						</div>
 					</div><!--/ grid end -->
 				</div><!--/ item 1 end -->
-
 				<div class="col-sm-3 portfolio-static-item">
 					<div class="grid">
 						<figure class="effect-oscar">
-							<img src="images/portfolio/portfolio2.jpg" alt="">
+							<img src="images/portfolio/splash.png" alt="">
 							<figcaption>
 								<!-- <a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a> -->
-								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/portfolio-bg2.jpg"><i class="fa fa-search"></i></a>            
-							</figcaption>			
+								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/splash.png"><i class="fa fa-search"></i></a>
+							</figcaption>
 						</figure>
 						<div class="portfolio-static-desc">
-							<h3>Easy to Lanunch</h3>
-							<span><a href="#">Webdesign</a></span>
-						</div>					
+							<h3>Ayurway</h3>
+							<span><a href="javascript:void(0)">Mobile App</a></span>
+						</div>
 					</div><!--/ grid end -->
-				</div><!--/ item 2 end -->
-
+				</div><!--/ item 1 end -->
 				<div class="col-sm-3 portfolio-static-item">
 					<div class="grid">
 						<figure class="effect-oscar">
-							<img src="images/portfolio/portfolio3.jpg" alt="">
+							<img src="images/portfolio/splash1.png" alt="">
 							<figcaption>
 								<!-- <a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a> -->
-								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/portfolio-bg3.jpg"><i class="fa fa-search"></i></a>            
-							</figcaption>			
+								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/splash1.png"><i class="fa fa-search"></i></a>
+							</figcaption>
 						</figure>
 						<div class="portfolio-static-desc">
-							<h3>Your Business</h3>
-							<span><a href="#">Ui Elements</a></span>
-						</div>					
+							<h3>Mansparsh Wedding</h3>
+							<span><a href="javascript:void(0)">Mobile App</a></span>
+						</div>
 					</div><!--/ grid end -->
-				</div><!--/ item 3 end -->
-
+				</div><!--/ item 1 end -->
 				<div class="col-sm-3 portfolio-static-item">
 					<div class="grid">
 						<figure class="effect-oscar">
-							<img src="images/portfolio/portfolio4.jpg" alt="">
+							<img src="images/portfolio/splash2.png" alt="">
 							<figcaption>
 								<!-- <a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a> -->
-								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/portfolio-bg1.jpg"><i class="fa fa-search"></i></a>            
-							</figcaption>			
+								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/splash2.png"><i class="fa fa-search"></i></a>
+							</figcaption>
 						</figure>
 						<div class="portfolio-static-desc">
-							<h3>Prego Match</h3>
-							<span><a href="#">Media Elements</a></span>
-						</div>					
+							<h3>Kohlapur Sports Club</h3>
+							<span><a href="javascript:void(0)">Mobile App</a></span>
+						</div>
 					</div><!--/ grid end -->
-				</div><!--/ item 4 end -->
-
+				</div><!--/ item 1 end -->
 				<div class="col-sm-3 portfolio-static-item">
 					<div class="grid">
 						<figure class="effect-oscar">
-							<img src="images/portfolio/portfolio5.jpg" alt="">
+							<img src="images/portfolio/splash4.png" alt="">
 							<figcaption>
 								<!-- <a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a> -->
-								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/portfolio-bg2.jpg"><i class="fa fa-search"></i></a>            
-							</figcaption>			
+								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/splash4.png"><i class="fa fa-search"></i></a>
+							</figcaption>
 						</figure>
 						<div class="portfolio-static-desc">
-							<h3>Fashion Brand</h3>
-							<span><a href="#">Graphics Media</a></span>
-						</div>					
+							<h3>Oswal Jewellers</h3>
+							<span><a href="javascript:void(0)">Mobile App</a></span>
+						</div>
 					</div><!--/ grid end -->
-				</div><!--/ item 5 end -->
-
+				</div><!--/ item 1 end -->
 				<div class="col-sm-3 portfolio-static-item">
 					<div class="grid">
 						<figure class="effect-oscar">
-							<img src="images/portfolio/portfolio6.jpg" alt="">
+							<img src="images/portfolio/splash6.png" alt="">
 							<figcaption>
 								<!-- <a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a> -->
-								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/portfolio-bg3.jpg"><i class="fa fa-search"></i></a>            
-							</figcaption>			
+								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/splash6.png"><i class="fa fa-search"></i></a>
+							</figcaption>
 						</figure>
 						<div class="portfolio-static-desc">
-							<h3>The Insidage</h3>
-							<span><a href="#">Material Design</a></span>
-						</div>					
+							<h3>Vision Money Mantra</h3>
+							<span><a href="javascript:void(0)">Mobile App</a></span>
+						</div>
 					</div><!--/ grid end -->
-				</div><!--/ item 6 end -->
-
+				</div><!--/ item 1 end -->
 				<div class="col-sm-3 portfolio-static-item">
 					<div class="grid">
 						<figure class="effect-oscar">
-							<img src="images/portfolio/portfolio7.jpg" alt="">
+							<img src="images/portfolio/splash8.png" alt="">
 							<figcaption>
 								<!-- <a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a> -->
-								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/portfolio-bg1.jpg"><i class="fa fa-search"></i></a>            
-							</figcaption>			
+								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/splash8.png"><i class="fa fa-search"></i></a>
+							</figcaption>
 						</figure>
 						<div class="portfolio-static-desc">
-							<h3>Light Carpet</h3>
-							<span><a href="#">Mockup</a></span>
-						</div>					
+							<h3>Law Protectores</h3>
+							<span><a href="javascript:void(0)">Mobile App</a></span>
+						</div>
 					</div><!--/ grid end -->
-				</div><!--/ item 7 end -->
-
+				</div><!--/ item 1 end -->
 				<div class="col-sm-3 portfolio-static-item">
 					<div class="grid">
 						<figure class="effect-oscar">
-							<img src="images/portfolio/portfolio8.jpg" alt="">
+							<img src="images/portfolio/splash9.png" alt="">
 							<figcaption>
 								<!-- <a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a> -->
-								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/portfolio-bg2.jpg"><i class="fa fa-search"></i></a>            
-							</figcaption>			
+								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/splash9.png"><i class="fa fa-search"></i></a>
+							</figcaption>
 						</figure>
 						<div class="portfolio-static-desc">
-							<h3>Amazing Keyboard</h3>
-							<span><a href="#">Photography</a></span>
-						</div>					
+							<h3>Menon Group</h3>
+							<span><a href="javascript:void(0)">Mobile App</a></span>
+						</div>
 					</div><!--/ grid end -->
-				</div><!--/ item 8 end -->
-					
+				</div><!--/ item 1 end -->
+				<div class="col-sm-3 portfolio-static-item">
+					<div class="grid">
+						<figure class="effect-oscar">
+							<img src="images/portfolio/splash10.png" alt="">
+							<figcaption>
+								<!-- <a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a> -->
+								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/splash10.png"><i class="fa fa-search"></i></a>
+							</figcaption>
+						</figure>
+						<div class="portfolio-static-desc">
+							<h3>Kohlapur Sports Club Cycling</h3>
+							<span><a href="javascript:void(0)">Mobile App</a></span>
+						</div>
+					</div><!--/ grid end -->
+				</div><!--/ item 1 end -->
+				<div class="col-sm-3 portfolio-static-item">
+					<div class="grid">
+						<figure class="effect-oscar">
+							<img src="images/portfolio/splash5.png" alt="">
+							<figcaption>
+								<!-- <a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a> -->
+								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/splash5.png"><i class="fa fa-search"></i></a>
+							</figcaption>
+						</figure>
+						<div class="portfolio-static-desc">
+							<h3>Wtel Family</h3>
+							<span><a href="javascript:void(0)">Webdesign</a></span>
+						</div>
+					</div><!--/ grid end -->
+				</div><!--/ item 1 end -->
+				<div class="col-sm-3 portfolio-static-item">
+					<div class="grid">
+						<figure class="effect-oscar">
+							<img src="images/portfolio/splash7.png" alt="">
+							<figcaption>
+								<!-- <a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a> -->
+								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/splash7.png"><i class="fa fa-search"></i></a>
+							</figcaption>
+						</figure>
+						<div class="portfolio-static-desc">
+							<h3>Low Protectors CRM</h3>
+							<span><a href="javascript:void(0)">Webdesign</a></span>
+						</div>
+					</div><!--/ grid end -->
+				</div><!--/ item 1 end -->
+				<div class="col-sm-3 portfolio-static-item">
+					<div class="grid">
+						<figure class="effect-oscar">
+							<img src="images/portfolio/splash3.png" alt="">
+							<figcaption>
+								<!-- <a class="link icon-pentagon" href="portfolio-item.php"><i class="fa fa-link"></i></a> -->
+								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/splash3.png"><i class="fa fa-search"></i></a>
+							</figcaption>
+						</figure>
+						<div class="portfolio-static-desc">
+							<h3>Orchid Lab</h3>
+							<span><a href="javascript:void(0)">Webdesign</a></span>
+						</div>
+					</div><!--/ grid end -->
+				</div><!--/ item 1 end -->
 			</div><!-- Content row end -->
 		</div><!-- Container end -->
 	</section><!-- Portfolio end -->

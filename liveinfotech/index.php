@@ -214,9 +214,7 @@
                         <ul>
                             <li><a href="#" class="active" data-filter="*">All</a></li>
                             <li><a href="#" data-filter=".web-design">Web Design</a></li>
-                            <li><a href="#" data-filter=".development">Development</a></li>
-                            <li><a href="#" data-filter=".joomla">Joomla</a></li>
-                            <li><a href="#" data-filter=".wordpress">Wordpress</a></li>
+                            <li><a href="#" data-filter=".mobile">Mobile App</a></li>
                         </ul>
                     </div>
                 </div><!-- Isotope filter end -->
@@ -228,116 +226,167 @@
                                 <figure class="effect-oscar">
                                     <img src="images/portfolio/portfolio1.jpg" alt="">
                                     <figcaption>
-                                        <h3>Startup Business</h3>
+                                        <h3>SketchUp</h3>
                                         <!-- <a class="link icon-pentagon" href="portfolio-item.php"><i
                                                 class="fa fa-link"></i></a> -->
                                         <a class="view icon-pentagon" data-rel="prettyPhoto"
-                                            href="images/portfolio/dbsadgb.png"><i class="fa fa-search"></i></a>
+                                            href="images/portfolio/portfolio1.jpg"><i class="fa fa-search"></i></a>
                                     </figcaption>
                                 </figure>
                             </div>
                         </div><!-- Isotope item end -->
 
-                        <div class="col-sm-3 development isotope-item">
+                        <div class="col-sm-3 mobile isotope-item">
                             <div class="grid">
                                 <figure class="effect-oscar">
-                                    <img src="images/portfolio/portfolio2.jpg" alt="">
+                                    <img src="images/portfolio/splash.png" alt="">
                                     <figcaption>
-                                        <h3>Easy to Lanunch</h3>
+                                        <h3>Ayurway</h3>
                                         <!-- <a class="link icon-pentagon" href="portfolio-item.php"><i
                                                 class="fa fa-link"></i></a> -->
                                         <a class="view icon-pentagon" data-rel="prettyPhoto"
-                                            href="images/portfolio/portfolio-bg2.jpg"><i class="fa fa-search"></i></a>
+                                            href="images/portfolio/splash.png"><i class="fa fa-search"></i></a>
                                     </figcaption>
                                 </figure>
                             </div>
                         </div><!-- Isotope item end -->
 
-                        <div class="col-sm-3 joomla isotope-item">
+                        <div class="col-sm-3 mobile isotope-item">
                             <div class="grid">
                                 <figure class="effect-oscar">
-                                    <img src="images/portfolio/portfolio3.jpg" alt="">
+                                    <img src="images/portfolio/splash1.png" alt="">
                                     <figcaption>
-                                        <h3>Your Business</h3>
+                                        <h3>Mansparsh Wedding</h3>
                                         <!-- <a class="link icon-pentagon" href="portfolio-item.php"><i
                                                 class="fa fa-link"></i></a> -->
                                         <a class="view icon-pentagon" data-rel="prettyPhoto"
-                                            href="images/portfolio/portfolio-bg3.jpg"><i class="fa fa-search"></i></a>
+                                            href="images/portfolio/splash1.png"><i class="fa fa-search"></i></a>
                                     </figcaption>
                                 </figure>
                             </div>
                         </div><!-- Isotope item end -->
-
-                        <div class="col-sm-3 wordpress isotope-item">
+                        <div class="col-sm-3 mobile isotope-item">
                             <div class="grid">
                                 <figure class="effect-oscar">
-                                    <img src="images/portfolio/portfolio4.jpg" alt="">
+                                    <img src="images/portfolio/splash2.png" alt="">
                                     <figcaption>
-                                        <h3>Prego Match</h3>
+                                        <h3>Kohlapur Sports Club</h3>
                                         <!-- <a class="link icon-pentagon" href="portfolio-item.php"><i
                                                 class="fa fa-link"></i></a> -->
                                         <a class="view icon-pentagon" data-rel="prettyPhoto"
-                                            href="images/portfolio/portfolio-bg4.jpg"><i class="fa fa-search"></i></a>
+                                            href="images/portfolio/splash2.png"><i class="fa fa-search"></i></a>
                                     </figcaption>
                                 </figure>
                             </div>
                         </div><!-- Isotope item end -->
-
-                        <div class="col-sm-3 joomla isotope-item">
+                        <div class="col-sm-3 mobile isotope-item">
                             <div class="grid">
                                 <figure class="effect-oscar">
-                                    <img src="images/portfolio/portfolio5.jpg" alt="">
+                                    <img src="images/portfolio/splash4.png" alt="">
                                     <figcaption>
-                                        <h3>Fashion Brand</h3>
+                                        <h3>Oswal Jewellers</h3>
                                         <!-- <a class="link icon-pentagon" href="portfolio-item.php"><i
                                                 class="fa fa-link"></i></a> -->
                                         <a class="view icon-pentagon" data-rel="prettyPhoto"
-                                            href="images/portfolio/portfolio-bg5.jpg"><i class="fa fa-search"></i></a>
+                                            href="images/portfolio/splash4.png"><i class="fa fa-search"></i></a>
                                     </figcaption>
                                 </figure>
                             </div>
                         </div><!-- Isotope item end -->
-
-                        <div class="col-sm-3 development isotope-item">
+                        <div class="col-sm-3 mobile isotope-item">
                             <div class="grid">
                                 <figure class="effect-oscar">
-                                    <img src="images/portfolio/portfolio6.jpg" alt="">
+                                    <img src="images/portfolio/splash6.png" alt="">
                                     <figcaption>
-                                        <h3>The Insidage</h3>
+                                        <h3>Vision Money Mantra</h3>
                                         <!-- <a class="link icon-pentagon" href="portfolio-item.php"><i
                                                 class="fa fa-link"></i></a> -->
                                         <a class="view icon-pentagon" data-rel="prettyPhoto"
-                                            href="images/portfolio/portfolio-bg1.jpg"><i class="fa fa-search"></i></a>
+                                            href="images/portfolio/splash6.png"><i class="fa fa-search"></i></a>
                                     </figcaption>
                                 </figure>
                             </div>
                         </div><!-- Isotope item end -->
-
-                        <div class="col-sm-3 development isotope-item">
+                        <div class="col-sm-3 mobile isotope-item">
                             <div class="grid">
                                 <figure class="effect-oscar">
-                                    <img src="images/portfolio/portfolio7.jpg" alt="">
+                                    <img src="images/portfolio/splash8.png" alt="">
                                     <figcaption>
-                                        <h3>Light Carpet</h3>
+                                        <h3>Law Protectores</h3>
                                         <!-- <a class="link icon-pentagon" href="portfolio-item.php"><i
                                                 class="fa fa-link"></i></a> -->
                                         <a class="view icon-pentagon" data-rel="prettyPhoto"
-                                            href="images/portfolio/portfolio-bg2.jpg"><i class="fa fa-search"></i></a>
+                                            href="images/portfolio/splash8.png"><i class="fa fa-search"></i></a>
                                     </figcaption>
                                 </figure>
                             </div>
                         </div><!-- Isotope item end -->
-
-                        <div class="col-sm-3 development isotope-item">
+                        <div class="col-sm-3 mobile isotope-item">
                             <div class="grid">
                                 <figure class="effect-oscar">
-                                    <img src="images/portfolio/portfolio8.jpg" alt="">
+                                    <img src="images/portfolio/splash9.png" alt="">
                                     <figcaption>
-                                        <h3>Amazing Keyboard</h3>
+                                        <h3>Menon Group</h3>
                                         <!-- <a class="link icon-pentagon" href="portfolio-item.php"><i
                                                 class="fa fa-link"></i></a> -->
                                         <a class="view icon-pentagon" data-rel="prettyPhoto"
-                                            href="images/portfolio/portfolio-bg3.jpg"><i class="fa fa-search"></i></a>
+                                            href="images/portfolio/splash9.png"><i class="fa fa-search"></i></a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div><!-- Isotope item end -->
+                        <div class="col-sm-3 mobile isotope-item">
+                            <div class="grid">
+                                <figure class="effect-oscar">
+                                    <img src="images/portfolio/splash10.png" alt="">
+                                    <figcaption>
+                                        <h3>Kohlapur Sports Club Cycling</h3>
+                                        <!-- <a class="link icon-pentagon" href="portfolio-item.php"><i
+                                                class="fa fa-link"></i></a> -->
+                                        <a class="view icon-pentagon" data-rel="prettyPhoto"
+                                            href="images/portfolio/splash10.png"><i class="fa fa-search"></i></a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div><!-- Isotope item end -->
+                        <div class="col-sm-3 mobile isotope-item">
+                            <div class="grid">
+                                <figure class="effect-oscar">
+                                    <img src="images/portfolio/splash5.png" alt="">
+                                    <figcaption>
+                                        <h3>Wtel Family</h3>
+                                        <!-- <a class="link icon-pentagon" href="portfolio-item.php"><i
+                                                class="fa fa-link"></i></a> -->
+                                        <a class="view icon-pentagon" data-rel="prettyPhoto"
+                                            href="images/portfolio/splash5.png"><i class="fa fa-search"></i></a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div><!-- Isotope item end -->
+                        <div class="col-sm-3 mobile isotope-item">
+                            <div class="grid">
+                                <figure class="effect-oscar">
+                                    <img src="images/portfolio/splash7.png" alt="">
+                                    <figcaption>
+                                        <h3>Low Protectors CRM</h3>
+                                        <!-- <a class="link icon-pentagon" href="portfolio-item.php"><i
+                                                class="fa fa-link"></i></a> -->
+                                        <a class="view icon-pentagon" data-rel="prettyPhoto"
+                                            href="images/portfolio/splash7.png"><i class="fa fa-search"></i></a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div><!-- Isotope item end -->
+                        <div class="col-sm-3 mobile isotope-item">
+                            <div class="grid">
+                                <figure class="effect-oscar">
+                                    <img src="images/portfolio/splash3.png" alt="">
+                                    <figcaption>
+                                        <h3>Orchid Lab</h3>
+                                        <!-- <a class="link icon-pentagon" href="portfolio-item.php"><i
+                                                class="fa fa-link"></i></a> -->
+                                        <a class="view icon-pentagon" data-rel="prettyPhoto"
+                                            href="images/portfolio/splash3.png"><i class="fa fa-search"></i></a>
                                     </figcaption>
                                 </figure>
                             </div>
@@ -635,7 +684,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-md-3 col-sm-6">
                         <div class="team wow slideInLeft">
                             <div class="img-hexagon">
@@ -656,7 +705,7 @@
                             </div>
                         </div>
                     </div>
-                   
+
                     <div class="col-md-3 col-sm-6">
                         <div class="team wow slideInRight">
                             <div class="img-hexagon">
@@ -677,7 +726,7 @@
                             </div>
                         </div>
                     </div>
-                   
+
                     <div class="col-md-3 col-sm-6">
                         <div class="team animate wow slideInRight">
                             <div class="img-hexagon">
@@ -698,11 +747,11 @@
                             </div>
                         </div>
                     </div>
-                   
+
                 </div>
-                
+
             </div>
-            
+
         </section> -->
         <!--/ Team end -->
 
@@ -811,7 +860,7 @@
         </section>
         <!--/ Clients end -->
         <!-- Modal HTML -->
-  
+
         <?php include "include/footer.php"; ?>
         <?php include "include/commonjs.php"; ?>
 
