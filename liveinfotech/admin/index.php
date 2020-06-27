@@ -57,9 +57,9 @@ ob_start();
         <div id="login-container" class="animation-fadeIn">
 			
             <!-- Login Title -->
-            <!-- <div class="login-title text-center">
-                 <img src="img/shafolo.png" alt="Login logo">
-            </div> -->
+            <div class="login-title text-center">
+                 <img src="img/logo.png" alt="Login logo">
+            </div>
             <!-- END Login Title -->
 
             <!-- Login Block -->

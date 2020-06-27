@@ -37,23 +37,9 @@ if(isset($_POST["submit"]))
 <body>
 	<div class="body-inner">
 	<!-- Header start -->
-	<?php include "include/header.php"; ?>
+	<?php //include "include/header.php"; ?>
 
-	<div id="banner-area">
-		<img src="images/banner/banner6.jpg" alt ="" />
-		<div class="parallax-overlay"></div>
-			<!-- Subpage title start -->
-			<div class="banner-title-content">
-	        	<div class="text-center">
-	        		
-		        	<h2>Registration Form </h2>
-		        	<ul class="breadcrumb">
-			            <li>Home</li>
-			            <li><a href="#"> Registration</a></li>
-		          	</ul>
-	          	</div>
-          	</div><!-- Subpage title end -->
-	</div><!-- Banner area end -->
+	
 
 	<!-- Main container start -->
 
@@ -141,7 +127,7 @@ if(isset($_POST["submit"]))
 	</section><!--/ Main container end -->
 	
 
-	<?php include "include/footer.php"; ?>
+	<?php //include "include/footer.php"; ?>
 	<?php include "include/commonjs.php"; ?>
 
 	<!-- Google Map API Key Source -->

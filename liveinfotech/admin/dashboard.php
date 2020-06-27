@@ -5,6 +5,42 @@
     
 }
 
+<style> 
+body{ 
+    text-align: center; 
+    background: #00ECB9; 
+  font-family: sans-serif; 
+  font-weight: 100; 
+} 
+
+#clockdiv {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    font-size: 13px;
+    margin-right: 80px inherit;
+    margin-top: -31px;
+    margin-left: 900px;
+}
+#clockdiv > div{ 
+    padding: 10px; 
+    border-radius: 3px; 
+    background: #00BF96; 
+    display: inline-block; 
+} 
+#clockdiv div > span{ 
+    padding: 15px; 
+    border-radius: 3px; 
+    background: #00816A; 
+    display: inline-block; 
+} 
+.smalltext{ 
+    padding-top: 5px; 
+    font-size: 16px; 
+} 
+</style>
+
 </style>
 <?php 	ob_start();
 	session_start();
@@ -72,12 +108,34 @@
                             <li><i class="fa fa-check fa-li text-success"></i> .. and many more awesome features!</li>
                         </ul>
                         <!-- END Key Features -->
-                        <div class="col-md-12 col-md-offset-3">
+                        <div class="col-md-12 col-md-offset-3 quizbtn" style="display: none">
                             <a href="quiz.php" class="btn btn-sm btn-primary quiz"><i class="fa fa-floppy-o"></i> Start Quiz</a>
                         </div>
                         
                     </div>
                 </div>
+
+                                        <h1 class="heading">Countdown Clock</h1> 
+                        <div id="clockdiv"> 
+                          <div> 
+                            <span class="days" id="day"></span> 
+                            <div class="smalltext">Days</div> 
+                          </div> 
+                          <div> 
+                            <span class="hours" id="hour"></span> 
+                            <div class="smalltext">Hours</div> 
+                          </div> 
+                          <div> 
+                            <span class="minutes" id="minute"></span> 
+                            <div class="smalltext">Minutes</div> 
+                          </div> 
+                          <div> 
+                            <span class="seconds" id="second"></span> 
+                            <div class="smalltext">Seconds</div> 
+                          </div> 
+                        </div> 
+                          
+                        <p id="demo"></p>
                         
                         <!-- END Dashboard Header -->
 
@@ -101,74 +159,37 @@
         <!-- Scroll to top link, initialized in js/app.js - scrollToTop() -->
         <a href="#" id="to-top"><i class="fa fa-angle-double-up"></i></a>
 
-        <!-- User Settings, modal which opens from Settings link (found in top right user menu) and the Cog link (found in sidebar user info) -->
-        <div id="modal-user-settings" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <!-- Modal Header -->
-                    <div class="modal-header text-center">
-                        <h2 class="modal-title"><i class="fa fa-pencil"></i> Settings</h2>
-                    </div>
-                    <!-- END Modal Header -->
-
-                    <!-- Modal Body -->
-                    <div class="modal-body">
-                        <form action="index.html" method="post" enctype="multipart/form-data" class="form-horizontal form-bordered" onsubmit="return false;">
-                            <fieldset>
-                                <legend>Vital Info</legend>
-                                <div class="form-group">
-                                    <label class="col-md-4 control-label">Username</label>
-                                    <div class="col-md-8">
-                                        <p class="form-control-static">Admin</p>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-md-4 control-label" for="user-settings-email">Email</label>
-                                    <div class="col-md-8">
-                                        <input type="email" id="user-settings-email" name="user-settings-email" class="form-control" value="admin@example.com">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-md-4 control-label" for="user-settings-notifications">Email Notifications</label>
-                                    <div class="col-md-8">
-                                        <label class="switch switch-primary">
-                                            <input type="checkbox" id="user-settings-notifications" name="user-settings-notifications" value="1" checked>
-                                            <span></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </fieldset>
-                            <fieldset>
-                                <legend>Password Update</legend>
-                                <div class="form-group">
-                                    <label class="col-md-4 control-label" for="user-settings-password">New Password</label>
-                                    <div class="col-md-8">
-                                        <input type="password" id="user-settings-password" name="user-settings-password" class="form-control" placeholder="Please choose a complex one..">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-md-4 control-label" for="user-settings-repassword">Confirm New Password</label>
-                                    <div class="col-md-8">
-                                        <input type="password" id="user-settings-repassword" name="user-settings-repassword" class="form-control" placeholder="..and confirm it!">
-                                    </div>
-                                </div>
-                            </fieldset>
-                            <div class="form-group form-actions">
-                                <div class="col-xs-12 text-right">
-                                    <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
-                                    <button type="submit" class="btn btn-sm btn-primary">Save Changes</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <!-- END Modal Body -->
-                </div>
-            </div>
-        </div>
-        <!-- END User Settings -->
+        
 
         <?php  include('common_js.php');?>  
         
         <script>$(function(){ Index.init(); });</script>
+        <script> 
+  
+            var deadline = new Date("june 27, 2020 09:27:25").getTime(); 
+              
+            var x = setInterval(function() { 
+              
+            var now = new Date().getTime(); 
+            var t = deadline - now; 
+            var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
+            var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+            var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
+            var seconds = Math.floor((t % (1000 * 60)) / 1000); 
+            document.getElementById("day").innerHTML =days ; 
+            document.getElementById("hour").innerHTML =hours; 
+            document.getElementById("minute").innerHTML = minutes;  
+            document.getElementById("second").innerHTML =seconds;  
+            if (t < 0) { 
+                    clearInterval(x); 
+                    document.getElementById("demo").innerHTML = "TIME UP"; 
+                    document.getElementById("day").innerHTML ='0'; 
+                    document.getElementById("hour").innerHTML ='0'; 
+                    document.getElementById("minute").innerHTML ='0' ;  
+                    document.getElementById("second").innerHTML = '0';
+                    $('.quizbtn').css('display','block');
+                } 
+            }, 1000); 
+</script>
     </body>
 </html>
