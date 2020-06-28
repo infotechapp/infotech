@@ -144,7 +144,7 @@ $('#quizsubmit').click(function(){
 
  
   
-  var deadline = new Date("june 27, 2020 09:44:25").getTime(); 
+  var deadline = new Date("july 27, 2020 09:44:25").getTime(); 
   var x = setInterval(function() { 
   var now = new Date().getTime(); 
   var t = deadline - now; 

@@ -11,14 +11,24 @@ ob_start();
         $result2 = mysqli_query($conn, $sqlinner) or die(mysqli_error($conn));  
         $countData = mysqli_num_rows($result2); 
 		$row = mysqli_fetch_array($result2);
-		if($countData > 0){
+
+        $sqlinner2 = "select id,name from students where email = '".$email."' and password='".$password."' and active_status='1'";
+        $result3 = mysqli_query($conn, $sqlinner2) or die(mysqli_error($conn));  
+        $countstatus = mysqli_num_rows($result3); 
+        
+
+		if($countData > 0 && $countstatus > 0){
 			$_SESSION['login_id']= $row['id']; 
 			$_SESSION['first_name']= $row['name']; 
 			header("Location: dashboard.php");
 			ob_end_flush();
-		}else{
-			header("Location: index.php?message=fail");
-		}
+		}elseif ($countData == 0) {
+           header("Location: index.php?message=fail");
+        }elseif ($countData > 0 && $countstatus == 0) {
+           header("Location: index.php?message=active");
+        }
+			
+		
 	}
 	?>
 <body>
@@ -51,14 +61,25 @@ ob_start();
         </div>
 		
 		
-	<?php } ?>
+	<?php }elseif (@$_GET['message'] == 'active') {?>
+        <div class="custom-alert">
+            <div class="alert alert-danger">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                    ×</button>
+                
+                
+                <p>
+                    Account is not active. Please contact to the admin!</p>
+            </div>
+        </div>
+   <?php  } ?>
 		
         <!-- Login Container -->
         <div id="login-container" class="animation-fadeIn">
 			
             <!-- Login Title -->
             <div class="login-title text-center">
-                 <img src="img/logo.png" alt="Login logo">
+                <u style="color: white"><strong style="color: white">Infotechapp</strong></u>
             </div>
             <!-- END Login Title -->
 

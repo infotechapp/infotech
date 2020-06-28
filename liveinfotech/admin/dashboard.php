@@ -12,35 +12,6 @@ body{
   font-family: sans-serif; 
   font-weight: 100; 
 } 
-
-#clockdiv {
-    font-family: sans-serif;
-    color: #fff;
-    display: inline-block;
-    font-weight: 100;
-    font-size: 13px;
-    margin-right: 80px inherit;
-    margin-top: -31px;
-    margin-left: 900px;
-}
-#clockdiv > div{ 
-    padding: 10px; 
-    border-radius: 3px; 
-    background: #00BF96; 
-    display: inline-block; 
-} 
-#clockdiv div > span{ 
-    padding: 15px; 
-    border-radius: 3px; 
-    background: #00816A; 
-    display: inline-block; 
-} 
-.smalltext{ 
-    padding-top: 5px; 
-    font-size: 16px; 
-} 
-</style>
-
 </style>
 <?php 	ob_start();
 	session_start();
@@ -92,7 +63,7 @@ body{
                         <!-- Title -->
                         <h1 class="push-top-bottom">
                             <strong>Welcome to Online Quiz</strong><br>
-                             <small>Welcome to ProUI Admin Template!</small>
+                             <small>Powered by Infotechapp</small>
                         </h1>
 
                         <!-- END Title -->
@@ -166,7 +137,7 @@ body{
         <script>$(function(){ Index.init(); });</script>
         <script> 
   
-            var deadline = new Date("june 27, 2020 09:27:25").getTime(); 
+            var deadline = new Date("july 27, 2020 09:27:25").getTime(); 
               
             var x = setInterval(function() { 
               
