@@ -3,7 +3,7 @@
 		$urlexp1 = explode('.', $url);
 		$urlexp2 = explode('/', $urlexp1[0]);
 		//print_r($urlexp2);die;
-	
+
 
  ?>
 <!-- Header start -->
@@ -27,11 +27,11 @@
 					</div>
 
 					<!--/ Logo end -->
-					
-						
 
-				   
-				  
+
+
+
+
 					<nav class="collapse navbar-collapse clearfix" role="navigation">
 
 						<ul class="nav navbar-nav navbar-right">
@@ -74,7 +74,7 @@
 
 
 							<li class="<?php if($urlexp2[1] =='register'){echo 'active';}?>">
-								<a href="register.php"><u>Register</u></a>
+								<a href="register.php">Register</a>
 							</li>
 
 						</ul>
