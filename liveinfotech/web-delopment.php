@@ -102,7 +102,7 @@
                 <span class="feature-icon pull-left"><img src="images/services/campaign.png" alt=""></span>
                 <div class="feature-content">
                     <h3>Enterprise App Devlopment</h3>
-                    <p>Through our exceptional Web App development, we at Endive Software have earned extensive experience to handle the client of varied industries.</p>
+                    <p>Through our exceptional Web App development, we at InfoTechApp have earned extensive experience to handle the client of varied industries.</p>
                 </div>
             </div>
             <!--/ End 1st featurebox -->
@@ -120,7 +120,7 @@
                 <span class="feature-icon pull-left"><img src="images/services/support.png" alt=""></span>
                 <div class="feature-content">
                     <h3>Support & Maintenance</h3>
-                    <p>At Endive Software, we provide exceptional maintenance and support services for the websites while development to enhance the overall performance of website</p>
+                    <p>At InfoTechApp, we provide exceptional maintenance and support services for the websites while development to enhance the overall performance of website</p>
                 </div>
             </div>
             <!--/ End 3rd featurebox -->
@@ -135,7 +135,7 @@
         <div class="row">
             <div class="col-md-12 heading text-center">
                 <h2 class="title2">Our Web Development Solutions That We Offer:
-                    <span class="title-desc">As a best web development compnay in USA and India, we at Endive Software build everything that would helpful for your business.
+                    <span class="title-desc">As a best web development compnay in India, we at InfoTechApp build everything that would helpful for your business.
                     </span>
                 </h2>
             </div>

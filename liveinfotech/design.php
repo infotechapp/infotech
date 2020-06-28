@@ -96,7 +96,7 @@
                         <div class="plan text-center featured">
                             <p class="plan-price" style="font-size: 20px;">E-Commerce Solution</p>
                             <ul class="list-unstyled">
-                                <li style="line-height: 2em;">Here at Endive Software, we build trendy web design
+                                <li style="line-height: 2em;">Here at InfoTechApp, we build trendy web design
                                     solutions for e-commerce. To make e-commerce website more engaging, we put a dynamic
                                     color scheme, high-definition images, and fonts. Each e-commerce website we develop
                                     is highly remarkable and truly unique.</li>
@@ -126,7 +126,7 @@
                 <div class="row">
                     <div class="col-md-12 heading text-center">
                         <h2 class="title2">Our Web Design Solution Includes
-                            <span class="title-desc">A brief outline of the agile web design process followed by Endive Software.
+                            <span class="title-desc">A brief outline of the agile web design process followed by InfoTechApp.
                             </span>
                         </h2>
                     </div>

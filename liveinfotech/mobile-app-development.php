@@ -71,7 +71,7 @@
                             <ul class="list-unstyled">
                                 <li style="line-height: 2em;">Mobility solutions have become a powerful asset for every
                                     business.
-                                    Endive Software’s Native app development services are dynamic and
+                                    InfoTechApp’s Native app development services are dynamic and
                                     reliable that will meet your business requirements. We provide on-demand
                                     native app solutions for every industry, including healthcare,
                                     education, and more.</li>
@@ -86,7 +86,7 @@
                             <ul class="list-unstyled">
                                 <li style="line-height: 2em;">Cross-platform apps run on different platforms (iOS and
                                     Android)
-                                    irrespective of device in use. At Endive Software, our Cross-platform
+                                    irrespective of device in use. At InfoTechApp, our Cross-platform
                                     App Development Services are well appreciated all around the world. Our
                                     experienced developers use the best technology and tools to develop
                                     versatile and compatible cross-platform applications.</li>
@@ -131,7 +131,7 @@
                 <div class="row">
                     <div class="col-md-12 heading text-center">
                         <h2 class="title2">Our Mobile App Development Services
-                            <span class="title-desc">Endive Software is India’s one of the best mobile app development
+                            <span class="title-desc">InfoTechApp is India’s one of the best mobile app development
                                 companies, has been providing dynamic and high-quality app solutions for a decade. We
                                 have helped businesses from diverse domains with outstanding solutions.
                             </span>
@@ -229,7 +229,7 @@
                                     <h4>Cloud Mobility Solutions</h4>
                                 </div>
                                 <div class="flip-card-back">
-                                    <p>At Endive Software, we provide cloud mobility solutions for most
+                                    <p>At InfoTechApp, we provide cloud mobility solutions for most
                                         of your business needs. Experienced programmers are trained
                                         enough in delivering a diverse range of mobility solutions.</p>
                                 </div>
@@ -278,7 +278,7 @@
                     <div class="col-md-12 heading text-center">
                         <h2 class="title2">We Offer Mobile Application Development Services For Different Operating
                             Systems or Platforms
-                            <span class="title-desc">Endive Software has established its position in the fast growing
+                            <span class="title-desc">InfoTechApp has established its position in the fast growing
                                 market by offering quality mobile applications.
                             </span>
                         </h2>
