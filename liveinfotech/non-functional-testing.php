@@ -95,7 +95,7 @@
                             <!-- <img class="img-responsive pull-right" src="images/tab/featured-tab2.png" alt=""> -->
                             <h3>Non-Functional Testing at
                                 InfoTechApp</h3>
-                            <p>Wildnet employs best-in-breed QA experts. Utilizing minutest of capabilities of non-functional testing, experts work to ensure that product performs as expected. Under this testing category, it is imperative to ensure that performance which is crucial to product deployment is never overlooked. Our QAs insist that every parameter non-functional testing comprises of needs to be thoroughly scrutinized for expected results.</p>
+                            <p>InfoTechApp employs best-in-breed QA experts. Utilizing minutest of capabilities of non-functional testing, experts work to ensure that product performs as expected. Under this testing category, it is imperative to ensure that performance which is crucial to product deployment is never overlooked. Our QAs insist that every parameter non-functional testing comprises of needs to be thoroughly scrutinized for expected results.</p>
                         </div>
                     </div><!-- tab content -->
                 </div><!-- Featured tab end -->

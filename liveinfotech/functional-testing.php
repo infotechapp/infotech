@@ -30,7 +30,7 @@
                     <h2 >“Work in Accordance with Objective”</br>
                         FUNCTIONAL TESTING
                     </h2>
-                    <p>Wildnet’s Functional Testing services verify and validate enterprise-level applications by providing them with comprehensive functional specifications. It will also incorporate testing the application against the end user’s performance expectations. The purpose is also to prevent the occurrence of defects and pinpoint them if any. The overall aim of best-in-class QA at the organization is to allow the application to work in accordance with the business objectives.
+                    <p>InfoTechApp’s Functional Testing services verify and validate enterprise-level applications by providing them with comprehensive functional specifications. It will also incorporate testing the application against the end user’s performance expectations. The purpose is also to prevent the occurrence of defects and pinpoint them if any. The overall aim of best-in-class QA at the organization is to allow the application to work in accordance with the business objectives.
                     </p>
                 </div>
             </div> <!-- Title row end -->
@@ -43,7 +43,7 @@
                             <img class="img-responsive pull-left" src="images/tab/testing3.png" alt="">
                             <p>“Flexible and Affordable Testing Method”</p>
                             <h3>MANUAL TESTING</h3>
-                            <p>At Wildnet, our major emphasis is to pinpoint defects in the early stages and rectify them. We provide expert testers and tools to test your product in faster time-to-market, measurable improvements in quality and reduced cost. Leveraging our services help you to identify defects when they are less costly to remediate. We cover multiple Browser, OS, Devices in Manual Testing.
+                            <p>At InfoTechApp, our major emphasis is to pinpoint defects in the early stages and rectify them. We provide expert testers and tools to test your product in faster time-to-market, measurable improvements in quality and reduced cost. Leveraging our services help you to identify defects when they are less costly to remediate. We cover multiple Browser, OS, Devices in Manual Testing.
                             </br>
                                 Our Testing Services include On-demand Manual Testing Resources by individual testers as well as Fully Managed Testing Services where we take full responsibility for any testing project.</p>
                         </div>
@@ -105,7 +105,7 @@
                             <h3>AUTOMATION TESTING</h3>
                             <p>If you are looking for Continuous, Fast, Accurate, defect-free and efficient testing of your product, Automation testing is the best solution for it. For any large scale and complex projects, one should always consider Automation Testing as an important step.
                             </br>
-                                We at Wildnet assist clients in identifying the right toolsets and designing an efficient automation test strategy to help them achieve maximum ROI.</p>
+                                We at InfoTechApp assist clients in identifying the right toolsets and designing an efficient automation test strategy to help them achieve maximum ROI.</p>
                                 <h4>Our Approach to Testing Automation Testing</h4>
                             <ul class="check-list ">
                                     <li><i class="fa fa-check"></i> To understand the Product and Automation feasibility and initial POC is carried out.</li>

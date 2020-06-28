@@ -115,7 +115,7 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <a href="web-delopment.php" style="color: #000;">
+                        <a href="web-delopment.php" style="color: #6A6A6A;">
                             <div class="col-md-4 col-sm-4 wow fadeInDown" data-wow-delay=".5s">
                                 <div class="service-content text-center">
                                     <span class="service-icon icon-pentagon"><i class="fa fa-laptop"></i></span>
@@ -126,7 +126,7 @@
                             </div>
                         </a>
                         <!--/ End first service -->
-                        <a href="mobile-app-development.php" style="color: #000;">
+                        <a href="mobile-app-development.php" style="color: #6A6A6A;">
                             <div class="col-md-4 col-sm-4 wow fadeInDown" data-wow-delay=".8s">
                                 <div class="service-content text-center">
                                     <span class="service-icon icon-pentagon"><i class="fa fa-mobile"></i></span>
@@ -139,7 +139,7 @@
                             </div>
                         </a>
                         <!--/ End Second service -->
-                        <a href="digital-market.php" style="color: #000;">
+                        <a href="digital-market.php" style="color: #6A6A6A;">
                             <div class="col-md-4 col-sm-4 wow fadeInDown" data-wow-delay="1.1s">
                                 <div class="service-content text-center">
                                     <span class="service-icon icon-pentagon"><i class="fa fa-rocket"></i></span>
@@ -156,7 +156,7 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <a href="design.php" style="color: #000;">
+                        <a href="design.php" style="color: #6A6A6A;">
                             <div class="col-md-4 col-sm-4 wow fadeInDown" data-wow-delay="1.4s">
                                 <div class="service-content text-center">
                                     <span class="service-icon icon-pentagon"><i class="fa fa-code  "></i></span>
@@ -167,7 +167,7 @@
                             </div>
                         </a>
                         <!--/ End 4th service -->
-                        <a href="javascript:void(0);" style="color: #000;">
+                        <a href="javascript:void(0);" style="color: #6A6A6A;">
                             <div class="col-md-4 col-sm-4 wow fadeInDown" data-wow-delay="1.7s">
                                 <div class="service-content text-center">
                                     <span class="service-icon icon-pentagon"><i class="fa fa-info"></i></span>
@@ -178,7 +178,7 @@
                             </div>
                         </a>
                         <!--/ End Third service -->
-                        <a href="testing.php" style="color: #000;">
+                        <a href="testing.php" style="color: #6A6A6A;">
                             <div class="col-md-4 col-sm-4 wow fadeInDown" data-wow-delay="2s">
                                 <div class="service-content text-center">
                                     <span class="service-icon icon-pentagon"><i class="fa fa-bug"></i></span>
@@ -604,7 +604,7 @@
                             </div>
                             <div class="tab-pane animated fadeIn" id="tab_d">
                                 <h3>We Build Ready made Web Applications for You</h3>
-                                <p>Wildnet in the past decade has eminently made numerous breakthroughs in IT
+                                <p>InfoTechApp in the past decade has eminently made numerous breakthroughs in IT
                                     development and digital marketing
                                     services. Servicing hundreds of existing clients globally is what we take
                                     immense pride in! Our achievements make us the first preference of our customers.
