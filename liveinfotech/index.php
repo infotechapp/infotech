@@ -446,7 +446,8 @@
                         <span class="feature-icon pull-left"><img src="images/services/support2.png" alt=""></span>
                         <div class="feature-content">
                             <h3>Full service, full stack</h3>
-                            <p>From idea to implementation, our complete product development approach means convenience and less risk.</p>
+                            <p>From idea to implementation, our complete product development approach means convenience
+                                and less risk.</p>
                         </div>
                     </div>
                     <!--/ End first featurebox -->
@@ -455,7 +456,8 @@
                         <span class="feature-icon pull-left"><img src="images/services/house-design.png" alt=""></span>
                         <div class="feature-content">
                             <h3>Smart, intuitive user experiences</h3>
-                            <p>Infotechapp’s methodology bridges the gap between design and engineering in ways our competitors can’t.</p>
+                            <p>Infotechapp’s methodology bridges the gap between design and engineering in ways our
+                                competitors can’t.</p>
                         </div>
                     </div>
                     <!--/ End 2nd featurebox -->
@@ -464,7 +466,8 @@
                         <span class="feature-icon pull-left"><img src="images/services/monitor.png" alt=""></span>
                         <div class="feature-content">
                             <h3>Trailblazing apps that function flawlessly</h3>
-                            <p>Our ambitious software, mobile, and web apps offer security, stability, and scalability, with attention to detail.</p>
+                            <p>Our ambitious software, mobile, and web apps offer security, stability, and scalability,
+                                with attention to detail.</p>
                         </div>
                     </div>
                     <!--/ End 3rd featurebox -->
@@ -477,7 +480,8 @@
                         <span class="feature-icon pull-left"><img src="images/services/information.png" alt=""></span>
                         <div class="feature-content">
                             <h3>Tech that advances the industry</h3>
-                            <p>InfoTechApp helps create and lead some of the open-source web development technologies of the future.</p>
+                            <p>InfoTechApp helps create and lead some of the open-source web development technologies of
+                                the future.</p>
                         </div>
                     </div>
                     <!--/ End 1st featurebox -->
@@ -486,7 +490,8 @@
                         <span class="feature-icon pull-left"><img src="images/services/meeting.png" alt=""></span>
                         <div class="feature-content">
                             <h3>Brilliant, top-tier talent</h3>
-                            <p>We hire only the brightest and most experienced product strategists, designers, engineers, and managers.</p>
+                            <p>We hire only the brightest and most experienced product strategists, designers,
+                                engineers, and managers.</p>
                         </div>
                     </div>
                     <!--/ End 2nd featurebox -->
@@ -495,7 +500,8 @@
                         <span class="feature-icon pull-left"><img src="images/services/group.png" alt=""></span>
                         <div class="feature-content">
                             <h3>Dedicated teams distributed nationwide</h3>
-                            <p>InfoTechApp is always nearby, with teams 100% allocated to your project, resulting in on-time, on-budget work.</p>
+                            <p>InfoTechApp is always nearby, with teams 100% allocated to your project, resulting in
+                                on-time, on-budget work.</p>
                         </div>
                     </div>
                     <!--/ End 3rd featurebox -->
@@ -525,7 +531,7 @@
                         <ul class="nav nav-tabs nav-stacked col-md-3 col-sm-5">
                             <li class="active">
                                 <a class="animated fadeIn" href="#tab_a" data-toggle="tab">
-                                    <span class="tab-icon"><i class="fa fa-bank"></i></span>
+                                    <span class="tab-icon"><i class="fa fa-binoculars"></i></span>
                                     <div class="tab-info">
                                         <h3>Who are we</h3>
                                     </div>
@@ -533,7 +539,7 @@
                             </li>
                             <li>
                                 <a class="animated fadeIn" href="#tab_b" data-toggle="tab">
-                                    <span class="tab-icon"><i class="fa fa-database"></i></span>
+                                    <span class="tab-icon"><i class="fa fa-briefcase"></i></span>
                                     <div class="tab-info">
                                         <h3>Our company</h3>
                                     </div>
@@ -549,7 +555,7 @@
                             </li>
                             <li>
                                 <a class="animated fadeIn" href="#tab_d" data-toggle="tab">
-                                    <span class="tab-icon"><i class="fa fa-language"></i></span>
+                                    <span class="tab-icon"><i class="fa fa-users"></i></span>
                                     <div class="tab-info">
                                         <h3>Why choose us</h3>
                                     </div>
@@ -557,9 +563,9 @@
                             </li>
                             <li>
                                 <a class="animated fadeIn" href="#tab_e" data-toggle="tab">
-                                    <span class="tab-icon"><i class="fa fa-coffee"></i></span>
+                                    <span class="tab-icon"><i class="fa fa-support"></i></span>
                                     <div class="tab-info">
-                                        <h3>Save time with us</h3>
+                                        <h3>Dedicated Support</h3>
                                     </div>
                                 </a>
                             </li>
@@ -567,52 +573,48 @@
                         <div class="tab-content col-md-9 col-sm-7">
                             <div class="tab-pane active animated fadeInRight" id="tab_a">
                                 <img class="img-responsive pull-left" src="images/tab/whoweare.png" alt="">
-                                <h4>We are technology-driven company</h4>
-                                <p>Our company delivers technology-driven business solutions that meet the strategic objectives of our clients and We have innovative ideas. We create a powerful Digital Marketing for your company that increases your market value.</p>
-                                <ul class="check-list">
-                                    <li><i class="fa fa-arrow-circle-right"></i> We design to keep in mind business</li>
-                                    <li><i class="fa fa-arrow-circle-right"></i> Love design to keep in mind business
-                                    </li>
-                                    <li><i class="fa fa-arrow-circle-right"></i> Hope design to keep in mind business
-                                    </li>
-                                </ul>
+                                <h3>We are technology-driven company</h3>
+                                <p>InfoTechApp is not an entity, it’s a family that represents togetherness for over two
+                                    decades of a successful journey. For InfoTechApp, the definition of success is to
+                                    transcend innovative ideas of people to reality with the help of our tech expertise,
+                                    this is what we, as a Team, want to be remembered for!
+                                    Our vision has led InfoTechApp to become a top IT company in India for delivering
+                                    various industry-led mobility solutions. The goal is to empower clients and
+                                    businesses by creating new possibilities leveraging the technologies of today and
+                                    tomorrow with the utmost quality, satisfaction, and transparency.</p>
                             </div>
                             <div class="tab-pane animated fadeInLeft" id="tab_b">
-                                <img class="img-responsive pull-right" src="images/tab/featured-tab2.png" alt="">
+                                <!-- <img class="img-responsive pull-right" src="images/tab/featured-tab2.png" alt=""> -->
                                 <h3>Our company provide IT solutions</h3>
-                                <p>We have been committed to the service of website development. Over these years, we have created websites, web applications, and mobile applications for small and large companies across a wide range of industries. </p>
-                                <ul class="check-list">
-                                    <li><i class="fa fa-check"></i> Duis autem vel eum iriure</li>
-                                    <li><i class="fa fa-check"></i> vulputate molestie consequat</li>
-                                    <li><i class="fa fa-check"></i> Lorem ipsum dolor sit amet</li>
-                                    <li><i class="fa fa-check"></i> Typi non habent claritatem insitam</li>
-                                    <li><i class="fa fa-check"></i> Nam liber tempor cum soluta nobi</li>
-                                </ul>
+                                <p>We have been committed to the service of website development. Over these years, we
+                                    have created websites, web applications, and mobile applications for small and large
+                                    companies across a wide range of industries. </p>
+
                             </div>
                             <div class="tab-pane animated fadeIn" id="tab_c">
                                 <img class="img-responsive pull-left" src="images/tab/sdlc.png" alt="">
                                 <h3>We Build Readymade Applications you</h3>
-                                <p>We extended our services and today we cover Web Designing & Development, E-Commerce, Mobile Application Development, Digital Marketing..</p>
-                                <ul class="check-list">
-                                    <li><i class="fa fa-arrow-circle-right"></i> We design to keep in mind business</li>
-                                    <li><i class="fa fa-arrow-circle-right"></i> Love design to keep in mind business
-                                    </li>
-                                    <li><i class="fa fa-arrow-circle-right"></i> Hope design to keep in mind business
-                                    </li>
-                                </ul>
+                                <p>Our enthusiasm has led us to become a top IT company in India for delivering various
+                                    industry-led mobility solutions in web and mobile application development domains
+                                    leveraging futuristic technologies like Internet of Things (IoT), AR-VR, Voice
+                                    assistants and Voice Skills, DevOps & Cloud computing, etc.
+                                    We feel empowered with our certified tech experts and our R&D team who have always
+                                    challenged themselves to help global clientele with a plethora of IT services and
+                                    solutions. Engagement with our team guarantees our clients to save huge money on
+                                    project development with faster delivery.</p>
+
                                 <!-- <img class="img-responsive" src="images/tab/featured-tab3.png" alt=""> -->
                             </div>
                             <div class="tab-pane animated fadeIn" id="tab_d">
-                                <h3>We Build Ready made Web Applications for You</h3>
+                                <img class="img-responsive pull-left" src="images/tab/savetime.png" alt="">
+                                <!-- <h3>We Build Ready made Web Applications for You</h3> -->
                                 <p>InfoTechApp in the past decade has eminently made numerous breakthroughs in IT
                                     development and digital marketing
                                     services. Servicing hundreds of existing clients globally is what we take
                                     immense pride in! Our achievements make us the first preference of our customers.
                                 </p>
                                 <ul class="check-list">
-                                    <li><i class="fa fa-check"></i> We assist our 400+ clients with an end
-                                        to end competence in strategizing and
-                                        successfully implementing the solutions</li>
+
                                     <li><i class="fa fa-check"></i> Our team is proficient in mobile app
                                         development, web application
                                         development and software product
@@ -620,29 +622,22 @@
                                     <li><i class="fa fa-check"></i> We have adopted futuristic work
                                         methods and capabilities in new and
                                         existing technology to complete more
-                                        than 650 projects</li>
+                                        than 50 projects</li>
                                     <li><i class="fa fa-check"></i> We have experts in Cloud, Digital
                                         Marketing, PPC, Salesforce, and
                                         Content Management System</li>
                                     <li><i class="fa fa-check"></i> We have carved out-of-the-box
                                         applications and powerful customized
                                         solutions</li>
-                                    <li><i class="fa fa-check"></i> We work on countless tech solutions in
-                                        more than 19 countries!</li>
+
 
                                 </ul>
                             </div>
-                            <div class="tab-pane animated fadeIn" id="tab_e">
-                                <img class="img-responsive pull-left" src="images/tab/savetime.png" alt="">
-                                <h3>Easy Solution on Every Project</h3>
-                                <p>Occupy selfies Tonx, +1 Truffaut beard organic normcore tilde flannel artisan squid
-                                    cray single-origin coffee. Master cleanse vinyl Austin kogi, semiotics skateboard
-                                    fap wayfarers health goth. Helvetica cray church-key hashtag Carles. Four dollar
-                                    toast meggings seitan, Tonx pork belly VHS Bushwick. Chambray banh mi cornhole.
-                                    Locavore messenger bag seitan.</p>
-                                <p>Helvetica cold-pressed lomo messenger bag ugh. Vinyl jean shorts Austin pork belly
-                                    PBR retro, Etsy VHS kitsch actually messenger bag pug. semiotics try-hard, Schlitz
-                                    occupy dreamcatcher master cleanse Marfa Vice tofu. </p>
+                            <div class="tab-pane animated fadeInLeft" id="tab_e">
+                                <!-- <img class="img-responsive pull-right" src="images/tab/featured-tab2.png" alt=""> -->
+                                <h3>24/7 Dedicated Support</h3>
+                                <p>We provide tech support services to address your issues on call. Call our Customer Service executive or submit your request online, our tech support staff will get in touch with you. Services for Consumers/Professionals. </p>
+
                             </div>
                         </div><!-- tab content -->
                     </div><!-- Featured tab end -->
@@ -768,9 +763,11 @@
                             </div>
                             <div class="testimonial-content">
                                 <p class="testimonial-text">
-                                   The Website/Mobile App Development services provided by Infotechapp are quite appreciable. We wish to have a long lasting relationship and great success to Infotechapp in future.
+                                    The Website/Mobile App Development services provided by Infotechapp are quite
+                                    appreciable. We wish to have a long lasting relationship and great success to
+                                    Infotechapp in future.
                                 </p>
-                               <!--  <p class="testimonial-text">
+                                <!--  <p class="testimonial-text">
                                     Itechapp's hardworking team effectively handled the website and showed flexibility when asked to maintain parts of the project.
                                 </p> -->
                                 <h3 class="name">Ankit Sharma<span>Chief Executive</span></h3>
@@ -782,7 +779,9 @@
                             </div>
                             <div class="testimonial-content">
                                 <p class="testimonial-text">
-                                    Infotechapp has been absolutely fantastic in assisting us with managing all of our various websites and technical issues. They respond to our queries at very quickly. Thanks...
+                                    Infotechapp has been absolutely fantastic in assisting us with managing all of our
+                                    various websites and technical issues. They respond to our queries at very quickly.
+                                    Thanks...
                                 </p>
                                 <h3 class="name">Rahul mittal<span>Sr. Manager</span></h3>
                             </div>
@@ -793,7 +792,9 @@
                             </div>
                             <div class="testimonial-content">
                                 <p class="testimonial-text">
-                                    Infotechapp designed superior websites for my company and have continuously demonstrated excellent support. Our company will continue to work with Infotechapp to develop and manage our web projects..
+                                    Infotechapp designed superior websites for my company and have continuously
+                                    demonstrated excellent support. Our company will continue to work with Infotechapp
+                                    to develop and manage our web projects..
                                 </p>
                                 <h3 class="name">Mohit Malhotra<span>Project Manager</span></h3>
                             </div>
@@ -809,7 +810,7 @@
 
 
         <!-- Clients start -->
-        <section id="clients" class="clients">
+        <!-- <section id="clients" class="clients">
             <div class="container">
                 <div class="row wow fadeInLeft">
                     <div id="client-carousel" class="col-sm-12 owl-carousel owl-theme text-center client-carousel">
@@ -853,11 +854,11 @@
                                 <img src="images/clients/client8.png" alt="client">
                             </a>
                         </figure>
-                    </div><!-- Owl carousel end -->
-                </div><!-- Main row end -->
+                    </div>
+                </div>
             </div>
-            <!--/ Container end -->
-        </section>
+
+        </section> -->
         <!--/ Clients end -->
         <!-- Modal HTML -->
 
