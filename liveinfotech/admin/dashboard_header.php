@@ -37,7 +37,7 @@
                                     
                                     <li>
                                         <!--a href="change_password.php"><i class="fa fa-lock fa-fw pull-right"></i> Change Password</a-->
-                                        <a href="logout.php"><i class="fa fa-ban fa-fw pull-right"></i> Logout</a>
+                                        <a href="logout.php" id="logoutclick"><i class="fa fa-ban fa-fw pull-right"></i> Logout</a>
                                     </li>
                                    
                                 </ul>
