@@ -521,7 +521,7 @@
                     <div class="col-md-12 heading text-center">
                         <span class="icon-pentagon wow bounceIn"><i class="fa fa-meh-o"></i></span>
                         <h2 class="title2">Know About Our Company
-                            <span class="title-desc">A Quality Experience Team with 4 years experience</span>
+                            <span class="title-desc">A Quality Experience Team with experience</span>
                         </h2>
                     </div>
                 </div> <!-- Title row end -->
@@ -584,7 +584,8 @@
                                     tomorrow with the utmost quality, satisfaction, and transparency.</p>
                             </div>
                             <div class="tab-pane animated fadeInLeft" id="tab_b">
-                                <!-- <img class="img-responsive pull-right" src="images/tab/featured-tab2.png" alt=""> -->
+                            <img class="img-responsive" width="485px;" src="images/tab/office.png" alt="">
+
                                 <h3>Our company provide IT solutions</h3>
                                 <p>We have been committed to the service of website development. Over these years, we
                                     have created websites, web applications, and mobile applications for small and large
@@ -634,7 +635,7 @@
                                 </ul>
                             </div>
                             <div class="tab-pane animated fadeInLeft" id="tab_e">
-                                <!-- <img class="img-responsive pull-right" src="images/tab/featured-tab2.png" alt=""> -->
+                                <img class="img-responsive" width="480px;" src="images/tab/support.png" alt="">
                                 <h3>24/7 Dedicated Support</h3>
                                 <p>We provide tech support services to address your issues on call. Call our Customer Service executive or submit your request online, our tech support staff will get in touch with you. Services for Consumers/Professionals. </p>
 

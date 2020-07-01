@@ -94,6 +94,8 @@
                             </div>
                             <div class="tab-pane animated fadeInLeft" id="tab_b">
                                 <!-- <i class="fa fa-briefcase big"></i> -->
+                                <img class="img-responsive " src="images/tab/office.png" alt="">
+
                                 <h3>Our company provide IT solutions</h3>
                                 <p>We have been committed to the service of website development. Over these years, we
                                     have created websites, web applications, and mobile applications for small and large
@@ -141,6 +143,7 @@
                             </div>
                             <div class="tab-pane animated fadeIn" id="tab_e">
                                 <!-- <i class="fa fa-support big"></i> -->
+                                <img class="img-responsive " src="images/tab/support.png" alt="">
                                 <h3>24/7 Dedicated Support</h3>
                                 <p>We provide tech support services to address your issues on call. Call our Customer
                                     Service executive or submit your request online, our tech support staff will get in

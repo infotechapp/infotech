@@ -1,4 +1,4 @@
-<?php 
+<?php
 error_reporting(1);
 if(isset($_POST["submit"]))
 {
@@ -13,12 +13,12 @@ if(isset($_POST["submit"]))
     // Check connection
     if ($conn->connect_error) {
        die("Connection failed: " . $conn->connect_error);
-    } 
+    }
     $sql = "INSERT INTO contact(name,email,mobile_number,subject,purpose,message)VALUES ('".$_POST["name"]."','".$_POST["email"]."','".$_POST["mobile_number"]."','".$_POST["subject"]."','".$_POST["purpose"]."','".$_POST["message"]."')";
-    if (mysqli_query($conn, $sql)) {	
+    if (mysqli_query($conn, $sql)) {
 
-       //Email Id start	
-       $subject = "New leads arrived";	
+       //Email Id start
+       $subject = "New leads arrived";
        $to = "info@infotechapp.com";
        $message = "<b>Name :</b> ".$_POST["name"];
        $message .= "<b>Email :</b> ".$_POST["email"];
@@ -26,12 +26,12 @@ if(isset($_POST["submit"]))
        $message .= "<b>Subject :</b> ".$_POST["subject"];
        $message .= "<b>Purpose :</b> ".$_POST["purpose"];
        $message .= "<b>Message :</b> ".$_POST["message"];
-       
+
        $header = "From:digital@infotechapp.com \r\n";
 	   $header .= "MIME-Version: 1.0\r\n";
 	   $header .= "Content-type: text/html\r\n";
        mail ($to,$subject,$message,$header);
-       //Email Id start	
+       //Email Id start
 
        $mess = "Thank You! We will contact you shortly…";
     } else {
@@ -44,7 +44,7 @@ if(isset($_POST["submit"]))
 <!DOCTYPE html>
 <html lang="en">
 	<?php include "include/head.php"; ?>
-	
+
 <body>
 	<div class="body-inner">
 	<!-- Header start -->
@@ -56,7 +56,7 @@ if(isset($_POST["submit"]))
 			<!-- Subpage title start -->
 			<div class="banner-title-content">
 	        	<div class="text-center">
-	        		
+
 		        	<h2>Contact Us</h2>
 		        	<ul class="breadcrumb">
 			            <li>Home</li>
@@ -79,30 +79,30 @@ if(isset($_POST["submit"]))
 							<div class="col-md-6">
 								<div class="form-group">
 									<label>Name</label>
-								<input class="form-control" name="name" id="name" placeholder="" type="text" required>
+								<input class="form-control" onkeypress="return event.charCode >= 97 && event.charCode <= 122 || event.charCode >= 65 && event.charCode <= 90 || event.charCode == 32" name="name" id="name" placeholder="" type="text" required>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
 									<label>Email</label>
-									<input class="form-control" name="email" id="email" 
+									<input class="form-control" name="email" id="email"
 									placeholder="" type="email" required>
 								</div>
 							</div>
-							
+
 						</div>
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
 									<label>Contact</label>
-									<input class="form-control" name="mobile_number" id="mobile_number" 
+									<input class="form-control" maxlength="10" onkeypress="return event.charCode >= 48 && event.charCode <= 57" name="mobile_number" id="mobile_number"
 									placeholder="" required>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
 									<label>Message</label>
-									<input class="form-control" name="subject" id="subject" 
+									<input class="form-control" name="subject" id="subject"
 									placeholder="" required>
 								</div>
 							</div>
@@ -119,14 +119,14 @@ if(isset($_POST["submit"]))
 									</select>
 								</div>
 							</div>
-							
+
 						</div>
 						<div class="form-group">
 							<label>Message</label>
 							<textarea class="form-control" name="message" id="message" placeholder="" rows="5" required></textarea>
 						</div>
 						<div class="text-right"><br>
-							 
+
 							<input class="btn btn-primary solid blank" type = "submit" value ="Send Message" name = "submit"/>
 						</div>
 					</form>
@@ -134,8 +134,8 @@ if(isset($_POST["submit"]))
 	    		<div class="col-md-5">
 	    			<div class="contact-info">
 		    			<h3>Contact Details</h3>
-			    		
-			    		
+
+
 			    		<p><i class="fa fa-home info"></i>  Main Road, Sector 14 Gurgaon, Haryana </p>
 						<p><i class="fa fa-phone info"></i>  +91-8899293353, +91-8523882090 </p>
 						<p><i class="fa fa-envelope-o info"></i>  info@infotechapp.com</p>
@@ -147,7 +147,7 @@ if(isset($_POST["submit"]))
 		</div><!--/ container end -->
 
 	</section><!--/ Main container end -->
-	
+
 
 	<?php include "include/footer.php"; ?>
 	<?php include "include/commonjs.php"; ?>
@@ -177,9 +177,9 @@ if(isset($_POST["submit"]))
 
 	</script> -->
 
-	
+
 	<!-- Template custom -->
-	
+
 	</div><!-- Body inner end -->
 </body>
 </html>
