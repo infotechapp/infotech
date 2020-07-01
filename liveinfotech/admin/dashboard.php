@@ -1,3 +1,10 @@
+<?php 
+ob_start();
+session_start();
+if(empty($_SESSION['login_id'])){       header('Location: https://infotechapp.com');     ob_end_flush();
+    }
+
+?>
 <style type="text/css">
     .col-md-5.col-md-offset-1.onlinetext {
     margin-top: -200px;

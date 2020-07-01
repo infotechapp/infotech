@@ -1,4 +1,10 @@
+<?php 
+ob_start();
+session_start();
+if(empty($_SESSION['login_id'])){       header('Location: https://infotechapp.com');     ob_end_flush();
+    }
 
+?>
 <style type="text/css">
   .loader2 { margin: 40% 0 33% -20%;
 position: absolute;
@@ -81,10 +87,10 @@ z-index: 9999;
 
 
 <h3>Math online Quiz </h3>
-
+<a href="logout.php" id="logoutclick"><i class="fa fa-ban fa-fw pull-right"></i></a>
 <form name="quizdash" id="quizdash" action="quiz.php">
 
-Check the answer to each multiple-coice question, and click on the "Send Form" button to submit the information.
+Check the answer to each multiple-coice question, and click on the "Submit Quiz" button to submit the information.
 <div id="questionData">
 </div>
 <br>
@@ -105,9 +111,9 @@ $(".loader2").css("display","block");
         $('#questionData').empty();  
         $(".loader2").css("display","none");  
         html = '';    
-        i = 999;
+        i = 1;
         $.each(data,function(index1, val1){
-          html += '<P>'+val1.question+'<BR>';
+          html += '<P>'+i+'. '+val1.question+'<BR>';
           html += '<input type="hidden"  name="user_id" value='+val1.user_id+'>';
           html += '<input type="hidden"  name="question_id[]'+i+'" value='+val1.question_id+'>';
           html +='<input type="radio" class="quizcheckbox" name="ans[]'+i+'" value='+val1.answers.ans1+'>'+val1.answers.ans1+'<BR>';
@@ -132,7 +138,9 @@ $('#quizsubmit').click(function(){
     dataType: 'json',
     success: function (data){
       $(".loader2").css("display","none");
+      //sessionStorage.clear();
       alert(data);
+      window.location.href = "/liveinfotech/admin/logout_redirect.php";
     },
     error: function(xhr, textStatus, error){
       console.log(xhr.statusText);
@@ -158,7 +166,8 @@ $('#quizsubmit').click(function(){
           document.getElementById("second").innerHTML = '0'; 
 
           $("#quizsubmit").click();
-         // $('#quizsubmit').css('display','none');
+
+         
           
       } 
   }, 1000); 
