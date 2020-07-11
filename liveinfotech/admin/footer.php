@@ -1,5 +1,5 @@
  <!-- Footer -->
             <footer class="text-muted text-center">
-                <small>&copy; <?php echo date('Y'); ?> Infotechapp</a></small>
+                <small>&copy; 2020 Infotechapp India Private Limited | All Rights Reserved.</small>
             </footer>
             <!-- END Footer -->

@@ -31,7 +31,7 @@
 						</ul>
 
 					</div>
-					
+
 
 
 					<div class="col-md-6 col-sm-12 footer-widget footer-about-us">
@@ -105,8 +105,7 @@
 				<div class="row">
 					<div class="col-md-12 text-center">
 						<div class="copyright-info">
-							&copy; Copyright 2020 Infotechapp. <span>Designed by <a
-									href="https://themefisher.com">Infotechapp.com</a></span>
+							&copy; 2020 Infotechapp India Private Limited | All Rights Reserved.</span>
 						</div>
 					</div>
 				</div>
