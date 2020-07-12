@@ -14,7 +14,7 @@ if(isset($_POST["submit"]))
     if ($conn->connect_error) {
        die("Connection failed: " . $conn->connect_error);
     }
-    $sql = "INSERT INTO contact(name,email,mobile_number,subject,purpose,message)VALUES ('".$_POST["name"]."','".$_POST["email"]."','".$_POST["mobile_number"]."','".$_POST["subject"]."','".$_POST["purpose"]."','".$_POST["message"]."')";
+    $sql = "INSERT INTO contact(name,email,mobile_number,purpose,message)VALUES ('".$_POST["name"]."','".$_POST["email"]."','".$_POST["mobile_number"]."','".$_POST["purpose"]."','".$_POST["message"]."')";
     if (mysqli_query($conn, $sql)) {
 
        //Email Id start
@@ -23,7 +23,6 @@ if(isset($_POST["submit"]))
        $message = "<b>Name :</b> ".$_POST["name"];
        $message .= "<b>Email :</b> ".$_POST["email"];
        $message .= "<b>Mobile Number :</b> ".$_POST["mobile_number"];
-       $message .= "<b>Subject :</b> ".$_POST["subject"];
        $message .= "<b>Purpose :</b> ".$_POST["purpose"];
        $message .= "<b>Message :</b> ".$_POST["message"];
 
@@ -98,17 +97,10 @@ if(isset($_POST["submit"]))
 									<input class="form-control" maxlength="10" onkeypress="return event.charCode >= 48 && event.charCode <= 57" name="mobile_number" id="mobile_number"
 									placeholder="" required>
 								</div>
-							</div>
+							</div>	
+						
+						
 							<div class="col-md-6">
-								<div class="form-group">
-									<label>Message</label>
-									<input class="form-control" name="subject" id="subject"
-									placeholder="" required>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
 								<div class="form-group">
 									<label class="control-label">How can we help you?</label>
 									<select class="form-control" name="purpose" id="purpose" required>
@@ -119,8 +111,8 @@ if(isset($_POST["submit"]))
 									</select>
 								</div>
 							</div>
-
-						</div>
+							</div>
+						
 						<div class="form-group">
 							<label>Message</label>
 							<textarea class="form-control" name="message" id="message" placeholder="" rows="5" required></textarea>
