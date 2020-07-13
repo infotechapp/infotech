@@ -21,7 +21,7 @@
                                 using industry leading technologies</h3>
                             <p>Harness the power of modern web frameworks to build progressive web apps that scale
                             </p>
-                            <a href="contact.html" class="btn btn-primary solid cd-btn">Enquire Now </a>
+                            <a href="contact.php" class="btn btn-primary solid cd-btn">Enquire Now </a>
                         </div> <!-- .cd-half-width -->
 
                     </li>
@@ -34,7 +34,7 @@
                             <p>We develop visually pleasing apps that are optimized to swiftly grow your global business
                                 revenue.
                             </p>
-                            <a href="contact.html" class="btn btn-primary solid cd-btn">Enquire Now </a>
+                            <a href="contact.php" class="btn btn-primary solid cd-btn">Enquire Now </a>
                         </div> <!-- .cd-half-width -->
 
                         <div class="cd-half-width cd-img-container">
@@ -53,14 +53,14 @@
                             <p>Speak with a results specialist today to get started with
                                 SEO, PPC, social media, web design & more.
                             </p>
-                            <a href="contact.html" class="btn btn-primary solid cd-btn">Enquire Now </a>
+                            <a href="contact.php" class="btn btn-primary solid cd-btn">Enquire Now </a>
                         </div> <!-- .cd-half-width -->
                     </li>
                     <li class="cd-bg-video">
                         <div class="cd-full-width">
                             <h3>Reinventing Brands Through Superior Digital Experience</h3>
                             <p>Offering Rich and Customized Digital Experience for Today’s Digital World</p>
-                            <a href="contact.html" class="btn btn-primary solid cd-btn">Enquire Now </a>
+                            <a href="contact.php" class="btn btn-primary solid cd-btn">Enquire Now </a>
 
                         </div> <!-- .cd-full-width -->
 
