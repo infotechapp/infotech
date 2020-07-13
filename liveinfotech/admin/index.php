@@ -116,9 +116,9 @@ ob_start();
 
         <!-- Login Title -->
         <div class="login-title text-center">
-            <div class="row" class="header-quiz">
+            <div class="row">
                 <div class="col-md-6">
-                    <h3>Online Quiz</h3>
+                    <h3 class="header-quiz">Online Quiz</h3>
                 </div>
                 <div class="col-md-6">
                     <text>powered by</text>
@@ -126,7 +126,6 @@ ob_start();
                         <img src="img/logo.png" width="138px" alt="Login logo">
                     </a>
                 </div>
-
             </div>
         </div>
         <!-- END Login Title -->
