@@ -48,7 +48,8 @@ if(isset($_POST["submit"]))
    $pass = password_generate(6);
    $md5pass = md5($pass);
    $email =  $_POST["email"];
-   
+   $datetime = date('Y-m-d H:i:s');
+
 
 	//Upload file start
 	$ext_details = pathinfo($_FILES['image']['name']);
@@ -58,7 +59,7 @@ if(isset($_POST["submit"]))
 	$img_name=$guid.'.'.$ext;   
 	$target = "images/student/".basename($img_name);
 	if(move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
-			$sql = "INSERT INTO students(name,father_name,dob,email,password,real_password,mobile_number,img_name,city,address)VALUES ('".$_POST["name"]."','".$_POST["father_name"]."','".$_POST["dob"]."','".$email."','".$md5pass."','".$pass."','".$_POST["mobile_number"]."','".$img_name."','".$_POST["city"]."','".$_POST["address"]."')";
+			$sql = "INSERT INTO students(name,father_name,dob,email,password,real_password,mobile_number,img_name,city,address,created_at)VALUES ('".$_POST["name"]."','".$_POST["father_name"]."','".$_POST["dob"]."','".$email."','".$md5pass."','".$pass."','".$_POST["mobile_number"]."','".$img_name."','".$_POST["city"]."','".$_POST["address"]."','".$datetime."')";
 	    if (mysqli_query($conn, $sql)) {
 	    	if($_POST["vendor"] == 'vendor'){
 	    		$last_id = $conn->insert_id;

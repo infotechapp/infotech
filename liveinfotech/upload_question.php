@@ -3,6 +3,7 @@ include "include/database.php";
 $fp = fopen(__DIR__."/question.csv", 'r') or die("Can't open file");
 $i = 1;
 $count = 0;
+$datetime = date('Y-m-d H:i:s');
 while ($csv_line = fgetcsv($fp, 2000)) {
     if ($i == 1) {
 		$i++;
@@ -11,7 +12,7 @@ while ($csv_line = fgetcsv($fp, 2000)) {
     $question = array("question"=>$csv_line[1]);
     $json_question = json_encode($question);
     //save the question start
-    $sql = "INSERT INTO questions(question)VALUES ('".$json_question."')";
+    $sql = "INSERT INTO questions(question,created_at)VALUES ('".$json_question."','".$datetime."')";
     //save the question end
     if ($conn->query($sql) === TRUE) {
 		$last_id = $conn->insert_id;

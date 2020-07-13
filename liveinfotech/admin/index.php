@@ -23,7 +23,7 @@ ob_start();
         }
 
 	if(isset($_POST['login-email'])){
-
+        $datetime = date('Y-m-d H:i:s');
 		$email        = trim($_POST['login-email']);
 		$password     = md5($_POST['login-password']);
 
@@ -32,7 +32,7 @@ ob_start();
         $countData = mysqli_num_rows($result2);
 		$row = mysqli_fetch_array($result2);
 
-        $sqlinner2 = "select id,name,quiz from students where email = '".$email."' and password='".$password."' and active_status='1'";
+        $sqlinner2 = "select id,name,quiz from students where email = '".$email."' and password='".$password."' and active_status='0'";
         $result3 = mysqli_query($conn, $sqlinner2) or die(mysqli_error($conn));
         $countstatus = mysqli_num_rows($result3);
 
@@ -44,7 +44,7 @@ ob_start();
 
                 // create the user logs start
                 $ipadd = get_client_ip();
-                $sqllgs = "INSERT INTO login_logs(user_id,name,ip_address)VALUES ('".$row['id']."','".$row['name']."','".$ipadd."')";
+                $sqllgs = "INSERT INTO login_logs(user_id,name,ip_address,created_at)VALUES ('".$row['id']."','".$row['name']."','".$ipadd."','".$datetime."')";
                 mysqli_query($conn, $sqllgs);
                 // create the user logs end
 
