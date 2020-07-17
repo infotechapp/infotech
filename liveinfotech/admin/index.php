@@ -1,8 +1,9 @@
-<?php session_start();
-ob_start();
+<?php 
 		include 'function/database.php';
 		include('head.php');
         date_default_timezone_set('Asia/Kolkata');
+        session_start();
+        ob_start();
         function get_client_ip() {
              $ipaddress = '';
              if (getenv('HTTP_CLIENT_IP'))
@@ -21,26 +22,62 @@ ob_start();
                  $ipaddress = 'UNKNOWN';
              return $ipaddress;
         }
+       // Generate token
+        function getToken($length){
+         $token = "";
+         $codeAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+         $codeAlphabet.= "abcdefghijklmnopqrstuvwxyz";
+         $codeAlphabet.= "0123456789";
+         $max = strlen($codeAlphabet); // edited
+
+         for ($i=0; $i < $length; $i++) {
+          $token .= $codeAlphabet[random_int(0, $max-1)];
+         }
+
+         return $token;
+        } 
 
 	if(isset($_POST['login-email'])){
         $datetime = date('Y-m-d H:i:s');
 		$email        = trim($_POST['login-email']);
 		$password     = md5($_POST['login-password']);
 
+        //check username and pass exists or not
 		$sqlinner = "select id,name,quiz from students where email = '".$email."' and password='".$password."'";
         $result2 = mysqli_query($conn, $sqlinner) or die(mysqli_error($conn));
         $countData = mysqli_num_rows($result2);
 		$row = mysqli_fetch_array($result2);
+        
+        //check username and pass exists or not
 
+        //check status active or not
         $sqlinner2 = "select id,name,quiz from students where email = '".$email."' and password='".$password."' and active_status='0'";
         $result3 = mysqli_query($conn, $sqlinner2) or die(mysqli_error($conn));
         $countstatus = mysqli_num_rows($result3);
-
-
+        //check status active or not
+        
 		if($countData > 0 && $countstatus > 0){
             if($row['quiz'] == 0){
+                $token = getToken(10);
+                $_SESSION['token'] = $token;
     			$_SESSION['login_id']= $row['id'];
     			$_SESSION['first_name']= $row['name'];
+
+                //echo "<pre>";
+               // print_r($_SESSION);die;
+
+                //Check token exists in the table
+                $sqltoken = "select * from user_token where name = '".$row['name']."'";
+                $resulttoken = mysqli_query($conn, $sqltoken) or die(mysqli_error($conn));
+                $countToken = mysqli_num_rows($resulttoken);
+                if($countToken > 0){
+                     $sqltokenUpdate = "update user_token set token = '".$token."',created_at = '".$datetime."' where name='".$row['name']."'";
+                     mysqli_query($conn, $sqltokenUpdate) or die(mysqli_error($conn));
+                }else{
+                     $sqltokenInsert = "INSERT INTO user_token(name,token,created_at)VALUES ('".$row['name']."','".$token."','".$datetime."')";
+                     mysqli_query($conn, $sqltokenInsert);
+                }
+                //Check token exists in the table
 
                 // create the user logs start
                 $ipadd = get_client_ip();
@@ -109,7 +146,16 @@ ob_start();
                 Quiz expired. Please contact to the admin!</p>
         </div>
     </div>
-    <?php }?>
+    <?php }elseif (@$_GET['message'] == 'alreadyLogin') {?>
+    <div class="custom-alert">
+        <div class="alert alert-danger">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                ×</button>
+            <p>
+                Someone else is already logged on using this user ID. Please contact to the admin!</p>
+        </div>
+    </div>
+<?php }?>
 
     <!-- Login Container -->
     <div id="login-container" class="animation-fadeIn">
@@ -121,7 +167,7 @@ ob_start();
                     <h3 class="header-quiz">Online Quiz</h3>
                 </div>
                 <div class="col-md-6">
-                    <text>powered by</text>
+                    <text>Powered by</text>
                     <a href="index.php">
                         <img src="img/logo.png" width="138px" alt="Login logo">
                     </a>

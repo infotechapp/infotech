@@ -1,3 +1,6 @@
+<?php 
+    include('check_token.php');
+?>
 <style type="text/css">
 .navbar.navbar-default {
     background-color: #49a2e7;

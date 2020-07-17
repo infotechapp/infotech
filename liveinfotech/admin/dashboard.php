@@ -1,6 +1,7 @@
 <?php
 ob_start();
 session_start();
+include('check_token.php');
 if(empty($_SESSION['login_id'])){       header('Location: https://infotechapp.com');     ob_end_flush();
     }
 
@@ -20,8 +21,8 @@ body{
   font-weight: 100;
 }
 </style>
-<?php 	ob_start();
-	session_start();
+<?php 	
+	
 	include('head.php');
 
 	?>
