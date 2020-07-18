@@ -49,7 +49,8 @@ if(isset($_POST["submit"]))
    $md5pass = md5($pass);
    $email =  $_POST["email"];
    $datetime = date('Y-m-d H:i:s');
-
+   $random_no = rand(10,10000);
+   
 
 	//Upload file start
 	$ext_details = pathinfo($_FILES['image']['name']);
@@ -59,7 +60,7 @@ if(isset($_POST["submit"]))
 	$img_name=$guid.'.'.$ext;   
 	$target = "images/student/".basename($img_name);
 	if(move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
-			$sql = "INSERT INTO students(name,father_name,dob,email,password,real_password,mobile_number,img_name,city,address,created_at)VALUES ('".$_POST["name"]."','".$_POST["father_name"]."','".$_POST["dob"]."','".$email."','".$md5pass."','".$pass."','".$_POST["mobile_number"]."','".$img_name."','".$_POST["city"]."','".$_POST["address"]."','".$datetime."')";
+			$sql = "INSERT INTO students(name,father_name,roll_number,dob,email,password,real_password,mobile_number,img_name,city,address,created_at)VALUES ('".$_POST["name"]."','".$_POST["father_name"]."','".$random_no."','".$_POST["dob"]."','".$email."','".$md5pass."','".$pass."','".$_POST["mobile_number"]."','".$img_name."','".$_POST["city"]."','".$_POST["address"]."','".$datetime."')";
 	    if (mysqli_query($conn, $sql)) {
 	    	if($_POST["vendor"] == 'vendor'){
 	    		$last_id = $conn->insert_id;
@@ -72,6 +73,7 @@ if(isset($_POST["submit"]))
 		       $to = $email;
 		       $message = "<b>Username :</b> ".$email;
 		       $message .= "<b>Password :</b> ".$pass;
+               $message .= "<b>Roll Number :</b> ".$random_no;
 		       $header = "From:info@infotechapp.com \r\n";
 			   $header .= "MIME-Version: 1.0\r\n";
 			   $header .= "Content-type: text/html\r\n";

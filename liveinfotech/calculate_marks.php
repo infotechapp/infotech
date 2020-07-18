@@ -12,11 +12,11 @@ if ($conn->connect_error) {
  die("Connection failed: " . $conn->connect_error);
 }
 
+$newCount= 0;
 $sqlcheck = "SELECT * FROM results";
 $result = mysqli_query($conn, $sqlcheck) or die(mysqli_error($conn));
 $count = mysqli_num_rows($result);
 if($count > 0){
-    $arr = [];
     while($row = mysqli_fetch_array($result)){
        $user_id = $row['user_id'];
        $time = date('h:i:s',strtotime($row['created_at']));
@@ -44,39 +44,16 @@ if($count > 0){
                }
            }
        }
+       //After calculate the result insert details start
+       $sql2 = "INSERT INTO score(user_id,correct_answer,wrong_answer,not_attemped,submitted_date,strtotime)VALUES ('".$user_id."','".$correct_answer."','".$wrong_answer."','".$not_attemped."','".$row['created_at']."','".$strtime."')";
+       $conn->query($sql2);
+       //After calculate the result insert details start
 
-       $fnarr['user_id'] = $user_id;
-       $fnarr['correct_answer'] = $correct_answer;
-       $fnarr['wrong_answer'] = $wrong_answer;
-       $fnarr['not_attemped'] = $not_attemped;
-       $fnarr['time'] = $time;
-       $fnarr['strtime'] = $strtime;
-       array_push($arr, $fnarr);
-       // //After calculate the result insert details start
-       // $sql2 = "INSERT INTO score(user_id,correct_answer,wrong_answer,not_attemped,submitted_date)VALUES ('".$user_id."','".$correct_answer."','".$wrong_answer."','".$not_attemped."','".$submitted_date."')";
-       // $conn->query($sql2);
-       // //After calculate the result insert details start
+       $newCount = $newCount+1;
     }
-
-
-    
-   foreach ($arr as $key => $row) {
-    $correct_answer[$key]  = $row['correct_answer'];
-    $strtime[$key] = $row['strtime'];
-   }
-
-   //print_r($strtime);die;
-
-   $sorted = array_orderby($arr, 'correct_answer', SORT_ASC, 'strtime', SORT_ASC);
-
-   echo "<pre>";
-   print_r($sorted);die;
-
-
-    
-
-    
 }
+
+echo $newCount;die;
 
 
 ?>

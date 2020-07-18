@@ -1,4 +1,8 @@
-
+<style type="text/css">
+    .subscribe input.form-control.result {
+    border: 1px solid rgba(25, 19, 19, 0.35);
+}
+</style>
 <html lang="en">
 <?php include "include/head.php"; ?>
 
@@ -24,12 +28,31 @@
         </div><!-- Banner area end -->
         <!-- Main container start -->
 
+
         <section id="main-container">
             <div class="container">
-                <div class="row">
+                <div class="row resultTab" style="display: none">
+                     <form name="resultForm" action="result.php" id="resultForm" method="POST">
+                        <div class="input-group subscribe">
+                            <input type="text" class="form-control result" required="" name="roll_number" placeholder="Enter Roll Number">
+                            <span class="input-group-addon">
+                                <button class="btn" type="button" id="resultAction"><i class="fa fa-search"> </i></button>
+                            </span>
+                        </div>
+                    </form>
                     <div id="restable"> 
                 </div>
                 </div>
+
+                <div class="col-md-8 timerTab" style="display: block;">
+
+                    <h3 class="title-border">Paragraph</h3>
+
+                    <p>Lorem ipsum dolor sit amet, <mark>a mark here</mark> adipisicing elit. Atque, iusto, minus sequi natus nesciunt rerum tenetur corrupti autem officiis fugiat expedita laudantium ea aspernatur</p>
+                    <p><strong class="text-success">Consectetur adipisicing elit</strong>. Corrupti, aliquam, voluptates, nulla, blanditiis totam voluptatem <strong class="text-danger">voluptatum quod ipsa debitis non</strong> ab odio natus.</p>
+
+                </div><!--/ Col end -->
+
             </div>
             <!--/ container end -->
         </section>
@@ -76,18 +99,34 @@
 
 
 <script type="text/javascript">
-    //$('#result').click(function(){ 
+
+
+      var deadline = new Date("july 25, 2020 16:51:00").getTime(); 
+      var x = setInterval(function() { 
+      var now = new Date().getTime(); 
+      var t = deadline - now; 
+      if (t < 0) { 
+          clearInterval(x); 
+          $("#resultAction").click();  
+          $(".timerTab").css("display","none");
+          $(".resultTab").css("display","block");
+        } 
+      }, 1000); 
+
+
+    $("#resultAction").on("click", function(){
       $(".loader2").css("display","block");
       $.ajax({
         type: "POST",
         url: "/liveinfotech/resultAjax.php",
+        data: $('#resultForm').serialize(),
         dataType: 'json',
         success: function (data){
           $(".loader2").css("display","none");
           html=""; 
           if(data){
               $("#restable").empty();
-              html+='<table class="table table-striped table-bordered table-dark"><thead><tr><th scope="col">Image</th><th scope="col">Roll No</th><th scope="col">Name</th><th scope="col">Father Name</th><th scope="col">Address</th><th scope="col">Result</th><th scope="col">Time</th></tr></thead><tbody>'; 
+              html+='<table class="table table-striped table-bordered table-dark"><thead><tr><th scope="col">Rank</th><th scope="col">Image</th><th scope="col">Roll No</th><th scope="col">Name</th><th scope="col">Father Name</th><th scope="col">Address</th><th scope="col">Result</th><th scope="col">Time</th></tr></thead><tbody>'; 
               $.each(data, function (index, obj) {
              if(obj.img_name){
                   img_url = '<img src=http://infotechapp.com/images/student/'+ obj.img_name + ' width="100" height="110">';  
@@ -95,13 +134,14 @@
                   img_url = '<img src=http://infotechapp.com/images/student/download.jpeg width="100" height="110">';   
               } 
                 
-                html += '<tr><td> ' + img_url + ' </td><td> ' + obj.roll_number + ' </td> <td> ' + obj.name + ' </td> <td>' + obj.father_name + '</td> <td>' + obj.address + '</td><td>' + obj.correct_answer+'/50' + '</td><td>' + obj.submitted_date + '</td> </tr>';
+                html += '<tr><td> ' + obj.position + ' </td><td> ' + img_url + ' </td><td> ' + obj.roll_number + ' </td> <td> ' + obj.name + ' </td> <td>' + obj.father_name + '</td> <td>' + obj.address + '</td><td>' + obj.correct_answer+'/50' + '</td><td>' + obj.submitted_date + '</td> </tr>';
               }); 
               html += '</tbody>';
               html += '</table>';
           }else{
               html +='No Result Found!';
           }
+
           $("#restable").append(html);
         },
         error: function(xhr, textStatus, error){
@@ -110,5 +150,6 @@
           console.log(error);
         }
   });
-//});   
+   });    
+
 </script>
