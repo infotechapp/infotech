@@ -1,4 +1,3 @@
-
 <?php
 error_reporting(1);
 function getGUID()
@@ -29,6 +28,7 @@ function password_generate($chars)
   return substr(str_shuffle($data), 0, $chars);
 }
 
+$relativePathLogo =  'http://infotechapp.com/images/logo.png';
 
 if(isset($_POST["submit"]))
 {
@@ -71,13 +71,38 @@ if(isset($_POST["submit"]))
 	       //send email to the student
 	    	   $subject = "Username and Password arrived";
 		       $to = $email;
-		       $message = "<b>Username :</b> ".$email;
-		       $message .= "<b>Password :</b> ".$pass;
-               $message .= "<b>Roll Number :</b> ".$random_no;
-		       $header = "From:info@infotechapp.com \r\n";
-			   $header .= "MIME-Version: 1.0\r\n";
-			   $header .= "Content-type: text/html\r\n";
-		       mail ($to,$subject,$message,$header);
+		      
+               $html = '<!DOCTYPE html>
+                    <html>
+                    <head>
+                        <title>Emailer</title>
+                        <meta charset="utf-8">
+
+                    </head>
+                    <body>
+                        <div class="emailer-container" style=" width: 100%; max-width: 1000px; border-radius: 3px; overflow: hidden; font-family: verdana, arial; margin: 30px auto; box-shadow: 0 0 10px #ddd;">
+                            <span style="float: left; width: 50%; background: #0a3266; min-height: 5px;"></span><span style="float: left; width: 50%; background: #0a3266; min-height: 5px;"></span>
+                            <div class="emailer-header" style="text-align: center; padding: 8px; background-color: #49a2e7; border-bottom: 3px solid #ececec">            
+                                <img src="' .$relativePathLogo. '" alt="Infotechapp" style="font-size: 21px; height:45px; color: #ff; font-weight: bold; ">
+                            </div>
+
+                            <div class="emailer-content" style="padding: 20px">
+                                <p style="font-size: 15px; margin:0 0 15px; color: #777">Dear <strong>Sir/Madam,</strong></p>
+                                <p style="font-size: 14px; margin:0 0 15px; color: #777">Welcome to Infotechapp Quiz. Please find your login details below.</p>
+                                <p><b>Username:</b>"'.$email.'"</p>
+                                <p><b>Password:</b> "'.$pass.'"</p>
+                                <p><b>Roll Number:</b> "'.$random_no.'"</p>
+                            </div>    
+                            <div style="margin: 30px auto; max-width: 223px; font-size: 12px; font-family: verdana, arial; background-color: #ddd; height: 1px; clear: both">© 2020 Infotechapp | All Rights Reserved.</div>    
+                           </div> 
+                           </body>  
+                           </html>';  
+
+    		       $header = "From:info@infotechapp.com \r\n";
+                   $header .= "Cc:digital@infotechapp.com \r\n";
+    			   $header .= "MIME-Version: 1.0\r\n";
+    			   $header .= "Content-type: text/html\r\n";
+    		       mail ($to,$subject,$html,$header);
 	       //send email to the student	
 	       $mess = "Thank you for participating in our Quiz!";
 	    } else {
@@ -195,12 +220,12 @@ if(isset($_POST["submit"]))
 								<div class="col-md-4">
 									<div class="form-group">
 										<label>Birthday (DOB)</label><br>
-										<input type="date" name="dob">
+										<input type="date" name="dob" required>
 									</div>
 								</div>
                                 <div class="col-md-4">
                                     <label>Upload Image</label>
-                                    <input type="file" name="image" id="image">
+                                    <input type="file" name="image" id="image" required>
                                 </div>
 							</div>
 
@@ -299,12 +324,12 @@ $(document).ready(function() {
                         }, 5000);
                         return false;
                     } else if (data == 0) {
-                        $(".EmailNameCheck").html('Email is Available!').css('color', 'green');
+                        //$(".EmailNameCheck").html('Email is Available!').css('color', 'green');
                         $("#btnSubmit").prop('disabled', false);
                         $("#btnSubmit").addClass("btn-primary").removeClass("btn-default");
-                        setTimeout(function () {
-                            $(".EmailNameCheck").text("");
-                        }, 5000);
+                        // setTimeout(function () {
+                        //     $(".EmailNameCheck").text("");
+                        // }, 5000);
                     }
                 }
             });
