@@ -98,10 +98,11 @@ body {
     <a href="#" id="to-top"><i class="fa fa-angle-double-up"></i></a>
     <?php  include('common_js.php');?>
     <script type="text/javascript">
+      
     $(".loader2").css("display", "block");
     $.ajax({
         type: "POST",
-        url: "/liveinfotech/admin/ansAjax.php",
+        url: "ansAjax.php",
         dataType: 'json',
         success: function(data) {
             $('#questionData').empty();
@@ -134,14 +135,18 @@ body {
         $(".loader2").css("display", "block");
         $.ajax({
             type: "POST",
-            url: "/liveinfotech/admin/saveQuizAjax.php",
+            url: "saveQuizAjax.php",
             data: $('#quizdash').serialize(),
             dataType: 'json',
             success: function(data) {
-                $(".loader2").css("display", "none");
-                //sessionStorage.clear();
-                alert(data);
-                window.location.href = "/liveinfotech/admin/logout_redirect.php";
+                if(data == 'Error'){
+                    alert('Someone else is already logged on using this user ID. Please contact to the admin!');
+                    window.location.href = "index.php?message=alreadyLogin";
+                }else{
+                    $(".loader2").css("display", "none");
+                    alert(data);
+                    window.location.href = "index.php";
+                }
             },
             error: function(xhr, textStatus, error) {
                 console.log(xhr.statusText);
