@@ -23,7 +23,7 @@ function getGUID()
     }
 }
 
-function password_generate($chars) 
+function password_generate($chars)
 {
   $data = '1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   return substr(str_shuffle($data), 0, $chars);
@@ -50,14 +50,14 @@ if(isset($_POST["submit"]))
    $email =  $_POST["email"];
    $datetime = date('Y-m-d H:i:s');
    $random_no = rand(10,10000);
-   
+
 
 	//Upload file start
 	$ext_details = pathinfo($_FILES['image']['name']);
 	$ext = strtolower($ext_details['extension']);
 	$image = getGUID();
 	$guid = substr($image, 1, -1);
-	$img_name=$guid.'.'.$ext;   
+	$img_name=$guid.'.'.$ext;
 	$target = "images/student/".basename($img_name);
 	if(move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
 			$sql = "INSERT INTO students(name,father_name,roll_number,dob,email,password,real_password,mobile_number,img_name,city,address,created_at)VALUES ('".$_POST["name"]."','".$_POST["father_name"]."','".$random_no."','".$_POST["dob"]."','".$email."','".$md5pass."','".$pass."','".$_POST["mobile_number"]."','".$img_name."','".$_POST["city"]."','".$_POST["address"]."','".$datetime."')";
@@ -78,15 +78,15 @@ if(isset($_POST["submit"]))
 			   $header .= "MIME-Version: 1.0\r\n";
 			   $header .= "Content-type: text/html\r\n";
 		       mail ($to,$subject,$message,$header);
-	       //send email to the student	
+	       //send email to the student
 	       $mess = "Thank you for participating in our Quiz!";
 	    } else {
 	       $mess = "Error: " . $sql . "" . mysqli_error($conn);
 	    }
 		}else{
 			$mess = "Failed to upload image";
-		}  
-	 
+		}
+
     $conn->close();
 }
 
@@ -149,7 +149,7 @@ if(isset($_POST["submit"]))
                                         <span class="EmailNameCheck"></span>
                                     </div>
                                 </div>
-								
+
                             </div>
 
                             <div class="row">
@@ -184,7 +184,7 @@ if(isset($_POST["submit"]))
 								</div>
                             </div>
 							<div class="row">
-								
+
                                 <div class="col-md-4">
 									<div class="form-group">
 										<label>Address</label>
@@ -195,12 +195,14 @@ if(isset($_POST["submit"]))
 								<div class="col-md-4">
 									<div class="form-group">
 										<label>Birthday (DOB)</label><br>
-										<input type="date" name="dob">
+										<input type="date" class="form-control" name="dob">
 									</div>
 								</div>
                                 <div class="col-md-4">
+                                    <div class="form-group">
                                     <label>Upload Image</label>
-                                    <input type="file" name="image" id="image">
+                                    <input type="file" class="form-control" accept="image/*" name="image" id="image">
+                                    </div>
                                 </div>
 							</div>
 
@@ -283,13 +285,13 @@ $(document).ready(function() {
                 $(".EmailNameCheck").text("");
                 return false;
             }
-          	
+
             $.ajax({
                 url: "checkEmailAjax.php",
                 type: "post",
                 data: {email: email},
                 success: function (data) {
-                 
+
                     if (data > 0) {
                         $(".EmailNameCheck").html('Email already Exist! ').css('color', '#cc2424');
                         $("#btnSubmit").prop('disabled', true);

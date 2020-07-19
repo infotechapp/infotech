@@ -1,23 +1,19 @@
-<?php 
+<?php
     include('check_token.php');
 ?>
 <style type="text/css">
 .navbar.navbar-default {
     background-color: #49a2e7;
 }
+
+
 </style>
-<header class="navbar navbar-default">
+<header  class="navbar navbar-default">
         <div class="row" style="padding: 15px;">
-                <div class="col-md-4">
+                <div class="col-md-6 col-sm-6 col-xs-6">
                     <h3 class="header-quiz">Online Quiz</h3>
                 </div>
-                <div class="col-md-4"  style="text-align: center;">
-                    <text>powered by</text>
-                    <a href="index.php">
-                        <img src="img/logo.png" width="138px" alt="Login logo">
-                    </a>
-                </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-sm-6 col-xs-6">
                      <!-- Right Header Navigation -->
     <ul class="nav navbar-nav-custom pull-right">
         <!-- Alternative Sidebar Toggle Button -->

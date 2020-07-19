@@ -430,7 +430,7 @@ body {
     font-size: 11px;
 
 
-    background-color: #ffffff;
+    background-color: #49a2e7;
 
 
     border-top: 1px solid #dbe1e8;
@@ -4096,42 +4096,11 @@ a.widget.widget-hover-effect4:active {
 
 
 
-#login-alt-container {
-
-
-    display: none;
-
-
-}
-
-
-
-
-
 #login-container,
-
-
 #login-alt-container {
-
-
-    position: absolute;
-
-
-    width: 300px;
-
-
-    top: 10px;
-
-
-    left: 50%;
-
-
-    margin-left: -150px;
-
-
+    position: relative;
+    margin-left: 10px;
     z-index: 1000;
-
-
 }
 
 
@@ -4152,32 +4121,16 @@ a.widget.widget-hover-effect4:active {
 
 
 #login-alt-container h1 {
-
-
     font-size: 26px;
-
-
     color: #ffffff;
-
-
 }
-
-
-
-
 
 #login-container .login-title h1 small,
 
 
 #login-alt-container h1 small {
-
-
     font-size: 16px;
-
-
     color: #dddddd;
-
-
 }
 
 
@@ -10810,7 +10763,7 @@ p, .table, .alert, .carousel {
 
 .push-top-bottom {
 
-
+   text-align: center;
     margin-top: 40px;
 
 
@@ -11344,31 +11297,6 @@ p, .table, .alert, .carousel {
 
     }
 
-
-
-
-
-    #login-container,
-
-
-    #login-alt-container {
-
-
-        width: 480px;
-
-
-        top: 186px;
-
-
-        margin-left: -240px;
-
-
-    }
-
-
-
-
-
     .full-page-container {
 
 
@@ -11760,26 +11688,6 @@ p, .table, .alert, .carousel {
 
 
 @media screen and (min-width: 992px) {
-
-
-
-
-
-    /* General */
-
-
-    #login-alt-container {
-
-
-        display: block;
-
-
-    }
-
-
-
-
-
     /* Sidebar Animations */
 
 
@@ -12527,4 +12435,9 @@ only screen and (min-device-pixel-ratio: 1.5) {
     margin: 5px;
     color: white;
     font-weight: bold;
+}
+
+.quizbtn{
+    text-align: center;
+    margin: 15px;
 }
