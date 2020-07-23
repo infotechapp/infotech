@@ -44,14 +44,39 @@
                 </div>
                 </div>
 
-                <div class="col-md-8 timerTab" style="display: block;">
+                <div class="row">
+                    <div class="timerTab">
+                        <div class="col-md-8" style="display: block;">
 
-                    <h3 class="title-border">Paragraph</h3>
+                            <h3 class="title-border">Paragraph</h3>
 
-                    <p>Lorem ipsum dolor sit amet, <mark>a mark here</mark> adipisicing elit. Atque, iusto, minus sequi natus nesciunt rerum tenetur corrupti autem officiis fugiat expedita laudantium ea aspernatur</p>
-                    <p><strong class="text-success">Consectetur adipisicing elit</strong>. Corrupti, aliquam, voluptates, nulla, blanditiis totam voluptatem <strong class="text-danger">voluptatum quod ipsa debitis non</strong> ab odio natus.</p>
+                            <p>Lorem ipsum dolor sit amet, <mark>a mark here</mark> adipisicing elit. Atque, iusto, minus sequi natus nesciunt rerum tenetur corrupti autem officiis fugiat expedita laudantium ea aspernatur</p>
+                            <p><strong class="text-success">Consectetur adipisicing elit</strong>. Corrupti, aliquam, voluptates, nulla, blanditiis totam voluptatem <strong class="text-danger">voluptatum quod ipsa debitis non</strong> ab odio natus.</p>
 
-                </div><!--/ Col end -->
+                        </div><!--/ Col end -->
+
+                        <div class="col-md-4">
+                            <div id="clockdiv">
+                                <div>
+                                    <span class="days" id="day"></span>
+                                    <div class="smalltext">Days</div>
+                                </div>
+                                <div>
+                                    <span class="hours" id="hour"></span>
+                                    <div class="smalltext">Hours</div>
+                                </div>
+                                <div>
+                                    <span class="minutes" id="minute"></span>
+                                    <div class="smalltext">Minutes</div>
+                                </div>
+                                <div>
+                                    <span class="seconds" id="second"></span>
+                                    <div class="smalltext">Seconds</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
             <!--/ container end -->
@@ -101,19 +126,27 @@
 <script type="text/javascript">
 
 
-      var deadline = new Date("july 25, 2020 16:51:00").getTime(); 
-      var x = setInterval(function() { 
-      var now = new Date().getTime(); 
-      var t = deadline - now; 
-      if (t < 0) { 
-          clearInterval(x); 
-          $("#resultAction").click();  
-          $(".timerTab").css("display","none");
-          $(".resultTab").css("display","block");
-        } 
-      }, 1000); 
+        var deadline = new Date("july 20, 2020 10:47:25").getTime();
+        var x = setInterval(function() {
+        var now = new Date().getTime();
+        var t = deadline - now;
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((t % (1000 * 60)) / 1000);
+        document.getElementById("day").innerHTML = days;
+        document.getElementById("hour").innerHTML = hours;
+        document.getElementById("minute").innerHTML = minutes;
+        document.getElementById("second").innerHTML = seconds;
+        if (t < 0) {
+            clearInterval(x);
+            $("#resultAction").click();  
+            $(".timerTab").css("display","none");
+            $(".resultTab").css("display","block");
+        }
+       }, 1000);
 
-
+    
     $("#resultAction").on("click", function(){
       $(".loader2").css("display","block");
       $.ajax({

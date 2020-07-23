@@ -59,6 +59,9 @@ if(isset($_POST["submit"]))
 	$guid = substr($image, 1, -1);
 	$img_name=$guid.'.'.$ext;
 	$target = "images/student/".basename($img_name);
+	$extension= array("jpeg","jpg","png","gif");
+
+   if(in_array($ext,$extension)){
 	if(move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
 			$sql = "INSERT INTO students(name,father_name,roll_number,dob,email,password,real_password,mobile_number,img_name,city,address,created_at)VALUES ('".$_POST["name"]."','".$_POST["father_name"]."','".$random_no."','".$_POST["dob"]."','".$email."','".$md5pass."','".$pass."','".$_POST["mobile_number"]."','".$img_name."','".$_POST["city"]."','".$_POST["address"]."','".$datetime."')";
 	    if (mysqli_query($conn, $sql)) {
@@ -119,7 +122,9 @@ if(isset($_POST["submit"]))
 		}else{
 			$mess = "Failed to upload image";
 		}
-
+	}else{
+		$mess = "Sorry, only JPG, JPEG, PNG, & GIF files are allowed to upload";
+	}
     $conn->close();
 }
 
