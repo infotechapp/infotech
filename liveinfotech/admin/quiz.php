@@ -75,7 +75,6 @@ body {
                     </div>
                     <p id="demo"></p>
                     <h3>Math online Quiz </h3>
-                    <a href="logout.php" id="logoutclick"><i class="fa fa-ban fa-fw pull-right"></i></a>
                     <form name="quizdash" id="quizdash" action="quiz.php">
 
                         Check the answer to each multiple-coice question, and click on the "Submit Quiz" button to
@@ -85,7 +84,7 @@ body {
                         </div>
                         <br>
                         <br>
-                        <input type="button" class="btn btn-primary" value="Submit Quiz" id="quizsubmit">
+                        <input type="button" class="btn btn-lg btn-primary" value="Submit Quiz" id="quizsubmit">
                     </form>
                     <div class="loader2" style="display:none">
                         <img src="/liveinfotech/admin/img/ajax-loader.gif" alt="Loading...">
@@ -98,7 +97,7 @@ body {
     <a href="#" id="to-top"><i class="fa fa-angle-double-up"></i></a>
     <?php  include('common_js.php');?>
     <script type="text/javascript">
-      
+
     $(".loader2").css("display", "block");
     $.ajax({
         type: "POST",

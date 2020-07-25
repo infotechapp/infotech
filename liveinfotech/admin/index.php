@@ -1,6 +1,6 @@
-<?php 
+<?php
 		include 'function/database.php';
-		include('head.php');
+		 include('head.php');
         date_default_timezone_set('Asia/Kolkata');
         session_start();
         ob_start();
@@ -35,7 +35,7 @@
          }
 
          return $token;
-        } 
+        }
 
 	if(isset($_POST['login-email'])){
         $datetime = date('Y-m-d H:i:s');
@@ -47,7 +47,7 @@
         $result2 = mysqli_query($conn, $sqlinner) or die(mysqli_error($conn));
         $countData = mysqli_num_rows($result2);
 		$row = mysqli_fetch_array($result2);
-        
+
         //check username and pass exists or not
 
         //check status active or not
@@ -55,7 +55,7 @@
         $result3 = mysqli_query($conn, $sqlinner2) or die(mysqli_error($conn));
         $countstatus = mysqli_num_rows($result3);
         //check status active or not
-        
+
 		if($countData > 0 && $countstatus > 0){
             if($row['quiz'] == 0 || $row['quiz'] == 1){
                 $token = getToken(10);
@@ -158,19 +158,19 @@
 <?php }?>
 
     <!-- Login Container -->
-    <div id="login-container" class="animation-fadeIn">
+    <div id="login-container1" class="animation-fadeIn">
 
         <!-- Login Title -->
         <div class="login-title text-center">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <h3 class="header-quiz">Online Quiz</h3>
                 </div>
                 <div class="col-md-6">
-                    <text>Powered by</text>
+                    <!-- <text>Powered by</text>
                     <a href="index.php">
                         <img src="img/logo.png" width="138px" alt="Login logo">
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </div>
@@ -205,8 +205,8 @@
                                 <span></span>
                             </label>
                         </div-->
-                    <div class="col-xs-8 text-right">
-                        <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-angle-right"></i> Login to
+                    <div class="col-xs-12 text-center">
+                        <button type="submit" class="btn btn-lg btn-primary"><i class="fa fa-angle-right"></i> Login to
                             Quiz...</button>
                     </div>
                 </div>

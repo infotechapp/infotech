@@ -109,10 +109,15 @@ z-index: 9999;
 .footercopyright
 {
     line-height: 50px;
+    font-weight: 800;
 }
 
 @media only screen and (max-width: 768px) {
     .footercopyright {
         line-height: 20px;
     }
+
+    #quizsubmit{
+        margin-left: 30%;
+      }
   }

@@ -80,37 +80,53 @@ body {
                     <div id="login-alt-container">
                                 <!-- Title -->
                                 <h1 class="push-top-bottom">
-                                    <strong>Instructions</strong><br>
+                                    <strong>Instructions for Online Quiz</strong><br>
                                     <!-- <small>Powered by Infotechapp</small> -->
                                 </h1>
 
                                 <!-- END Title -->
 
                                 <!-- Key Features -->
-                                <ul class="fa-ul text-muted">
-                                    <li><i class="fa fa-check fa-li text-success"></i> Clean &amp; Modern Design
+                                <ul class="fa-ul text-light">
+                                    <li><h4>1. Read carefully the instructions before starting the test</h4>
                                     </li>
-                                    <li><i class="fa fa-check fa-li text-success"></i> Fully Responsive &amp; Retina
-                                        Ready
+                                    <li><h4>2. You have 60 minutes to complete the test.</h4>
                                     </li>
-                                    <li><i class="fa fa-check fa-li text-success"></i> 10 Color Themes</li>
-                                    <li><i class="fa fa-check fa-li text-success"></i> PSD Files Included</li>
-                                    <li><i class="fa fa-check fa-li text-success"></i> Widgets Collection</li>
-                                    <li><i class="fa fa-check fa-li text-success"></i> Designed Pages Collection
+                                    <li><h4>3. The test contains a total of 200 questions.</h4>
                                     </li>
-
+                                    <li><h4>4. There is only one correct answer to each question. Click on the most appropriate option to mark it as your answer.</h4>
+                                    </li>
+                                    <li><h4>5. You will be awarded 1 marks for each correct answer.</h4>
+                                    </li>
+                                    <li><h4>6. There is no negative marks for each wrong answer.</h4>
+                                    </li>
+                                    <li><h4>7. A Number list of all questions appears at the center of the window.</h4>
+                                    </li>
+                                    <li><h4>8. You can use rough sheets while taking the test. Do not use calculators, log tables, dictionaries, or any other printed/online reference material during the test.</h4>
+                                    </li>
+                                    <li><h4>9. Do not click the button "End TEST" before completing the test. A test once submitted cannot be resumed.</h4>
+                                    </li>
+                                    <li><h4>10. Once clicked on the (End TEST) button, You Cannot UNDO this Test.</h4>
+                                    </li>
+                                    <li><h4>11. After clicked on the (End TEST) You get your RESULT sheet on mention date 12-03-2020 (http://www.infotechapp.com/result).</h4>
+                                    </li>
+                                    <li><h4>12. After Complete the test Please logout your account for security purpose.</h4>
+                                    </li>
+                                    <li><h4>13. 1st 3 Winners will get Prize money</h4>
+                                    </li>
                                 </ul>
-
+                                <label class="text-info disclaimer">
+                                <input type="checkbox">
+                                I have read and understood all the instructions. Exammination center provide All computer hardwares alloted to me are in proper working condition. I agree to give the exam.
+                                <span></span>
+                            </label>
                             </div>
 
                     <!-- END Key Features -->
                     <div class="quizbtn">
-                        <a href="quiz.php" class="btn btn-sm btn-primary quiz"><i class="fa fa-floppy-o"></i>
+                        <a href="quiz.php" class="btn btn-lg btn-primary quiz"><i class="fa fa-floppy-o"></i>
                             Start Quiz</a>
                     </div>
-
-
-                    <p id="demo"></p>
 
                     <!-- END Dashboard Header -->
 
