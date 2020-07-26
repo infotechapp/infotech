@@ -2,7 +2,7 @@
 ob_start();
 session_start();
 include('check_token.php');
-if(empty($_SESSION['login_id'])){       header('Location: https://infotechapp.com');     ob_end_flush();
+if(empty($_SESSION['login_id'])){       header('Location: http://infotechapp.com');     ob_end_flush();
     }
 
 ?>
@@ -116,7 +116,7 @@ body {
                                     </li>
                                 </ul>
                                 <label class="text-info disclaimer">
-                                <input type="checkbox">
+                                <input type="checkbox" id='disclaimer'>
                                 I have read and understood all the instructions. Exammination center provide All computer hardwares alloted to me are in proper working condition. I agree to give the exam.
                                 <span></span>
                             </label>
@@ -124,7 +124,7 @@ body {
 
                     <!-- END Key Features -->
                     <div class="quizbtn">
-                        <a href="quiz.php" class="btn btn-lg btn-primary quiz"><i class="fa fa-floppy-o"></i>
+                        <a href="javascript:void(0)" class="btn btn-lg btn-primary quiz"><i class="fa fa-floppy-o"></i>
                             Start Quiz</a>
                     </div>
 
@@ -155,10 +155,17 @@ body {
     <?php  include('common_js.php');?>
 
     <script>
+
+    $('.quiz').click(function() {
+            if($('#disclaimer').prop("checked") == true){
+                window.open("quiz.php", "_blank","toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=4000,height=4000");
+            }
+            else if($('#disclaimer').prop("checked") == false){
+               alert('Please agree disclaimer');
+            }
+    });
     var deadline = new Date("july 27, 2020 09:27:25").getTime();
-
     var x = setInterval(function() {
-
         var now = new Date().getTime();
         var t = deadline - now;
         var days = Math.floor(t / (1000 * 60 * 60 * 24));

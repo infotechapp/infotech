@@ -12486,3 +12486,62 @@ only screen and (min-device-pixel-ratio: 1.5) {
   #quizsubmit{
     margin-left: 45%;
   }
+
+  .loader2 {
+    margin: 40% 0 33% -20%;
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    text-align: center;
+    top: 0;
+
+
+}
+
+.loader2>img {
+    margin-top: -50px;
+    position: absolute;
+    top: 50%;
+}
+
+.loader2 {
+    margin: 0;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    background: rgba(0, 0, 0, 0.2);
+    left: 0;
+    height: 100%;
+}
+
+.loader2>img {
+    margin-top: -50px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -50px;
+}
+  .content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 102px;
+}
+
+.timer{
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 800;
+    color: white;
+    background-color: #394263;
+    text-align: center;
+}

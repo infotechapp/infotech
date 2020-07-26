@@ -2,7 +2,7 @@
 ob_start();
 session_start();
 include('check_token.php');
-if(empty($_SESSION['login_id'])){       header('Location: https://infotechapp.com');     ob_end_flush();
+if(empty($_SESSION['login_id'])){       header('Location: http://infotechapp.com');     ob_end_flush();
     }
 
 ?>
@@ -13,43 +13,6 @@ body {
     font-family: sans-serif;
     font-weight: 100;
 }
-.loader2 {
-    margin: 40% 0 33% -20%;
-    position: absolute;
-    z-index: 9999;
-    width: 100%;
-    text-align: center;
-    top: 0;
-
-
-}
-
-.loader2>img {
-    margin-top: -50px;
-    position: absolute;
-    top: 50%;
-}
-
-.loader2 {
-    margin: 0;
-    position: fixed;
-    z-index: 9999;
-    width: 100%;
-    text-align: center;
-    top: 0;
-    background: rgba(0, 0, 0, 0.2);
-    left: 0;
-    height: 100%;
-}
-
-.loader2>img {
-    margin-top: -50px;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    margin-left: -50px;
-}
-
 </style>
 <?php
 
@@ -61,49 +24,73 @@ body {
     <div id="page-wrapper">
         <div id="page-container" class="">
             <div id="main-container">
-                <?php include('dashboard_header.php'); ?>
-                <div id="page-content" style="background-color: white;">
-                    <div id="clockdiv">
-                        <div>
-                            <span class="minutes" id="minute"></span>
-                            <div class="smalltext">Minutes</div>
-                        </div>
-                        <div>
-                            <span class="seconds" id="second"></span>
-                            <div class="smalltext">Seconds</div>
-                        </div>
-                    </div>
-                    <p id="demo"></p>
-                    <h3>Math online Quiz </h3>
-                    <form name="quizdash" id="quizdash" action="quiz.php">
-
-                        Check the answer to each multiple-coice question, and click on the "Submit Quiz" button to
-                        submit the
-                        information.
-                        <div id="questionData">
-                        </div>
-                        <br>
-                        <br>
-                        <input type="button" class="btn btn-lg btn-primary" value="Submit Quiz" id="quizsubmit">
-                    </form>
-                    <div class="loader2" style="display:none">
-                        <img src="/liveinfotech/admin/img/ajax-loader.gif" alt="Loading...">
+                <div class="header" id="myHeader">
+                    <?php include('dashboard_header.php'); ?>
+                    <div class="timer">
+                    <span class="minutes">40 Minutes Timer: </span>
+                    <span class="minutes" id="minute"></span>
+                    <span class="seconds" id="second"></span>
                     </div>
                 </div>
-                <?php  include('footer.php');?>
+                <!-- <div id="clockdiv">
+                    <div>
+                        <span class="minutes" id="minute"></span>
+                        <div class="smalltext">Minutes</div>
+                    </div>
+                    <div>
+                        <span class="seconds" id="second"></span>
+                        <div class="smalltext">Seconds</div>
+                    </div>
+                </div> -->
             </div>
+            <div id="page-content" class="content" style="background-color: white;">
+                <h3>Math online Quiz </h3>
+                <form name="quizdash" id="quizdash" action="quiz.php">
+
+                    Check the answer to each multiple-coice question, and click on the "Submit Quiz" button to
+                    submit the
+                    information.
+                    <div id="questionData">
+                    </div>
+                    <br>
+                    <br>
+                    <input type="button" class="btn btn-lg btn-primary" value="Submit Quiz" id="quizsubmit">
+                </form>
+                <div class="loader2" style="display:none">
+                    <img src="/liveinfotech/admin/img/ajax-loader.gif" alt="Loading...">
+                </div>
+            </div>
+            <?php  include('footer.php');?>
         </div>
+    </div>
     </div>
     <a href="#" id="to-top"><i class="fa fa-angle-double-up"></i></a>
     <?php  include('common_js.php');?>
-    <script type="text/javascript">
+    <script>
 
+    window.onscroll = function() {
+        myFunction()
+    };
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+    </script>
+    <script type="text/javascript">
     $(".loader2").css("display", "block");
     $.ajax({
         type: "POST",
         url: "ansAjax.php",
         dataType: 'json',
         success: function(data) {
+            fullscreen()
             $('#questionData').empty();
             $(".loader2").css("display", "none");
             html = '';
@@ -124,8 +111,25 @@ body {
                 i++;
             });
             $('#questionData').html(html);
+        },
+        error: function(xhr, textStatus, error) {
+            fullscreen()
         }
     });
+
+    function fullscreen() {
+        var elem = document.getElementById("page-wrapper");
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.mozRequestFullScreen) { /* Firefox */
+            elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE/Edge */
+            elem.msRequestFullscreen();
+        }
+    }
+
     $('#quizsubmit').click(function() {
         if ($("input.quizcheckbox").filter(':checked').length < 1) {
             alert("Please attempt at least one Question!");
@@ -138,10 +142,11 @@ body {
             data: $('#quizdash').serialize(),
             dataType: 'json',
             success: function(data) {
-                if(data == 'Error'){
-                    alert('Someone else is already logged on using this user ID. Please contact to the admin!');
+                if (data == 'Error') {
+                    alert(
+                        'Someone else is already logged on using this user ID. Please contact to the admin!');
                     window.location.href = "index.php?message=alreadyLogin";
-                }else{
+                } else {
                     $(".loader2").css("display", "none");
                     alert(data);
                     window.location.href = "index.php";
@@ -154,26 +159,19 @@ body {
             }
         });
     });
-
-
-
     var deadline = new Date("july 27, 2020 09:44:25").getTime();
     var x = setInterval(function() {
         var now = new Date().getTime();
         var t = deadline - now;
         var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((t % (1000 * 60)) / 1000);
-        document.getElementById("minute").innerHTML = minutes;
-        document.getElementById("second").innerHTML = seconds;
+        document.getElementById("minute").innerHTML = minutes +'m : ';
+        document.getElementById("second").innerHTML = seconds+'s';
         if (t < 0) {
             clearInterval(x);
-            document.getElementById("minute").innerHTML = '0';
-            document.getElementById("second").innerHTML = '0';
-
+            document.getElementById("minute").innerHTML = '0m : ';
+            document.getElementById("second").innerHTML = '0s';
             $("#quizsubmit").click();
-
-
-
         }
     }, 1000);
     </script>

@@ -155,16 +155,21 @@
                 Someone else is already logged on using this user ID. Please contact to the admin!</p>
         </div>
     </div>
-<?php }?>
+    <?php }?>
 
     <!-- Login Container -->
     <div id="login-container1" class="animation-fadeIn">
 
         <!-- Login Title -->
-        <div class="login-title text-center">
+        <div class="login-title">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="header-quiz">Online Quiz</h3>
+                    <div class="col-md-3 col-xs-3 text-right">
+                        <img src="img/exam.png" alt="Login logo">
+                    </div>
+                    <div class="col-md-9 col-xs-9 text-left">
+                        <h3 class="header-quiz" style='line-height: 2;'>Online Quiz</h3>
+                    </div>
                 </div>
                 <div class="col-md-6">
                     <!-- <text>Powered by</text>
