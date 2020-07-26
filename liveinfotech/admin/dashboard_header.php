@@ -1,4 +1,5 @@
 <?php
+
      include('check_token.php');
 ?>
 <style type="text/css">
@@ -18,13 +19,21 @@
                 <!-- User Dropdown -->
                 <li class="dropdown">
                     <h4 style="float:left;"><strong>Hi,</strong>
-                        <strong><?php echo $_SESSION['first_name'];?></strong></h4>
+                        <strong><?php echo $_SESSION['first_name'].'('.$_SESSION['roll_number'].')';?></strong></h4>
+                    <?php  if($_SESSION['img_name']) {?>  
+                    
                     <a style="float:left;" href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                        <img src=http://infotechapp.com/images/student/<?php echo $_SESSION['img_name']; ?> alt="avatar"> <i class="fa fa-angle-down"></i>
+                    </a>
+                    <?php }else{?>  
+                        <a style="float:left;" href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
                         <img src="img/placeholders/avatars/avatar2.jpg" alt="avatar"> <i class="fa fa-angle-down"></i>
                     </a>
+                    
+                <?php }?>
                     <ul class="dropdown-menu dropdown-custom dropdown-menu-right">
                         <li>
-                            <!--a href="change_password.php"><i class="fa fa-lock fa-fw pull-right"></i> Change Password</a-->
+                            <a href="change_password.php"><i class="fa fa-lock fa-fw pull-right"></i> Change Password</a>
                             <a href="logout.php" id="logoutclick"><i class="fa fa-ban fa-fw pull-right"></i> Logout</a>
                         </li>
                     </ul>

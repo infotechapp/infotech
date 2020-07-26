@@ -43,7 +43,7 @@
 		$password     = md5($_POST['login-password']);
 
         //check username and pass exists or not
-		$sqlinner = "select id,name,quiz from students where email = '".$email."' and password='".$password."'";
+		$sqlinner = "select id,name,quiz,roll_number,img_name from students where email = '".$email."' and password='".$password."'";
         $result2 = mysqli_query($conn, $sqlinner) or die(mysqli_error($conn));
         $countData = mysqli_num_rows($result2);
 		$row = mysqli_fetch_array($result2);
@@ -62,6 +62,8 @@
                 $_SESSION['token'] = $token;
     			$_SESSION['login_id']= $row['id'];
     			$_SESSION['first_name']= $row['name'];
+                $_SESSION['roll_number']= $row['roll_number'];
+                $_SESSION['img_name']= $row['img_name'];
 
                 //echo "<pre>";
                // print_r($_SESSION);die;

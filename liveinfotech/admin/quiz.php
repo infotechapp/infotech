@@ -131,28 +131,32 @@ body {
             alert("Please attempt at least one Question!");
             return false;
         }
-        $(".loader2").css("display", "block");
-        $.ajax({
-            type: "POST",
-            url: "saveQuizAjax.php",
-            data: $('#quizdash').serialize(),
-            dataType: 'json',
-            success: function(data) {
-                if(data == 'Error'){
-                    alert('Someone else is already logged on using this user ID. Please contact to the admin!');
-                    window.location.href = "index.php?message=alreadyLogin";
-                }else{
-                    $(".loader2").css("display", "none");
-                    alert(data);
-                    window.location.href = "index.php";
+        if(confirm("Are you sure you want to submit?")){
+            $(".loader2").css("display", "block");
+            $.ajax({
+                type: "POST",
+                url: "saveQuizAjax.php",
+                data: $('#quizdash').serialize(),
+                dataType: 'json',
+                success: function(data) {
+                    if(data == 'Error'){
+                        alert('Someone else is already logged on using this user ID. Please contact to the admin!');
+                        window.location.href = "index.php?message=alreadyLogin";
+                    }else{
+                        $(".loader2").css("display", "none");
+                        alert(data);
+                        window.location.href = "index.php";
+                    }
+                },
+                error: function(xhr, textStatus, error) {
+                    console.log(xhr.statusText);
+                    console.log(textStatus);
+                    console.log(error);
                 }
-            },
-            error: function(xhr, textStatus, error) {
-                console.log(xhr.statusText);
-                console.log(textStatus);
-                console.log(error);
-            }
-        });
+            });
+        }else{
+            return false;
+        }
     });
 
 
