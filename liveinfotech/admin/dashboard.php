@@ -55,6 +55,28 @@ body {
                     -->
                 <?php include('dashboard_header.php'); ?>
 
+                <?php if(@$_GET['message'] == 'success'){  ?>
+
+    <div class="custom-alert">
+        <div class="alert alert-success">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                ×</button>
+
+
+            <p> Your password has been changed successfully! Thank you</p>
+        </div>
+    </div>
+<?php }elseif (@$_GET['message'] == 'error') {?>
+    <div class="custom-alert">
+        <div class="alert alert-danger">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                ×</button>
+            <p>
+                Error to change your password!</p>
+        </div>
+    </div>
+<?php }?>
+
                 <!-- Page content -->
                 <div id="page-content" class="pagecolor">
                     <!-- Dashboard Header -->

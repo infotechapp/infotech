@@ -57,7 +57,7 @@
         //check status active or not
 
 		if($countData > 0 && $countstatus > 0){
-            if($row['quiz'] == 0 || $row['quiz'] == 1){
+            if($row['quiz'] == 0){
                 $token = getToken(10);
                 $_SESSION['token'] = $token;
     			$_SESSION['login_id']= $row['id'];
