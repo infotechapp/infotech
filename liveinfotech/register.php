@@ -29,10 +29,11 @@ function password_generate($chars)
 }
 
 $relativePathLogo =  'http://infotechapp.com/images/logo.png';
+$subject = "Welcome to Online Quiz";
 
 if(isset($_POST["submit"]))
 {
-	$servername = "148.66.145.21";
+    $servername = "148.66.145.21";
     $username = "infotechapp";
     $password = "eG7GN!A$3Lh9";
     $dbname = "infotechapp";
@@ -48,83 +49,63 @@ if(isset($_POST["submit"]))
    $pass = password_generate(6);
    $md5pass = md5($pass);
    $email =  $_POST["email"];
-   $datetime = date('Y-m-d H:i:s');
-   $random_no = rand(10,10000);
+   $datetime = date("Y-m-d H:i:s", strtotime("+330 minutes"));
+   $random_no = rand(100,10000);
 
 
-	//Upload file start
-	$ext_details = pathinfo($_FILES['image']['name']);
-	$ext = strtolower($ext_details['extension']);
-	$image = getGUID();
-	$guid = substr($image, 1, -1);
-	$img_name=$guid.'.'.$ext;
-	$target = "images/student/".basename($img_name);
-	$extension= array("jpeg","jpg","png","gif");
+    //Upload file start
+    $ext_details = pathinfo($_FILES['image']['name']);
+    $ext = strtolower($ext_details['extension']);
+    $image = getGUID();
+    $guid = substr($image, 1, -1);
+    $img_name=$guid.'.'.$ext;
+    $target = "images/student/".basename($img_name);
+    $extension= array("jpeg","jpg","png","gif");
 
    if(in_array($ext,$extension)){
-	if(move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
-			$sql = "INSERT INTO students(name,father_name,roll_number,dob,email,password,real_password,mobile_number,img_name,city,address,created_at)VALUES ('".$_POST["name"]."','".$_POST["father_name"]."','".$random_no."','".$_POST["dob"]."','".$email."','".$md5pass."','".$pass."','".$_POST["mobile_number"]."','".$img_name."','".$_POST["city"]."','".$_POST["address"]."','".$datetime."')";
-	    if (mysqli_query($conn, $sql)) {
-	    	if($_POST["vendor"] == 'vendor'){
-	    		$last_id = $conn->insert_id;
-	    		$sql2 = "INSERT INTO vendors(user_id,vendor_code)VALUES ('".$last_id."','".$_POST["vendor_code"]."')";
-	    		mysqli_query($conn, $sql2);
-	    	}
+    if(move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
+            $sql = "INSERT INTO students(name,father_name,roll_number,dob,email,password,real_password,mobile_number,img_name,city,address,created_at)VALUES ('".$_POST["name"]."','".$_POST["father_name"]."','".$random_no."','".$_POST["dob"]."','".$email."','".$md5pass."','".$pass."','".$_POST["mobile_number"]."','".$img_name."','".$_POST["city"]."','".$_POST["address"]."','".$datetime."')";
+        if (mysqli_query($conn, $sql)) {
+            if($_POST["vendor"] == 'vendor'){
+                $last_id = $conn->insert_id;
+                $sql2 = "INSERT INTO vendors(user_id,vendor_code)VALUES ('".$last_id."','".$_POST["vendor_code"]."')";
+                mysqli_query($conn, $sql2);
+            }
 
-	       //send email to the student
-	    	   $subject = "Username and Password arrived";
-		       $to = $email;
-		       $message = "<b>Username :</b> ".$email;
-		       $message .= "<b>Password :</b> ".$pass;
-               $message .= "<b>Roll Number :</b> ".$random_no;
-		       $header = "From:info@infotechapp.com \r\n";
-			   $header .= "MIME-Version: 1.0\r\n";
-			   $header .= "Content-type: text/html\r\n";
-		       mail ($to,$subject,$message,$header);
-	       //send email to the student
 
-               $html = '<!DOCTYPE html>
-                    <html>
-                    <head>
-                        <title>Emailer</title>
-                        <meta charset="utf-8">
-
-                    </head>
-                    <body>
-                        <div class="emailer-container" style=" width: 100%; max-width: 1000px; border-radius: 3px; overflow: hidden; font-family: verdana, arial; margin: 30px auto; box-shadow: 0 0 10px #ddd;">
-                            <span style="float: left; width: 50%; background: #0a3266; min-height: 5px;"></span><span style="float: left; width: 50%; background: #0a3266; min-height: 5px;"></span>
-                            <div class="emailer-header" style="text-align: center; padding: 8px; background-color: #49a2e7; border-bottom: 3px solid #ececec">
-                                <img src="' .$relativePathLogo. '" alt="Infotechapp" style="font-size: 21px; height:45px; color: #ff; font-weight: bold; ">
-                            </div>
-
-                            <div class="emailer-content" style="padding: 20px">
+               $html = '<div class="emailer-content" style="padding: 20px">
                                 <p style="font-size: 15px; margin:0 0 15px; color: #777">Dear <strong>Sir/Madam,</strong></p>
                                 <p style="font-size: 14px; margin:0 0 15px; color: #777">Welcome to Infotechapp Quiz. Please find your login details below.</p>
-                                <p><b>Username:</b>"'.$email.'"</p>
-                                <p><b>Password:</b> "'.$pass.'"</p>
-                                <p><b>Roll Number:</b> "'.$random_no.'"</p>
-                            </div>
-                            <div style="margin: 30px auto; max-width: 223px; font-size: 12px; font-family: verdana, arial; background-color: #ddd; height: 1px; clear: both">© 2020 Infotechapp | All Rights Reserved.</div>
-                           </div>
-                           </body>
-                           </html>';
-
-    		       $header = "From:info@infotechapp.com \r\n";
-                   $header .= "Cc:digital@infotechapp.com \r\n";
-    			   $header .= "MIME-Version: 1.0\r\n";
-    			   $header .= "Content-type: text/html\r\n";
-    		       mail ($to,$subject,$html,$header);
-	       //send email to the student
-	       $mess = "Thank you for participating in our Quiz!";
-	    } else {
-	       $mess = "Error: " . $sql . "" . mysqli_error($conn);
-	    }
-		}else{
-			$mess = "Failed to upload image";
-		}
-	}else{
-		$mess = "Sorry, only JPG, JPEG, PNG, & GIF files are allowed to upload";
-	}
+                                <p><b>Username:</b> '.$email.'</p>
+                                <p><b>Password:</b> '.$pass.'</p>
+                                <p><b>Roll Number:</b> '.$random_no.'</p>
+                            </div>';
+                   
+                    $to = $email;
+                    $subject = 'Welcome to Online Quiz';
+                    $from = 'infotechapp2020@gmail.com';
+                     
+                    // To send HTML mail, the Content-type header must be set
+                    $headers  = 'MIME-Version: 1.0' . "\r\n";
+                    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+                     
+                    // Create email headers
+                    $headers .= 'From: '.$from."\r\n".
+                        'Reply-To: '.$from."\r\n" .
+                        'X-Mailer: PHP/' . phpversion();
+                        
+                    mail($to, $subject, $html, $headers);        
+           //send email to the student
+           $mess = "Thank you for creating your account at Infotechapp. Your login details will be sent to your registered email id (It will take up to 2 minutes)";
+        } else {
+           $mess = "Error: " . $sql . "" . mysqli_error($conn);
+        }
+        }else{
+            $mess = "Failed to upload image";
+        }
+    }else{
+        $mess = "Sorry, only JPG, JPEG, PNG, & GIF files are allowed to upload";
+    }
     $conn->close();
 }
 
@@ -204,8 +185,8 @@ if(isset($_POST["submit"]))
                                             placeholder="" required>
                                     </div>
                                 </div>
-								<div class="col-md-4">
-									<div class="form-group">
+                                <div class="col-md-4">
+                                    <div class="form-group">
                                         <label class="control-label">Type</label>
                                         <select class="form-control" name="vendor" id="vendor" required>
                                             <option value="student">Student</option>
@@ -213,36 +194,36 @@ if(isset($_POST["submit"]))
 
                                         </select>
                                     </div>
-								</div>
-								<div class="col-md-4" id="vendor_cd" style="display: none">
-									<div class="form-group">
+                                </div>
+                                <div class="col-md-4" id="vendor_cd" style="display: none">
+                                    <div class="form-group">
                                         <label>Vendor Code</label>
                                         <input class="form-control" name="vendor_code" id="vendor_code" placeholder="">
                                     </div>
-								</div>
+                                </div>
                             </div>
-							<div class="row">
+                            <div class="row">
 
                                 <div class="col-md-4">
-									<div class="form-group">
-										<label>Address</label>
-										<textarea class="form-control" name="address" id="address" placeholder="" rows="3"
-											required></textarea>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="form-group">
-										<label>Birthday (DOB)</label><br>
-										<input type="date" class="form-control" name="dob" required>
-									</div>
-								</div>
+                                    <div class="form-group">
+                                        <label>Address</label>
+                                        <textarea class="form-control" name="address" id="address" placeholder="" rows="3"
+                                            required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Birthday (DOB)</label><br>
+                                        <input type="date" class="form-control" name="dob" required>
+                                    </div>
+                                </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
                                     <label>Upload Image</label>
                                     <input type="file" class="form-control" accept="image/*" name="image" id="image" required>
                                     </div>
                                 </div>
-							</div>
+                            </div>
 
                             <div class="text-center"><br>
 
@@ -272,23 +253,23 @@ if(isset($_POST["submit"]))
 
         <!-- <script type="text/javascript">
 
-		$(function () {
-	       $('#map')
-	         .gmap3({
-	           address:"14600 Goldenwest St #101A, Westminster, California 92683",
-	           zoom: 17,
-	           mapTypeId : google.maps.MapTypeId.ROADMAP,
-	           scrollwheel: false
-	         })
-	         .marker(function (map) {
-	           return {
-	             position: map.getCenter(),
-	             icon: 'http://themewinter.com/html/marker.png'
-	           };
-	         });
-	     });
+        $(function () {
+           $('#map')
+             .gmap3({
+               address:"14600 Goldenwest St #101A, Westminster, California 92683",
+               zoom: 17,
+               mapTypeId : google.maps.MapTypeId.ROADMAP,
+               scrollwheel: false
+             })
+             .marker(function (map) {
+               return {
+                 position: map.getCenter(),
+                 icon: 'http://themewinter.com/html/marker.png'
+               };
+             });
+         });
 
-	</script> -->
+    </script> -->
 
 
         <!-- Template custom -->
@@ -304,7 +285,7 @@ $(document).ready(function() {
 
 
 
-    $('#hidemessage').delay(5000).fadeOut();
+    $('#hidemessage').delay(25000).fadeOut();
     jQuery("#vendor").change(function() {
         var vendor = $(this).children("option:selected").val();
         if (vendor == 'vendor') {

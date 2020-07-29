@@ -23,7 +23,7 @@
     if($session == 0) {
         $user_id = $_POST['user_id'];
         $arrCount = count($_POST['question_id']);
-        $datetime = date('Y-m-d H:i:s');
+        $datetime = date("Y-m-d H:i:s", strtotime("+330 minutes"));
         $fnArr = [];
         for ($i=0; $i < $arrCount ; $i++) { 
             $question_id = isset($_POST['question_id'][$i]) ? $_POST['question_id'][$i] : '';

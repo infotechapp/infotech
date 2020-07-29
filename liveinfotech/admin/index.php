@@ -38,7 +38,7 @@
         }
 
 	if(isset($_POST['login-email'])){
-        $datetime = date('Y-m-d H:i:s');
+        $datetime = date("Y-m-d H:i:s", strtotime("+330 minutes"));
 		$email        = trim($_POST['login-email']);
 		$password     = md5($_POST['login-password']);
 

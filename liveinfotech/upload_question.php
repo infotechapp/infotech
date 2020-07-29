@@ -3,7 +3,7 @@ include "include/database.php";
 $fp = fopen(__DIR__."/question.csv", 'r') or die("Can't open file");
 $i = 1;
 $count = 0;
-$datetime = date('Y-m-d H:i:s');
+$datetime = date("Y-m-d H:i:s", strtotime("+330 minutes"));
 while ($csv_line = fgetcsv($fp, 2000)) {
     if ($i == 1) {
 		$i++;

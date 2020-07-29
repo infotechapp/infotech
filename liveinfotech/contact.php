@@ -14,7 +14,7 @@ if(isset($_POST["submit"]))
     if ($conn->connect_error) {
        die("Connection failed: " . $conn->connect_error);
     }
-    $datetime = date('Y-m-d H:i:s');
+    $datetime = date("Y-m-d H:i:s", strtotime("+330 minutes"));
     $sql = "INSERT INTO contact(name,email,mobile_number,purpose,message,created_at)VALUES ('".$_POST["name"]."','".$_POST["email"]."','".$_POST["mobile_number"]."','".$_POST["purpose"]."','".$_POST["message"]."','".$datetime."')";
     if (mysqli_query($conn, $sql)) {
 
