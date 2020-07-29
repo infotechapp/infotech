@@ -48,10 +48,10 @@
                     <div class="timerTab">
                         <div class="col-md-8" style="display: block;">
 
-                            <h3 class="title-border">Paragraph</h3>
+                            <h3 class="title-border">Online Quiz Result</h3>
 
-                            <p>Lorem ipsum dolor sit amet, <mark>a mark here</mark> adipisicing elit. Atque, iusto, minus sequi natus nesciunt rerum tenetur corrupti autem officiis fugiat expedita laudantium ea aspernatur</p>
-                            <p><strong class="text-success">Consectetur adipisicing elit</strong>. Corrupti, aliquam, voluptates, nulla, blanditiis totam voluptatem <strong class="text-danger">voluptatum quod ipsa debitis non</strong> ab odio natus.</p>
+                            <p><strong>Infotechapp results 2020</strong></p>
+                            <p><strong class="text-success">Published on <mark> 10.08.2020</mark></p>
 
                         </div><!--/ Col end -->
 
@@ -140,9 +140,9 @@
         document.getElementById("second").innerHTML = seconds;
         if (t < 0) {
             clearInterval(x);
-            $("#resultAction").click();  
             $(".timerTab").css("display","none");
             $(".resultTab").css("display","block");
+            $("#resultAction").click();  
         }
        }, 1000);
 
@@ -155,19 +155,27 @@
         data: $('#resultForm').serialize(),
         dataType: 'json',
         success: function (data){
+          $("#restable").empty();
           $(".loader2").css("display","none");
           html=""; 
-          if(data){
-              $("#restable").empty();
+          if (data.length != 0) {
+              
               html+='<table class="table table-striped table-bordered table-dark"><thead><tr><th scope="col">Rank</th><th scope="col">Image</th><th scope="col">Roll No</th><th scope="col">Name</th><th scope="col">Father Name</th><th scope="col">Address</th><th scope="col">Result</th><th scope="col">Time</th></tr></thead><tbody>'; 
+              i = 0;
               $.each(data, function (index, obj) {
-             if(obj.img_name){
-                  img_url = '<img src=http://infotechapp.com/images/student/'+ obj.img_name + ' width="100" height="110">';  
-              }else{
-                  img_url = '<img src=http://infotechapp.com/images/student/download.jpeg width="100" height="110">';   
-              } 
-                
-                html += '<tr><td> ' + obj.position + ' </td><td> ' + img_url + ' </td><td> ' + obj.roll_number + ' </td> <td> ' + obj.name + ' </td> <td>' + obj.father_name + '</td> <td>' + obj.address + '</td><td>' + obj.correct_answer+'/50' + '</td><td>' + obj.submitted_date + '</td> </tr>';
+               if(i <= 2){
+                  icon = '<i class="fa fa-trophy" style="color:#FFD700; font-size: 25px"; aria-hidden="true"></i>';
+               }else{
+                  icon = '';
+               }
+               if(obj.img_name){
+                    img_url = '<img src=http://infotechapp.com/images/student/'+ obj.img_name + ' width="100" height="110">';  
+                }else{
+                    img_url = '<img src=http://infotechapp.com/images/student/download.jpeg width="100" height="110">';   
+                } 
+                  
+                  html += '<tr><td> ' + obj.position + '  '+icon+' </td><td> ' + img_url + ' </td><td> ' + obj.roll_number + ' </td> <td> ' + obj.name + ' </td> <td>' + obj.father_name + '</td> <td>' + obj.address + '</td><td>' + obj.correct_answer+'/50' + '</td><td>' + obj.submitted_date + '</td> </tr>';
+                  i++;
               }); 
               html += '</tbody>';
               html += '</table>';

@@ -64,6 +64,7 @@
     			$_SESSION['first_name']= $row['name'];
                 $_SESSION['roll_number']= $row['roll_number'];
                 $_SESSION['img_name']= $row['img_name'];
+                $_SESSION["login_time_stamp"] = time();
 
                 //echo "<pre>";
                // print_r($_SESSION);die;
