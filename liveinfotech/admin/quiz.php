@@ -2,9 +2,15 @@
 ob_start();
 session_start();
 include('check_token.php');
+include 'function/database.php';
 if(empty($_SESSION['login_id'])){       header('Location: http://infotechapp.com');     ob_end_flush();
     }
 
+$sqlinner = "select quiz_date,timer_time from common";
+$result2 = mysqli_query($conn, $sqlinner) or die(mysqli_error($conn));
+$row = mysqli_fetch_array($result2);
+$quiz_date = $row['quiz_date'];
+$timer_time = $row['timer_time'];
 ?>
 <style type="text/css">
 body {
@@ -27,7 +33,7 @@ body {
                 <div class="header" id="myHeader">
                     <?php include('dashboard_header.php'); ?>
                     <div class="timer">
-                    <span class="minutes">40 Minutes Timer: </span>
+                    <span class="minutes"><?php echo $timer_time;?> Minutes Timer: </span>
                     <span class="minutes" id="minute"></span>
                     <span class="seconds" id="second"></span>
                     </div>
@@ -55,6 +61,8 @@ body {
                     <br>
                     <br>
                     <input type="button" class="btn btn-lg btn-primary" value="Submit Quiz" id="quizsubmit">
+                    <input type="button" class="btn btn-lg btn-primary" style="display: none" id="quizsubmitauto">
+                    <input type="button" class="btn btn-lg btn-primary" style="display: none" id="autotimer">
                 </form>
                 <div class="loader2" style="display:none">
                     <img src="/liveinfotech/admin/img/ajax-loader.gif" alt="Loading...">
@@ -67,7 +75,6 @@ body {
     <a href="#" id="to-top"><i class="fa fa-angle-double-up"></i></a>
     <?php  include('common_js.php');?>
     <script>
-
     window.onscroll = function() {
         myFunction()
     };
@@ -111,8 +118,10 @@ body {
                 i++;
             });
             $('#questionData').html(html);
+            setTimer();
         },
         error: function(xhr, textStatus, error) {
+            alert("Something went wrong please contact to admin");
             fullscreen()
         }
     });
@@ -131,10 +140,10 @@ body {
     }
 
     $('#quizsubmit').click(function() {
-        if ($("input.quizcheckbox").filter(':checked').length < 1) {
-            alert("Please attempt at least one Question!");
-            return false;
-        }
+        // if ($("input.quizcheckbox").filter(':checked').length < 1) {
+        //     alert("Please attempt at least one Question!");
+        //     return false;
+        // }
 
         if(confirm("Are you sure you want to submit?")){
             $(".loader2").css("display", "block");
@@ -150,13 +159,11 @@ body {
                     }else{
                         $(".loader2").css("display", "none");
                         alert(data);
-                        window.location.href = "index.php";
+                        window.location.href = "http://infotechapp.com/result.php";
                     }
                 },
                 error: function(xhr, textStatus, error) {
-                    console.log(xhr.statusText);
-                    console.log(textStatus);
-                    console.log(error);
+                    alert("Something went wrong please contact to admin");
 
                 }
             });
@@ -166,20 +173,46 @@ body {
         }
     });
 
-    var deadline = new Date("augest 27, 2020 09:44:25").getTime();
-    var x = setInterval(function() {
-        var now = new Date().getTime();
-        var t = deadline - now;
-        var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((t % (1000 * 60)) / 1000);
-        document.getElementById("minute").innerHTML = minutes +'m : ';
-        document.getElementById("second").innerHTML = seconds+'s';
-        if (t < 0) {
-            clearInterval(x);
-            document.getElementById("minute").innerHTML = '0m : ';
-            document.getElementById("second").innerHTML = '0s';
-            $("#quizsubmit").click();
-        }
-    }, 1000);
+    $('#quizsubmitauto').click(function() {
+        $(".loader2").css("display", "block");
+        $.ajax({
+            type: "POST",
+            url: "saveQuizAjax.php",
+            data: $('#quizdash').serialize(),
+            dataType: 'json',
+            success: function(data) {
+                if(data == 'Error'){
+                    alert('Someone else is already logged on using this user ID. Please contact to the admin!');
+                    window.location.href = "index.php?message=alreadyLogin";
+                }else{
+                    $(".loader2").css("display", "none");
+                    alert("Time is up the quiz will be automatically submitted");
+                    window.location.href = "http://infotechapp.com/result.php";
+                }
+            },
+            error: function(xhr, textStatus, error) {
+                alert("Something went wrong please contact to admin");
+            }
+        });
+    });
+
+    function setTimer(){
+        var quiz_date = '<?php echo $quiz_date;?>';
+        var deadline = new Date(quiz_date).getTime();
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var t = deadline - now;
+            var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((t % (1000 * 60)) / 1000);
+            document.getElementById("minute").innerHTML = minutes +'m : ';
+            document.getElementById("second").innerHTML = seconds+'s';
+            if (t < 0) {
+                clearInterval(x);
+                document.getElementById("minute").innerHTML = '0m : ';
+                document.getElementById("second").innerHTML = '0s';
+                $("#quizsubmitauto").click();
+            }
+        }, 1000);
+    }
     </script>
 </body>

@@ -1,9 +1,15 @@
 <?php
 ob_start();
 session_start();
+include 'function/database.php';
 include('check_token.php');
 if(empty($_SESSION['login_id'])){       header('Location: http://infotechapp.com');     ob_end_flush();
     }
+
+$sqlinner = "select exam_date from common";
+$result2 = mysqli_query($conn, $sqlinner) or die(mysqli_error($conn));
+$row = mysqli_fetch_array($result2);
+$exam_date = $row['exam_date'];
 
 ?>
 <style type="text/css">
@@ -77,6 +83,14 @@ body {
     </div>
 <?php }?>
 
+                <div class="custom-alert startbutton" style="display: none">
+                    <div class="alert alert-success">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                            ×</button>
+                            <p> Your quiz start now please click on "Start Quiz Button"</p>
+                    </div>
+                </div>
+
                 <!-- Page content -->
                 <div id="page-content" class="pagecolor">
                     <!-- Dashboard Header -->
@@ -130,7 +144,7 @@ body {
                                     </li>
                                     <li><h4>10. Once clicked on the (End TEST) button, You Cannot UNDO this Test.</h4>
                                     </li>
-                                    <li><h4>11. After clicked on the (End TEST) You get your RESULT sheet on mention date 12-03-2020 (http://www.infotechapp.com/result).</h4>
+                                    <li><h4>11. After clicked on the (End TEST) You get your RESULT sheet on mention date 12-03-2020 (http://www.infotechapp.com/result.php).</h4>
                                     </li>
                                     <li><h4>12. After Complete the test Please logout your account for security purpose.</h4>
                                     </li>
@@ -146,8 +160,9 @@ body {
 
                     <!-- END Key Features -->
                     <div class="quizbtn">
-                        <a href="javascript:void(0)" class="btn btn-lg btn-primary quiz"><i class="fa fa-floppy-o"></i>
-                            Start Quiz</a>
+                    <!--     <a href="javascript:void(0)" class="btn btn-lg btn-primary quiz quizSubmitbut" disabled='disabled'><i class="fa fa-floppy-o"></i>
+                            Start Quiz</a> -->
+                            <button type="button" class="btn btn-lg btn-primary quiz quizSubmitbut" disabled><i class="fa fa-floppy-o"></i>Start Quiz</button>
                     </div>
 
                     <!-- END Dashboard Header -->
@@ -177,7 +192,8 @@ body {
     <?php  include('common_js.php');?>
 
     <script>
-
+       
+     
     $('.quiz').click(function() {
             if($('#disclaimer').prop("checked") == true){
                 window.open("quiz.php", "_blank","toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=4000,height=4000");
@@ -186,7 +202,10 @@ body {
                alert('Please agree disclaimer');
             }
     });
-    var deadline = new Date("augest 27, 2020 09:27:25").getTime();
+
+    
+    var exam_date = '<?php echo $exam_date;?>';
+    var deadline = new Date(exam_date).getTime();
     var x = setInterval(function() {
         var now = new Date().getTime();
         var t = deadline - now;
@@ -200,12 +219,9 @@ body {
         document.getElementById("second").innerHTML = seconds;
         if (t < 0) {
             clearInterval(x);
-            document.getElementById("demo").innerHTML = "TIME UP";
-            document.getElementById("day").innerHTML = '0';
-            document.getElementById("hour").innerHTML = '0';
-            document.getElementById("minute").innerHTML = '0';
-            document.getElementById("second").innerHTML = '0';
-            $('.quizbtn').css('display', 'block');
+            $('.quizSubmitbut').removeAttr("disabled");
+            $("#clockdiv").css("display", "none");
+            $(".startbutton").css("display", "block");
         }
     }, 1000);
     </script>

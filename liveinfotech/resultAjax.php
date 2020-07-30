@@ -37,8 +37,12 @@ error_reporting(1);
       $new['submitted_date'] = $time;
       array_push($newfun,$new);
    }
-   $rev = array_reverse($newfun);
-   echo json_encode($rev);
+
+   function sortByOrder($a, $b) {
+      return $a['position'] - $b['position'];
+   }
+   usort($newfun, 'sortByOrder');
+   echo json_encode($newfun);
    exit;
 
 ?>

@@ -4,7 +4,7 @@
                 <div class="col-md-5 col-sm-5 col-xs-12">
                 <div  style="text-align: center;">
                     <text><strong>Powered by</strong></text>
-                    <a href="index.php">
+                    <a href="http://infotechapp.com">
                         <img src="img/logo.png" width="138px" alt="Login logo">
                     </a>
                 </div>

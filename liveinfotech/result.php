@@ -1,3 +1,35 @@
+<?php 
+
+  $servername = "148.66.145.21";
+  $username = "infotechapp";
+  $password = "eG7GN!A$3Lh9";
+  $dbname = "infotechapp";
+
+  // Create connection
+  $conn = new mysqli($servername, $username, $password, $dbname);
+
+  // Check connection
+  if ($conn->connect_error) {
+     die("Connection failed: " . $conn->connect_error);
+  }
+
+  $sqlinner = "select id from questions where status = 1";
+  $result2 = mysqli_query($conn, $sqlinner) or die(mysqli_error($conn));
+  $number_question = mysqli_num_rows($result2);
+  //print_r($number_question);die;
+
+  $sql = "select result_date from common";
+  $result3 = mysqli_query($conn, $sql) or die(mysqli_error($conn));
+  $row = mysqli_fetch_array($result3);
+  $result_date = $row['result_date'];
+  $datetime = date('Y-m-d H:i:s',strtotime($result_date));
+  $todaydate = date("Y-m-d H:i:s");
+  $timestampresult = strtotime($datetime);
+  $timestamptoday = strtotime($todaydate);
+
+
+?>
+
 <style type="text/css">
     .subscribe input.form-control.result {
     border: 1px solid rgba(25, 19, 19, 0.35);
@@ -44,6 +76,7 @@
                 </div>
                 </div>
 
+                
                 <div class="row">
                     <div class="timerTab">
                         <div class="col-md-8" style="display: block;">
@@ -77,7 +110,7 @@
                         </div>
                     </div>
                 </div>
-
+              
             </div>
             <!--/ container end -->
         </section>
@@ -124,9 +157,9 @@
 
 
 <script type="text/javascript">
-
-
-        var deadline = new Date("july 20, 2020 10:47:25").getTime();
+        var number_question = '<?php echo $number_question;?>';
+        var result_date = '<?php echo $result_date;?>';
+        var deadline = new Date(result_date).getTime();
         var x = setInterval(function() {
         var now = new Date().getTime();
         var t = deadline - now;
@@ -174,7 +207,7 @@
                     img_url = '<img src=http://infotechapp.com/images/student/download.jpeg width="100" height="110">';   
                 } 
                   
-                  html += '<tr><td> ' + obj.position + '  '+icon+' </td><td> ' + img_url + ' </td><td> ' + obj.roll_number + ' </td> <td> ' + obj.name + ' </td> <td>' + obj.father_name + '</td> <td>' + obj.address + '</td><td>' + obj.correct_answer+'/50' + '</td><td>' + obj.submitted_date + '</td> </tr>';
+                  html += '<tr><td> ' + obj.position + '  '+icon+' </td><td> ' + img_url + ' </td><td> ' + obj.roll_number + ' </td> <td> ' + obj.name + ' </td> <td>' + obj.father_name + '</td> <td>' + obj.address + '</td><td>' + obj.correct_answer+'/'+number_question+'</td><td>' + obj.submitted_date + '</td> </tr>';
                   i++;
               }); 
               html += '</tbody>';
