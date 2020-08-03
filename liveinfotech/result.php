@@ -1,4 +1,4 @@
-<?php 
+<?php
 
   $servername = "148.66.145.21";
   $username = "infotechapp";
@@ -64,7 +64,8 @@
         <section id="main-container">
             <div class="container">
                 <div class="row resultTab" style="display: none">
-                     <form name="resultForm" action="result.php" id="resultForm" method="POST">
+                <div class="col-md-12">
+                <form name="resultForm" action="result.php" id="resultForm" method="POST">
                         <div class="input-group subscribe">
                             <input type="text" class="form-control result" required="" name="roll_number" placeholder="Enter Roll Number">
                             <span class="input-group-addon">
@@ -72,14 +73,15 @@
                             </span>
                         </div>
                     </form>
-                    <div id="restable"> 
+                    <div id="restable">
+                </div>
                 </div>
                 </div>
 
-                
-                <div class="row">
-                    <div class="timerTab">
-                        <div class="col-md-8" style="display: block;">
+
+                <div class="row timerTab"  style="display: none;">
+                    <div>
+                        <div class="col-md-8">
 
                             <h3 class="title-border">Online Quiz Result</h3>
 
@@ -110,7 +112,7 @@
                         </div>
                     </div>
                 </div>
-              
+
             </div>
             <!--/ container end -->
         </section>
@@ -175,11 +177,15 @@
             clearInterval(x);
             $(".timerTab").css("display","none");
             $(".resultTab").css("display","block");
-            $("#resultAction").click();  
+            $("#resultAction").click();
+        }
+        else{
+            $(".timerTab").css("display","block");
+            $(".resultTab").css("display","none");
         }
        }, 1000);
 
-    
+
     $("#resultAction").on("click", function(){
       $(".loader2").css("display","block");
       $.ajax({
@@ -190,10 +196,10 @@
         success: function (data){
           $("#restable").empty();
           $(".loader2").css("display","none");
-          html=""; 
+          html="";
           if (data.length != 0) {
-              
-              html+='<table class="table table-striped table-bordered table-dark"><thead><tr><th scope="col">Rank</th><th scope="col">Image</th><th scope="col">Roll No</th><th scope="col">Name</th><th scope="col">Father Name</th><th scope="col">Address</th><th scope="col">Result</th><th scope="col">Time</th></tr></thead><tbody>'; 
+
+              html+='<table class="table table-striped table-bordered table-dark"><thead><tr><th scope="col">Rank</th><th scope="col">Image</th><th scope="col">Roll No</th><th scope="col">Name</th><th scope="col">Father Name</th><th scope="col">Address</th><th scope="col">Result</th><th scope="col">Time</th></tr></thead><tbody>';
               i = 0;
               $.each(data, function (index, obj) {
                if(i <= 2){
@@ -202,14 +208,14 @@
                   icon = '';
                }
                if(obj.img_name){
-                    img_url = '<img src=http://infotechapp.com/images/student/'+ obj.img_name + ' width="100" height="110">';  
+                    img_url = '<img src=http://infotechapp.com/images/student/'+ obj.img_name + ' width="100" height="110">';
                 }else{
-                    img_url = '<img src=http://infotechapp.com/images/student/download.jpeg width="100" height="110">';   
-                } 
-                  
+                    img_url = '<img src=http://infotechapp.com/images/student/download.jpeg width="100" height="110">';
+                }
+
                   html += '<tr><td> ' + obj.position + '  '+icon+' </td><td> ' + img_url + ' </td><td> ' + obj.roll_number + ' </td> <td> ' + obj.name + ' </td> <td>' + obj.father_name + '</td> <td>' + obj.address + '</td><td>' + obj.correct_answer+'/'+number_question+'</td><td>' + obj.submitted_date + '</td> </tr>';
                   i++;
-              }); 
+              });
               html += '</tbody>';
               html += '</table>';
           }else{
@@ -224,6 +230,6 @@
           console.log(error);
         }
   });
-   });    
+   });
 
 </script>

@@ -3372,11 +3372,11 @@ a.btn.btn-primary.solid.newClass {
 
   .loader2 { margin: 40% 0 33% -20%;
 position: absolute;
-z-index: 9999;      
-    width: 100%;    
-    text-align: center;   
+z-index: 9999;
+    width: 100%;
+    text-align: center;
     top: 0;
-    
+
 
 }
 
@@ -3439,3 +3439,12 @@ z-index: 9999;
     padding-top: 5px;
     font-size: 16px;
 }
+
+#restable{
+  overflow-x: auto;
+}
+
+#restable th{
+	white-space: nowrap;
+	text-align: center;
+  }
