@@ -64,7 +64,7 @@
         <section id="main-container">
             <div class="container">
                 <div class="row resultTab" style="display: none">
-                     <form name="resultForm" action="result.php" id="resultForm" method="POST">
+                     <form name="resultForm" action="" id="resultForm" method="POST">
                         <div class="input-group subscribe">
                             <input type="text" class="form-control result" required="" name="roll_number" placeholder="Enter Roll Number">
                             <span class="input-group-addon">
@@ -219,9 +219,7 @@
           $("#restable").append(html);
         },
         error: function(xhr, textStatus, error){
-          console.log(xhr.statusText);
-          console.log(textStatus);
-          console.log(error);
+          alert('Unable to getting the result!');
         }
   });
    });    
