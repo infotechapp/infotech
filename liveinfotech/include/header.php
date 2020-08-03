@@ -7,6 +7,7 @@
 
  ?>
 <!-- Header start -->
+
 		<header id="header" class="navbar-fixed-top header" role="banner">
 			<div class="container">
 				<div class="row">
@@ -74,7 +75,7 @@
 
 
 							<li class="<?php if($urlexp2[1] =='register'){echo 'active';}?>">
-								<a href="register.php">Register</a>
+								<a href="quiz">Login</a>
 							</li>
 
 						</ul>

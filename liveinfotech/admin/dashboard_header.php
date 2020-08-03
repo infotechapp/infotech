@@ -1,6 +1,6 @@
 <?php
 
-     include('check_token.php');
+    include('check_token.php');
 ?>
 <style type="text/css">
 .navbar.navbar-default {
@@ -25,16 +25,16 @@
                 <li class="dropdown">
                     <h4 style="float:left;"><strong>Hi,</strong>
                         <strong><?php echo $_SESSION['first_name'].'('.$_SESSION['roll_number'].')';?></strong></h4>
-                    <?php  if($_SESSION['img_name']) {?>  
-                    
+                    <?php  if($_SESSION['img_name']) {?>
+
                     <a style="float:left;" href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
                         <img src=http://infotechapp.com/images/student/<?php echo $_SESSION['img_name']; ?> alt="avatar"> <i class="fa fa-angle-down"></i>
                     </a>
-                    <?php }else{?>  
+                    <?php }else{?>
                         <a style="float:left;" href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
                         <img src="img/placeholders/avatars/avatar2.jpg" alt="avatar"> <i class="fa fa-angle-down"></i>
                     </a>
-                    
+
                 <?php }?>
                     <ul class="dropdown-menu dropdown-custom dropdown-menu-right">
                         <li>

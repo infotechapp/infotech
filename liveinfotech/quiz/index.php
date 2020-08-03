@@ -218,12 +218,12 @@
                             Quiz...</button>
                     </div>
                 </div>
-                <!--div class="form-group">
+                <div class="form-group">
                         <div class="col-xs-12 text-center">
                             <a href="javascript:void(0)" id="link-reminder-login"><small>Forgot password?</small></a> -
-                            <a href="javascript:void(0)" id="link-register-login"><small>Create a new account</small></a>
+                            <a href="/register.php" id="link-register-login"><small>Create a new account (Registration)</small></a>
                         </div>
-                    </div-->
+                    </div>
             </form>
             <!-- END Login Form -->
 

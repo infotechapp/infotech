@@ -3,13 +3,31 @@
 <?php include "include/head.php"; ?>
 
 <body>
+
     <div class="body-inner">
         <?php include "include/header.php"; ?>
         <!-- Slider start -->
         <section id="home" class="no-padding">
             <div id="main-slide" class="cd-hero">
                 <ul class="cd-hero-slider">
-                    <li class="selected">
+                <li class="selected">
+                        <div class="overlay2">
+                            <img class="" src="images/slider/bg1.jpg" alt="slider">
+                        </div>
+                        <div class="cd-half-width cd-img-container img-right">
+                            <img src="images/slider/quiz.png" alt="">
+                        </div> <!-- .cd-half-width.cd-img-container -->
+                        <div class="cd-half-width">
+                            <h3>Paticipate in Online Quiz exam and get a chance to win price money</h3>
+                            <p>Register for Online quiz exam or login if you have already created account
+                            </p>
+                            <a href="register.php" class="btn btn-primary solid cd-btn">Register Now </a>
+
+                            <a href="quiz" class="btn btn-primary solid cd-btn">Login </a>
+                        </div> <!-- .cd-half-width -->
+
+                    </li>
+                    <li>
                         <div class="overlay2">
                             <img class="" src="images/slider/bg1.jpg" alt="slider">
                         </div>
@@ -87,7 +105,8 @@
                     <nav>
                         <span class="cd-marker item-1"></span>
                         <ul>
-                            <li class="selected"><a href="#0"><i class="fa fa-globe"></i> Website</a></li>
+                            <li class="selected"><a href="#0"><i class="fa fa-laptop"></i> Quiz</a></li>
+                            <li><a href="#0"><i class="fa fa-globe"></i> Website</a></li>
                             <li><a href="#0"><i class="fa fa-android"></i> Application</a></li>
                             <li><a href="#0"><i class="fa fa-newspaper-o"></i>SEO/SEM</a></li>
                             <li class="video"><a href="#0"><i class="fa fa-video-camera"></i> Digital</a></li>
