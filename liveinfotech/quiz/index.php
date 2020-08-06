@@ -158,7 +158,19 @@
                 Someone else is already logged on using this user ID. Please contact to the admin!</p>
         </div>
     </div>
-    <?php }?>
+    <?php }elseif(@$_GET['message'] == 'forgot'){  ?>
+
+    <div class="custom-alert">
+        <div class="alert alert-success">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                ×</button>
+
+
+            <p>
+                A new password has been sent to your e-mail address.</p>
+        </div>
+    </div>
+<?php }?>
 
     <!-- Login Container -->
     <div id="login-container1" class="animation-fadeIn">
@@ -220,8 +232,8 @@
                 </div>
                 <div class="form-group">
                         <div class="col-xs-12 text-center">
-                            <a href="javascript:void(0)" id="link-reminder-login"><small>Forgot password?</small></a> -
-                            <a href="/register.php" id="link-register-login"><small>Create a new account (Registration)</small></a>
+                            <a href="/quiz/forgot.php" ><small>Forgot password?</small></a> -
+                            <a href="/register.php" ><small>Create a new account (Registration)</small></a>
                         </div>
                     </div>
             </form>
