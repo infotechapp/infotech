@@ -37,68 +37,84 @@
          return $token;
         }
 
-	if(isset($_POST['login-email'])){
-        $datetime = date("Y-m-d H:i:s", strtotime("+330 minutes"));
-		$email        = trim($_POST['login-email']);
-		$password     = md5($_POST['login-password']);
+      $sql = "select quiz_date from common";
+      $result3 = mysqli_query($conn, $sql) or die(mysqli_error($conn));
+      $row = mysqli_fetch_array($result3);
+      $quiz_date = $row['quiz_date'];
+      $datetimequiz = date('Y-m-d H:i:s',strtotime($quiz_date));
+      $todaydate = date("Y-m-d H:i:s");
 
-        //check username and pass exists or not
-		$sqlinner = "select id,name,quiz,roll_number,img_name from students where email = '".$email."' and password='".$password."'";
-        $result2 = mysqli_query($conn, $sqlinner) or die(mysqli_error($conn));
-        $countData = mysqli_num_rows($result2);
-		$row = mysqli_fetch_array($result2);
+      $timestampquiz = strtotime($datetimequiz);
+      $timestamptoday = strtotime($todaydate);
 
-        //check username and pass exists or not
+      
+    	if(isset($_POST['login-email'])){
+            if($timestampquiz > $timestamptoday){
+                $datetime = date("Y-m-d H:i:s", strtotime("+330 minutes"));
+        		$email        = trim($_POST['login-email']);
+        		$password     = md5($_POST['login-password']);
 
-        //check status active or not
-        $sqlinner2 = "select id,name,quiz from students where email = '".$email."' and password='".$password."' and active_status='0'";
-        $result3 = mysqli_query($conn, $sqlinner2) or die(mysqli_error($conn));
-        $countstatus = mysqli_num_rows($result3);
-        //check status active or not
+                //check username and pass exists or not
+        		$sqlinner = "select id,name,quiz,roll_number,img_name from students where email = '".$email."' and password='".$password."'";
+                $result2 = mysqli_query($conn, $sqlinner) or die(mysqli_error($conn));
+                $countData = mysqli_num_rows($result2);
+        		$row = mysqli_fetch_array($result2);
 
-		if($countData > 0 && $countstatus > 0){
-            if($row['quiz'] == 0){
-                $token = getToken(10);
-                $_SESSION['token'] = $token;
-    			$_SESSION['login_id']= $row['id'];
-    			$_SESSION['first_name']= $row['name'];
-                $_SESSION['roll_number']= $row['roll_number'];
-                $_SESSION['img_name']= $row['img_name'];
-                $_SESSION["login_time_stamp"] = time();
+                //check username and pass exists or not
 
-                //echo "<pre>";
-               // print_r($_SESSION);die;
+                //check status active or not
+                $sqlinner2 = "select id,name,quiz from students where email = '".$email."' and password='".$password."' and active_status='0'";
+                $result3 = mysqli_query($conn, $sqlinner2) or die(mysqli_error($conn));
+                $countstatus = mysqli_num_rows($result3);
+                //check status active or not
 
-                //Check token exists in the table
-                $sqltoken = "select * from user_token where name = '".$row['name']."'";
-                $resulttoken = mysqli_query($conn, $sqltoken) or die(mysqli_error($conn));
-                $countToken = mysqli_num_rows($resulttoken);
-                if($countToken > 0){
-                     $sqltokenUpdate = "update user_token set token = '".$token."',created_at = '".$datetime."' where name='".$row['name']."'";
-                     mysqli_query($conn, $sqltokenUpdate) or die(mysqli_error($conn));
-                }else{
-                     $sqltokenInsert = "INSERT INTO user_token(name,token,created_at)VALUES ('".$row['name']."','".$token."','".$datetime."')";
-                     mysqli_query($conn, $sqltokenInsert);
+        		if($countData > 0 && $countstatus > 0){
+                    if($row['quiz'] == 0){
+                        $token = getToken(10);
+                        $_SESSION['token'] = $token;
+            			$_SESSION['login_id']= $row['id'];
+            			$_SESSION['first_name']= $row['name'];
+                        $_SESSION['roll_number']= $row['roll_number'];
+                        $_SESSION['img_name']= $row['img_name'];
+                        $_SESSION["login_time_stamp"] = time();
+
+                        //echo "<pre>";
+                       // print_r($_SESSION);die;
+
+                        //Check token exists in the table
+                        $sqltoken = "select * from user_token where name = '".$row['name']."'";
+                        $resulttoken = mysqli_query($conn, $sqltoken) or die(mysqli_error($conn));
+                        $countToken = mysqli_num_rows($resulttoken);
+                        if($countToken > 0){
+                             $sqltokenUpdate = "update user_token set token = '".$token."',created_at = '".$datetime."' where name='".$row['name']."'";
+                             mysqli_query($conn, $sqltokenUpdate) or die(mysqli_error($conn));
+                        }else{
+                             $sqltokenInsert = "INSERT INTO user_token(name,token,created_at)VALUES ('".$row['name']."','".$token."','".$datetime."')";
+                             mysqli_query($conn, $sqltokenInsert);
+                        }
+                        //Check token exists in the table
+
+                        // create the user logs start
+                        $ipadd = get_client_ip();
+                        $sqllgs = "INSERT INTO login_logs(user_id,name,ip_address,created_at)VALUES ('".$row['id']."','".$row['name']."','".$ipadd."','".$datetime."')";
+                        mysqli_query($conn, $sqllgs);
+                        // create the user logs end
+
+            			header("Location: dashboard.php");
+            			ob_end_flush();
+                    }else{
+                        header("Location: index.php?message=quiz");
+                    }
+        		}elseif ($countData == 0) {
+                   header("Location: index.php?message=fail");
+                }elseif ($countData > 0 && $countstatus == 0) {
+                   header("Location: index.php?message=active");
                 }
-                //Check token exists in the table
-
-                // create the user logs start
-                $ipadd = get_client_ip();
-                $sqllgs = "INSERT INTO login_logs(user_id,name,ip_address,created_at)VALUES ('".$row['id']."','".$row['name']."','".$ipadd."','".$datetime."')";
-                mysqli_query($conn, $sqllgs);
-                // create the user logs end
-
-    			header("Location: dashboard.php");
-    			ob_end_flush();
             }else{
-                header("Location: index.php?message=quiz");
+                header("Location: index.php?message=timeup");
             }
-		}elseif ($countData == 0) {
-           header("Location: index.php?message=fail");
-        }elseif ($countData > 0 && $countstatus == 0) {
-           header("Location: index.php?message=active");
-        }
-	}
+       }
+       
 	?>
 
 <body>
@@ -170,7 +186,16 @@
                 A new password has been sent to your e-mail address.</p>
         </div>
     </div>
-<?php }?>
+<?php }elseif (@$_GET['message'] == 'timeup') {?>
+    <div class="custom-alert">
+        <div class="alert alert-danger">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                ×</button>
+            <p>
+                Sorry… time’s up. Please contact to the admin!</p>
+        </div>
+    </div>
+    <?php }?>
 
     <!-- Login Container -->
     <div id="login-container1" class="animation-fadeIn">

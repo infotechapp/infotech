@@ -23,6 +23,9 @@
   $row = mysqli_fetch_array($result3);
   $result_date = $row['result_date'];
   $datetime = date('Y-m-d H:i:s',strtotime($result_date));
+  $datetimeresult = date('d-m-Y H:i:s',strtotime($result_date));
+
+  
   $todaydate = date("Y-m-d H:i:s");
   $timestampresult = strtotime($datetime);
   $timestamptoday = strtotime($todaydate);
@@ -88,7 +91,7 @@
                             <h3 class="title-border">Online Quiz Result</h3>
 
                             <p><strong>Infotechapp results 2020</strong></p>
-                            <p><strong class="text-success">Published on <mark> 10.08.2020</mark></p>
+                            <p><strong class="text-success">Published on <mark> <?php echo $datetimeresult;?></mark></p>
 
                         </div><!--/ Col end -->
 

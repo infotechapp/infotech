@@ -73,28 +73,29 @@ if(isset($_POST["submit"]))
             }
 
 
-               $html = '<div class="emailer-content" style="padding: 20px">
-                                <p style="font-size: 15px; margin:0 0 15px; color: #777">Dear <strong>Sir/Madam,</strong></p>
-                                <p style="font-size: 14px; margin:0 0 15px; color: #777">Welcome to Infotechapp Quiz. Please find your login details below.</p>
-                                <p><b>Username:</b> '.$email.'</p>
-                                <p><b>Password:</b> '.$pass.'</p>
-                                <p><b>Roll Number:</b> '.$random_no.'</p>
-                            </div>';
-                   
-                    $to = $email;
-                    $subject = 'Welcome to Online Quiz';
-                    $from = 'infotechapp2020@gmail.com';
-                     
-                    // To send HTML mail, the Content-type header must be set
-                    $headers  = 'MIME-Version: 1.0' . "\r\n";
-                    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-                     
-                    // Create email headers
-                    $headers .= 'From: '.$from."\r\n".
-                        'Reply-To: '.$from."\r\n" .
-                        'X-Mailer: PHP/' . phpversion();
-                        
-                    mail($to, $subject, $html, $headers);        
+        //   $message = '<p>Dear <strong>Sir/Madam,</strong></p>
+        //                 <p>Welcome to Infotechapp Quiz. Please find your login details below.</p>
+        //                 <p><b>Username:</b> '.$email.'</p>
+        //                 <p><b>Password:</b> '.$pass.'</p>
+        //                 <p><b>Roll Number:</b> '.$random_no.'</p>';
+            
+            $message = '<p>Dear <strong>Sir/Madam,</strong></p>';
+            $message .='<p>Welcome to Infotechapp Quiz. Please find your login details below.</p>';
+            $message .= '<p><b>Username:</b> '.$email.'</p>';
+            $message .= '<p><b>Password:</b> '.$pass.'</p>';
+            $message .= '<p><b>Roll Number:</b> '.$random_no.'</p>';
+        
+            // $message = "<b>Username :</b> ".$email;
+            // $message .= "<b>Password :</b> ".$pass;   
+            // $message .= "<b>Roll Number :</b> ".$random_no; 
+           
+            $to = $email;
+            $subject = 'Welcome to Online Quiz';
+            $header = "From:infotechapp2020@gmail.com \r\n";
+            $header .= "MIME-Version: 1.0\r\n";
+            $header .= "Content-type: text/html\r\n";
+            mail ($to,$subject,$message,$header);
+                    
            //send email to the student
            $mess = "Thank you for creating your account at Infotechapp. Your login details will be sent to your registered email id (It will take up to 2 minutes)";
         } else {
