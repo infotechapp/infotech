@@ -34,7 +34,7 @@ body {
 
             'page-loading'      enables page preloader
         -->
-    <div id="page-wrapper" >
+    <div id="page-wrapper">
 
 
         <div id="page-container" class="">
@@ -63,31 +63,31 @@ body {
 
                 <?php if(@$_GET['message'] == 'success'){  ?>
 
-    <div class="custom-alert">
-        <div class="alert alert-success">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
-                ×</button>
+                <div class="custom-alert">
+                    <div class="alert alert-success">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                            ×</button>
 
 
-            <p> Your password has been changed successfully! Thank you</p>
-        </div>
-    </div>
-<?php }elseif (@$_GET['message'] == 'error') {?>
-    <div class="custom-alert">
-        <div class="alert alert-danger">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
-                ×</button>
-            <p>
-                Error to change your password!</p>
-        </div>
-    </div>
-<?php }?>
+                        <p> Your password has been changed successfully! Thank you</p>
+                    </div>
+                </div>
+                <?php }elseif (@$_GET['message'] == 'error') {?>
+                <div class="custom-alert">
+                    <div class="alert alert-danger">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                            ×</button>
+                        <p>
+                            Error to change your password!</p>
+                    </div>
+                </div>
+                <?php }?>
 
                 <div class="custom-alert startbutton" style="display: none">
                     <div class="alert alert-success">
                         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
                             ×</button>
-                            <p> Your quiz start now please click on "Start Quiz Button"</p>
+                        <p> Your quiz start now please click on "Start Quiz Button"</p>
                     </div>
                 </div>
 
@@ -114,55 +114,92 @@ body {
                         </div>
                     </div>
                     <div id="login-alt-container">
-                                <!-- Title -->
-                                <h1 class="push-top-bottom">
-                                    <strong>Instructions for Online Quiz</strong><br>
-                                    <!-- <small>Powered by Infotechapp</small> -->
-                                </h1>
+                        <!-- Title -->
+                        <h1 class="push-top-bottom">
+                            <strong>Instructions for Online Quiz</strong><br>
+                            <!-- <small>Powered by Infotechapp</small> -->
+                        </h1>
 
-                                <!-- END Title -->
+                        <!-- END Title -->
 
-                                <!-- Key Features -->
-                                <ul class="fa-ul text-light">
-                                    <li><h4>1. Read carefully the instructions before starting the test</h4>
-                                    </li>
-                                    <li><h4>2. You have 60 minutes to complete the test.</h4>
-                                    </li>
-                                    <li><h4>3. The test contains a total of 200 questions.</h4>
-                                    </li>
-                                    <li><h4>4. There is only one correct answer to each question. Click on the most appropriate option to mark it as your answer.</h4>
-                                    </li>
-                                    <li><h4>5. You will be awarded 1 marks for each correct answer.</h4>
-                                    </li>
-                                    <li><h4>6. There is no negative marks for each wrong answer.</h4>
-                                    </li>
-                                    <li><h4>7. A Number list of all questions appears at the center of the window.</h4>
-                                    </li>
-                                    <li><h4>8. You can use rough sheets while taking the test. Do not use calculators, log tables, dictionaries, or any other printed/online reference material during the test.</h4>
-                                    </li>
-                                    <li><h4>9. Do not click the button "End TEST" before completing the test. A test once submitted cannot be resumed.</h4>
-                                    </li>
-                                    <li><h4>10. Once clicked on the (End TEST) button, You Cannot UNDO this Test.</h4>
-                                    </li>
-                                    <li><h4>11. After clicked on the (End TEST) You get your RESULT sheet on mention date 12-03-2020 (http://www.infotechapp.com/result.php).</h4>
-                                    </li>
-                                    <li><h4>12. After Complete the test Please logout your account for security purpose.</h4>
-                                    </li>
-                                    <li><h4>13. 1st 3 Winners will get Prize money</h4>
-                                    </li>
-                                </ul>
-                                <label class="text-info disclaimer">
-                                <input type="checkbox" id='disclaimer'>
-                                I have read and understood all the instructions. Exammination center provide All computer hardwares alloted to me are in proper working condition. I agree to give the exam.
-                                <span></span>
-                            </label>
-                            </div>
+                        <!-- Key Features -->
+                        <ul class="fa-ul text-light">
+                            <li>
+                                <h4>1. 1st 3 Winners will get Prize. (
+                                    प्रथम 3 विजेताओं को मिलेगा पुरस्कार)</h4>
+                            </li>
+                            <li>
+                                <h4>2. Read carefully the instructions before starting the exam. (परीक्षा शुरू करने से
+                                    पहले निर्देशों को ध्यान से पढ़ें)</h4>
+                            </li>
+                            <li>
+                                <h4>3. You have 50 minutes to complete the exam. (परीक्षा को पूरा करने के लिए आपके पास 50 मिनट हैं)</h4>
+                            </li>
+                            <li>
+                                <h4>4. The exam contains a total of 50 questions. (परीक्षा पूरा करने के लिए आपके पास 50
+                                    मिनट हैं)</h4>
+                            </li>
+                            <li>
+                                <h4>5. There is only one correct answer to each question. Click on the most appropriate
+                                    option to mark it as your answer. (
+                                    प्रत्येक प्रश्न का केवल एक सही उत्तर है। अपने उत्तर के रूप में चिह्नित करने के लिए
+                                    सबसे उपयुक्त विकल्प पर क्लिक करें)</h4>
+                            </li>
+                            <li>
+                                <h4>6. You will be awarded 1 marks for each correct answer. (आपको प्रत्येक सही उत्तर के लिए 1 अंक प्रदान किया जाएगा)</h4>
+                            </li>
+                            <li>
+                                <h4>7. There is no negative marks for each wrong answer. (आपको प्रत्येक सही उत्तर के लिए
+                                    1 अंक प्रदान किया जाएगा)</h4>
+                            </li>
+                            <li>
+                                <h4>8. A Number list of all questions appears at the center of the window. (विंडो के
+                                    केंद्र में सभी प्रश्नों की एक संख्या सूची दिखाई देती है)</h4>
+                            </li>
+                            <li>
+                                <h4>9. You can use plain paper while taking the exam. Do not use calculators, log tables, dictionaries, or any other printed/online reference material during the exam. (
+                                    परीक्षा देते समय आप सादे कागज का उपयोग कर सकते हैं। परीक्षा के दौरान कैलकुलेटर, लॉग टेबल, शब्दकोश, या किसी अन्य मुद्रित / ऑनलाइन संदर्भ सामग्री का उपयोग न करें)</h4>
+                            </li>
+                            <li>
+                                <h4>10. Do not click the button "End TEST" before completing the exam. A exam once
+                                    submitted cannot be resumed. (परीक्षा पूरा करने से पहले बटन "एंड टेस्ट" पर क्लिक न
+                                    करें। एक बार प्रस्तुत किया गया परीक्षा फिर से शुरू नहीं किया जा सकता है)</h4>
+                            </li>
+                            <li>
+                                <h4>11. Once clicked on the (End TEST) button, You Cannot restart this exam. (एक बार (एंड टेस्ट) बटन पर क्लिक करने के बाद, आप इस परीक्षा को पुनः आरंभ नहीं कर सकते)</h4>
+                            </li>
+                            <li>
+                                <h4>12. After completing the exam, You can see your result sheet on mention date at
+                                    12-03-2020 (http://www.infotechapp.com/result.php). (परीक्षा पूरी करने के बाद, आप
+                                    12-03-2020 (http://www.infotechapp.com/result.php) पर अपनी रिजल्ट शीट देख सकते हैं।)
+                                </h4>
+                            </li>
+                            <li>
+                                <h4>13. After Completing the exam Please logout your account for security purpose.
+                                    (परीक्षा पूरा करने के बाद कृपया सुरक्षा उद्देश्य के लिए अपना खाता लॉगआउट करें)</h4>
+                            </li>
+                            <li>
+                                <h4>14. During the eaxam, Do not refresh the Quiz page. (एक्जाम के दौरान क्विज पेज को
+                                    रिफ्रेश न करें)</h4>
+                            </li>
+                            <li>
+                                <h4>15. After time up, Exam will be auto-submitted. (टाइम-अप के बाद, एग्जाम ऑटो-सबमिट
+                                    किया जाएगा)</h4>
+                            </li>
+                        </ul>
+                        <label class="text-info disclaimer">
+                            <input type="checkbox" id='disclaimer'>
+                            I have read and understood all the instructions. I agree with all above given instructions.
+                            <span></span>
+                        </label>
+                    </div>
 
                     <!-- END Key Features -->
                     <div class="quizbtn">
-                    <!--     <a href="javascript:void(0)" class="btn btn-lg btn-primary quiz quizSubmitbut" disabled='disabled'><i class="fa fa-floppy-o"></i>
+                        <!--     <a href="javascript:void(0)" class="btn btn-lg btn-primary quiz quizSubmitbut" disabled='disabled'><i class="fa fa-floppy-o"></i>
                             Start Quiz</a> -->
-                            <button type="button" class="btn btn-lg btn-primary quiz quizSubmitbut" disabled><i class="fa fa-floppy-o"></i>Start Quiz</button>
+                        <button type="button" class="btn btn-lg btn-primary quiz quizSubmitbut" disabled><i
+                                class="fa fa-floppy-o"></i>Start Quiz</button>
                     </div>
 
                     <!-- END Dashboard Header -->
@@ -192,18 +229,16 @@ body {
     <?php  include('common_js.php');?>
 
     <script>
-       
-     
     $('.quiz').click(function() {
-            if($('#disclaimer').prop("checked") == true){
-                window.open("quiz.php", "_blank","toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=4000,height=4000");
-            }
-            else if($('#disclaimer').prop("checked") == false){
-               alert('Please agree disclaimer');
-            }
+        if ($('#disclaimer').prop("checked") == true) {
+            window.open("quiz.php", "_blank",
+                "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=4000,height=4000");
+        } else if ($('#disclaimer').prop("checked") == false) {
+            alert('Please agree disclaimer');
+        }
     });
 
-    
+
     var exam_date = '<?php echo $exam_date;?>';
     var deadline = new Date(exam_date).getTime();
     var x = setInterval(function() {

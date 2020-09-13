@@ -74,6 +74,20 @@ body {
     </div>
     <a href="#" id="to-top"><i class="fa fa-angle-double-up"></i></a>
     <?php  include('common_js.php');?>
+    <script type="text/javascript">
+    $(document).ready(function () {
+        //Disable cut copy paste
+        $('body').bind('cut copy paste', function (e) {
+            e.preventDefault();
+        });
+
+        //Disable mouse right click
+        $("body").on("contextmenu",function(e){
+            return false;
+        });
+    });
+    </script>
+
     <script>
     window.onscroll = function() {
         myFunction()

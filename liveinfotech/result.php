@@ -25,7 +25,7 @@
   $datetime = date('Y-m-d H:i:s',strtotime($result_date));
   $datetimeresult = date('d-m-Y H:i:s',strtotime($result_date));
 
-  
+
   $todaydate = date("Y-m-d H:i:s");
   $timestampresult = strtotime($datetime);
   $timestamptoday = strtotime($todaydate);
@@ -117,7 +117,8 @@
                         </div>
                     </div>
                 </div>
-
+                <div><a href="/contact.php">Click Here</a>  to give the feedback us </div>
+                <div>Contact us: <a href="tel:8523882090">+91-8523882090</a> and <a href="tel:8899293353">+91-8899293353</a></div>
             </div>
             <!--/ container end -->
         </section>
