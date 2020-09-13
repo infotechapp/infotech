@@ -6,10 +6,12 @@ include('check_token.php');
 if(empty($_SESSION['login_id'])){       header('Location: http://infotechapp.com');     ob_end_flush();
     }
 
-$sqlinner = "select exam_date from common";
+$sqlinner = "select exam_date,result_date from common";
 $result2 = mysqli_query($conn, $sqlinner) or die(mysqli_error($conn));
 $row = mysqli_fetch_array($result2);
 $exam_date = $row['exam_date'];
+$result_date = $row['result_date'];
+$datetimeresult = date('d-m-Y H:i:s',strtotime($result_date));
 
 ?>
 <style type="text/css">
@@ -137,7 +139,7 @@ body {
                             </li>
                             <li>
                                 <h4>4. The exam contains a total of 50 questions. (परीक्षा पूरा करने के लिए आपके पास 50
-                                    मिनट हैं)</h4>
+                                    प्रश्न हैं)</h4>
                             </li>
                             <li>
                                 <h4>5. There is only one correct answer to each question. Click on the most appropriate
@@ -170,8 +172,8 @@ body {
                             </li>
                             <li>
                                 <h4>12. After completing the exam, You can see your result sheet on mention date at
-                                    12-03-2020 (http://www.infotechapp.com/result.php). (परीक्षा पूरी करने के बाद, आप
-                                    12-03-2020 (http://www.infotechapp.com/result.php) पर अपनी रिजल्ट शीट देख सकते हैं।)
+                                    <?php echo $datetimeresult;?> (http://www.infotechapp.com/result.php). (परीक्षा पूरी करने के बाद, आप
+                                    <?php echo $datetimeresult;?> (http://www.infotechapp.com/result.php) पर अपनी रिजल्ट शीट देख सकते हैं।)
                                 </h4>
                             </li>
                             <li>
