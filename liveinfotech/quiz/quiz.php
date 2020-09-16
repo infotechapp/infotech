@@ -116,19 +116,20 @@ body {
             $(".loader2").css("display", "none");
             html = '';
             i = 1;
+
             $.each(data, function(index1, val1) {
                 html += '<P>' + i + '. ' + val1.question + '<BR>';
                 html += '<input type="hidden"  name="user_id" value=' + val1.user_id + '>';
                 html += '<input type="hidden"  name="question_id[]' + i + '" value=' + val1
                     .question_id + '>';
                 html += '<input type="radio" class="quizcheckbox" name="ans[]' + i + '" value=' +
-                    val1.answers.ans1 + '>' + val1.answers.ans1 + '<BR>';
+                    val1.ans1 + '>' + val1.ans1 + '<BR>';
                 html += '<input type="radio" class="quizcheckbox" name="ans[]' + i + '" value=' +
-                    val1.answers.ans2 + '>' + val1.answers.ans2 + '<BR>';
+                    val1.ans2 + '>' + val1.ans2 + '<BR>';
                 html += '<input type="radio" class="quizcheckbox" name="ans[]' + i + '" value=' +
-                    val1.answers.ans3 + '>' + val1.answers.ans3 + '<BR>';
+                    val1.ans3 + '>' + val1.ans3 + '<BR>';
                 html += '<input type="radio" class="quizcheckbox" name="ans[]' + i + '" value=' +
-                    val1.answers.ans4 + '>' + val1.answers.ans4 + '<BR>';
+                    val1.ans4 + '>' + val1.ans4 + '<BR>';
                 i++;
             });
             $('#questionData').html(html);
