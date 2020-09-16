@@ -85,7 +85,7 @@
 
 
                 <div class="row timerTab"  style="display: none;">
-                    <div>
+                    
                         <div class="col-md-8">
 
                             <h3 class="title-border">Online Quiz Result</h3>
@@ -115,10 +115,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    
                 </div>
-                <div><a href="/contact.php">Click Here</a>  to give the feedback us </div>
-                <div>Contact us: <a href="tel:8523882090">+91-8523882090</a> and <a href="tel:8899293353">+91-8899293353</a></div>
+                 <div class="addtext"  style="display: none;">
+                  <div><a href="/contact.php">Click Here</a>  to give the feedback us </div>
+                  <div>Contact us: <a href="tel:8523882090">+91-8523882090</a> and <a href="tel:8899293353">+91-8899293353</a></div>
+                 </div> 
             </div>
             <!--/ container end -->
         </section>
@@ -181,12 +183,14 @@
         document.getElementById("second").innerHTML = seconds;
         if (t < 0) {
             clearInterval(x);
+            $(".addtext").css("display","none");
             $(".timerTab").css("display","none");
             $(".resultTab").css("display","block");
             $("#resultAction").click();
         }
         else{
             $(".timerTab").css("display","block");
+             $(".addtext").css("display","block");
             $(".resultTab").css("display","none");
         }
        }, 1000);
