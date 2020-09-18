@@ -30,10 +30,13 @@
             $ans = isset($_POST['ans'][$i]) ? $_POST['ans'][$i] : '';
             $data['question_id'] = $question_id;
             $data['answer'] = $ans;
-            array_push($fnArr, $data);   
+            $ansArr = implode(',', $data);
+            $fd = $ansArr.'$$';
+            array_push($fnArr, $fd);   
         }
-        $jsonAns = json_encode($fnArr,true);
-        $sql = "INSERT INTO results(user_id,answer,created_at)VALUES ('".$user_id."','".$jsonAns."','".$datetime."')";
+        $newArr = implode(',', $fnArr);
+        //$jsonAns = json_encode($fnArr,true);
+        $sql = "INSERT INTO results(user_id,answer,created_at)VALUES ('".$user_id."','".$newArr."','".$datetime."')";
         if(mysqli_query($conn, $sql)){
             //update quiz status
             $sqlquiz = "update students set quiz = '1' where id='".$user_id."'";
