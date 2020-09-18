@@ -53,6 +53,14 @@ if(isset($_POST["submit"]))
    $random_no = rand(100,10000);
 
 
+   $sql = "select exam_date from common";
+   $result3 = mysqli_query($conn, $sql) or die(mysqli_error($conn));
+   $row = mysqli_fetch_array($result3);
+   $examdt = $row['exam_date'];
+   $exam_date = date('d-m-Y H:i:s',strtotime($examdt));
+
+
+
     //Upload file start
     $ext_details = pathinfo($_FILES['image']['name']);
     $ext = strtolower($ext_details['extension']);
@@ -81,9 +89,13 @@ if(isset($_POST["submit"]))
             
             $message = '<p>Dear <strong>Sir/Madam,</strong></p>';
             $message .='<p>Welcome to Infotechapp Quiz. Please find your login details below.</p>';
+            $message .= '<p><b>Quiz Date:</b> '.$exam_date.'</p>';
             $message .= '<p><b>Username:</b> '.$email.'</p>';
             $message .= '<p><b>Password:</b> '.$pass.'</p>';
-            $message .= '<p><b>Roll Number:</b> '.$random_no.'</p>';
+            $message .= '<p><b>Roll Number:</b> '.$random_no.'</p><br/>';
+            $message .= '<a href="http://infotechapp.com/quiz/">Click here for Quiz</a>';
+
+           
         
             // $message = "<b>Username :</b> ".$email;
             // $message .= "<b>Password :</b> ".$pass;   

@@ -24,6 +24,7 @@
                             <a href="register.php" class="btn btn-primary solid cd-btn">Register Now </a>
 
                             <a href="quiz" class="btn btn-primary solid cd-btn">Login </a>
+                            <a href="result.php" class="btn btn-primary solid cd-btn">Result </a>
                         </div> <!-- .cd-half-width -->
 
                     </li>
@@ -90,15 +91,15 @@
                 <!--/ cd-hero-slider -->
 
                 <!--<div class="cd-slider-nav">-->
-                <!--	<nav>-->
-                <!--		<span class="cd-marker item-1"></span>-->
-                <!--		<ul>-->
-                <!--			<li class="selected"><a href="#0"><i class="fa fa-bicycle"></i> Invent</a></li>-->
-                <!--			<li><a href="#0"><i class="fa fa-hotel"></i> Dream</a></li>-->
-                <!--			<li><a href="#0"><i class="fa fa-android"></i> Tech</a></li>-->
-                <!--			<li class="video"><a href="#0"><i class="fa fa-video-camera"></i> Video</a></li>-->
-                <!--		</ul>-->
-                <!--	</nav>-->
+                <!--    <nav>-->
+                <!--        <span class="cd-marker item-1"></span>-->
+                <!--        <ul>-->
+                <!--            <li class="selected"><a href="#0"><i class="fa fa-bicycle"></i> Invent</a></li>-->
+                <!--            <li><a href="#0"><i class="fa fa-hotel"></i> Dream</a></li>-->
+                <!--            <li><a href="#0"><i class="fa fa-android"></i> Tech</a></li>-->
+                <!--            <li class="video"><a href="#0"><i class="fa fa-video-camera"></i> Video</a></li>-->
+                <!--        </ul>-->
+                <!--    </nav>-->
                 <!--</div>-->
 
                 <div class="cd-slider-nav">

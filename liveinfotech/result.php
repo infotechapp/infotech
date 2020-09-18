@@ -212,11 +212,12 @@
               html+='<table class="table table-striped table-bordered table-dark"><thead><tr><th scope="col">Rank</th><th scope="col">Image</th><th scope="col">Roll No</th><th scope="col">Name</th><th scope="col">Father Name</th><th scope="col">Address</th><th scope="col">Result</th><th scope="col">Time</th></tr></thead><tbody>';
               i = 0;
               $.each(data, function (index, obj) {
-               if(i <= 2){
-                  icon = '<i class="fa fa-trophy" style="color:#FFD700; font-size: 25px"; aria-hidden="true"></i>';
-               }else{
-                  icon = '';
-               }
+               // if(i <= 2){
+               //    icon = '<i class="fa fa-trophy" style="color:#FFD700; font-size: 25px"; aria-hidden="true"></i>';
+               // }else{
+               //    icon = '';
+               // }
+               icon = ''
                if(obj.img_name){
                     img_url = '<img src=http://infotechapp.com/images/student/'+ obj.img_name + ' width="100" height="110">';
                 }else{
