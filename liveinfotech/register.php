@@ -78,24 +78,24 @@ if(isset($_POST["submit"]))
         //                 <p><b>Username:</b> '.$email.'</p>
         //                 <p><b>Password:</b> '.$pass.'</p>
         //                 <p><b>Roll Number:</b> '.$random_no.'</p>';
-            
+
             $message = '<p>Dear <strong>Sir/Madam,</strong></p>';
             $message .='<p>Welcome to Infotechapp Quiz. Please find your login details below.</p>';
             $message .= '<p><b>Username:</b> '.$email.'</p>';
             $message .= '<p><b>Password:</b> '.$pass.'</p>';
             $message .= '<p><b>Roll Number:</b> '.$random_no.'</p>';
-        
+
             // $message = "<b>Username :</b> ".$email;
-            // $message .= "<b>Password :</b> ".$pass;   
-            // $message .= "<b>Roll Number :</b> ".$random_no; 
-           
+            // $message .= "<b>Password :</b> ".$pass;
+            // $message .= "<b>Roll Number :</b> ".$random_no;
+
             $to = $email;
             $subject = 'Welcome to Online Quiz';
             $header = "From:infotechapp2020@gmail.com \r\n";
             $header .= "MIME-Version: 1.0\r\n";
             $header .= "Content-type: text/html\r\n";
             mail ($to,$subject,$message,$header);
-                    
+
            //send email to the student
            $mess = "Thank you for creating your account at Infotechapp. Your login details will be sent to your registered email id (It will take up to 2 minutes)";
         } else {
@@ -142,6 +142,7 @@ if(isset($_POST["submit"]))
                 <h5 style="color:#49a2e7; text-align: center;"><?php echo $mess;?></h5>
             </div>
             <div class="container">
+            <h5>Already Register <a href="quiz"> click here</a> to Login</h5>
 
                 <div class="row">
                     <div class="col-md-12" style="">
@@ -233,6 +234,7 @@ if(isset($_POST["submit"]))
 
                             </div>
                         </form>
+                        <p>Note: Password will be sent on your Email id. Do not share password to anyone.</p>
                     </div>
 
                 </div>
