@@ -93,7 +93,7 @@ if(isset($_POST["submit"]))
             $message .= '<p><b>Username:</b> '.$email.'</p>';
             $message .= '<p><b>Password:</b> '.$pass.'</p>';
             $message .= '<p><b>Roll Number:</b> '.$random_no.'</p>';
-            $message .= '<a href="http://infotechapp.com/quiz/">Click here for Quiz</a>';
+            // $message .= '<a href="http://infotechapp.com/quiz/">Click here for Quiz</a>';
 
 
 

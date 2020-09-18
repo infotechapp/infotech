@@ -135,7 +135,7 @@ body {
                                     पहले निर्देशों को ध्यान से पढ़ें)</h4>
                             </li>
                             <li>
-                                <h4>3. You have 50 minutes to complete the exam. (परीक्षा को पूरा करने के लिए आपके पास 50 मिनट हैं)</h4>
+                                <h4>3. You have 50 minutes to complete the exam. (परीक्षा को पूरा करने के लिए आपके पास 40 मिनट हैं)</h4>
                             </li>
                             <li>
                                 <h4>4. The exam contains a total of 50 questions. (परीक्षा में कुल 50 प्रश्न हैं)</h4>
