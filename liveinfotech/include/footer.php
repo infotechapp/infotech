@@ -76,21 +76,21 @@
 					<div class="col-md-12 text-center">
 						<ul class="footer-social unstyled">
 							<li>
-								<a title="Twitter" href="#">
+								<!-- <a title="Twitter" href="#">
 									<span class="icon-pentagon wow bounceIn"><i class="fa fa-twitter"></i></span>
-								</a>
-								<a title="Facebook" href="#">
+								</a> -->
+								<a title="Facebook" href="https://www.facebook.com/ITAinfotechapp">
 									<span class="icon-pentagon wow bounceIn"><i class="fa fa-facebook"></i></span>
 								</a>
 								<!-- <a title="Google+" href="#">
 									<span class="icon-pentagon wow bounceIn"><i class="fa fa-google-plus"></i></span>
 								</a> -->
-								<a title="linkedin" href="#">
+								<a title="linkedin" href="https://www.linkedin.com/company/infotechapp">
 									<span class="icon-pentagon wow bounceIn"><i class="fa fa-linkedin"></i></span>
 								</a>
-								<a title="Pinterest" href="#">
+								<!-- <a title="Pinterest" href="#">
 									<span class="icon-pentagon wow bounceIn"><i class="fa fa-pinterest"></i></span>
-								</a>
+								</a> -->
 								<!-- <a title="Skype" href="#">
 									<span class="icon-pentagon wow bounceIn"><i class="fa fa-skype"></i></span>
 								</a>
