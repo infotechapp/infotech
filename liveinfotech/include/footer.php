@@ -47,6 +47,7 @@
 							<div class="col-md-6">
 								<strong>Phone No.</strong>
 								<p>+91-8899293353, +91-8523882090</p>
+							
 							</div>
 						</div>
 

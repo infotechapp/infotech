@@ -138,8 +138,7 @@ body {
                                 <h4>3. You have 50 minutes to complete the exam. (परीक्षा को पूरा करने के लिए आपके पास 50 मिनट हैं)</h4>
                             </li>
                             <li>
-                                <h4>4. The exam contains a total of 50 questions. (परीक्षा पूरा करने के लिए आपके पास 50
-                                    प्रश्न हैं)</h4>
+                                <h4>4. The exam contains a total of 50 questions. (परीक्षा में कुल 50 प्रश्न हैं)</h4>
                             </li>
                             <li>
                                 <h4>5. There is only one correct answer to each question. Click on the most appropriate
@@ -151,13 +150,9 @@ body {
                                 <h4>6. You will be awarded 1 marks for each correct answer. (आपको प्रत्येक सही उत्तर के लिए 1 अंक प्रदान किया जाएगा)</h4>
                             </li>
                             <li>
-                                <h4>7. There is no negative marks for each wrong answer. (आपको प्रत्येक सही उत्तर के लिए
-                                    1 अंक प्रदान किया जाएगा)</h4>
+                                <h4>7. There is no negative marks for each wrong answer. (प्रत्येक गलत उत्तर के लिए कोई नकारात्मक अंक नहीं है)</h4>
                             </li>
-                            <li>
-                                <h4>8. A Number list of all questions appears at the center of the window. (विंडो के
-                                    केंद्र में सभी प्रश्नों की एक संख्या सूची दिखाई देती है)</h4>
-                            </li>
+                            
                             <li>
                                 <h4>9. You can use plain paper while taking the exam. Do not use calculators, log tables, dictionaries, or any other printed/online reference material during the exam. (
                                     परीक्षा देते समय आप सादे कागज का उपयोग कर सकते हैं। परीक्षा के दौरान कैलकुलेटर, लॉग टेबल, शब्दकोश, या किसी अन्य मुद्रित / ऑनलाइन संदर्भ सामग्री का उपयोग न करें)</h4>
